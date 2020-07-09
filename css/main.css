@@ -518,7 +518,8 @@ align-items: center;
 }
 .head__center-image{
   width: auto;
-  padding-right: 70px;
+  padding-right: 40px;
+  padding-left: 20px;
 }
 .head__top-link{
   font-size: 14px;
@@ -551,7 +552,7 @@ align-items: center;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
-  padding-right: 35px;
+  padding-right: 34px;
 }
 .head__center-btn{
   font-size: 16px;
@@ -561,7 +562,7 @@ align-items: center;
   border: 2px solid #E97327;
   box-sizing: border-box;
   margin-right: 55px;
-  padding: 7px 20px 7px 60px;
+  padding: 10px 20px 9px 60px;
   position: relative;
 }
 .head__center-btn::before{
@@ -593,11 +594,15 @@ align-items: center;
   left: 30px;
 }
 .head__center--input{
-  margin-right: 45px;
-  padding: 0px 360px 0 10px;
+  width: 100%;
+  border: 1px solid white;
+  padding: 0px 50px;
 }
 .head__center-inner{
   display: flex;
+  width: 660px;
+  height: 45px;
+  margin-right: 35px;
 }
 .head__center-link--left{
   position: relative;
@@ -629,9 +634,20 @@ align-items: center;
 .head__center-btn-left{
   padding: 0px 15px 0 15px;
   position: relative;
+  border: none;
 }
 .head__center-btn-left::after{
   content: url(/img/arrow.svg);
   position: absolute;  
   right: 4px;
+}
+.head__center-btn-right,
+.head__center-btn-right:active,
+.head__center-btn-right:focus{
+  outline: none;
+  background-color: #fff;
+  border: none;
+}
+.head__link-left{
+  margin-left: 20px;
 }
