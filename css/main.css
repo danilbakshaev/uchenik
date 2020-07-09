@@ -506,15 +506,18 @@ display: flex;
 margin-bottom: 30px;
 justify-content: space-between;
 align-items: center;
+flex-wrap: wrap;
 }
 .head__center{
   display: flex;
   margin-bottom: 40px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .head__bottom{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .head__center-image{
   width: auto;
