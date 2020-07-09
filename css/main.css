@@ -495,3 +495,143 @@ img {
     margin: 0 15px;
   }
 }
+
+/* head */
+.head{
+  background: #232F3F;
+  padding: 25px 0;
+}
+.head__top{
+display: flex;
+margin-bottom: 30px;
+justify-content: space-between;
+align-items: center;
+}
+.head__center{
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.head__bottom{
+  display: flex;
+  align-items: center;
+}
+.head__center-image{
+  width: auto;
+  padding-right: 70px;
+}
+.head__top-link{
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 30px;
+}
+.head__top-link:last-child{
+  margin-right: 0px;
+}
+.head__top-link--st::before{
+  content: url(/img/st.svg);
+  position: absolute;
+  top: 3px;
+  left: -17px;
+}
+.head__top-link--phone::before{
+  content: url(/img/phone.svg);
+  position: absolute;
+  top: 3px;
+  left: -17px;
+}
+.head__top-link--phone{
+  position: relative;
+}
+.head__top-link--st{
+  position: relative;
+}
+.head__bottom-link{
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-right: 35px;
+}
+.head__center-btn{
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #232F3F;
+  border: 2px solid #E97327;
+  box-sizing: border-box;
+  margin-right: 55px;
+  padding: 7px 20px 7px 60px;
+  position: relative;
+}
+.head__center-btn::before{
+  content: url(/img/vector.svg);
+  position: absolute;
+  left: 18px;
+  top: 8px;
+}
+.head__center-link{
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-right: 35px;
+  padding-top: 50px;
+}
+.head__bottom-btn{
+  margin-right: 35px;
+  background: #E97327;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding: 10px 30px 10px 60px;
+  position: relative;
+  border: none;
+}
+.head__bottom-btn::before {
+  content: url(/img/line.svg);
+  position: absolute;
+  left: 30px;
+}
+.head__center--input{
+  margin-right: 45px;
+  padding: 0px 360px 0 10px;
+}
+.head__center-inner{
+  display: flex;
+}
+.head__center-link--left{
+  position: relative;
+}
+.head__center-link--center{
+  position: relative;
+}
+.head__center-link--right{
+  position: relative;
+}
+.head__center-link--left::before{
+  content: url(/img/group2.svg);
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+.head__center-link--center::before{
+  content: url(/img/vector3.svg);
+  position: absolute;
+  top: 13px;
+  left: 30px;
+}
+.head__center-link--right::before{
+  content: url(/img/group4.svg);
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.head__center-btn-left{
+  padding: 0px 15px 0 15px;
+  position: relative;
+}
+.head__center-btn-left::after{
+  content: url(/img/arrow.svg);
+  position: absolute;  
+  right: 4px;
+}
