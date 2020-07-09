@@ -654,3 +654,90 @@ align-items: center;
 .head__link-left{
   margin-left: 20px;
 }
+
+/* slider */
+
+.slider{
+  background: linear-gradient(325.83deg, #85C7F2 -13.85%, #3F88C5 77.39%);
+}
+.slider__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.slider__image--yamaha{
+  position: absolute;
+  right: 0;
+  width: auto;
+  top: 31px;
+  right: 283px;
+}
+.slider__image--pianino{
+  position: absolute;
+  right: 210px;
+  width: auto;
+  bottom: 0;
+}
+.slider__title{
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin: 0;
+}
+.slider__subtitle{
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.slider__text{
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.slider__dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__dots-btn{
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  margin-right: 15px;
+  border: none;
+}
+.arrow__btn{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.arrow__btn--left{
+  position: absolute;
+  left: 0;
+  top: 120px;
+  border: none;
+}
+.arrow__btn--right{
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  border: none;
+}
+.arrow__btn--left::after{
+  content: url(/img/left.svg);
+  position: absolute;
+  top: 19px;
+  right: 25px;
+}
+.arrow__btn--right::after{
+  content: url(/img/right.svg);
+  position: absolute;
+  top: 19px;
+  right: 21px;
+}
+.slider__left{
+  margin-left: 100px;
+}
