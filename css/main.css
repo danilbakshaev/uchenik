@@ -526,6 +526,7 @@ align-items: center;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.7);
   margin-right: 30px;
+  text-decoration: none;
 }
 .head__top-link:last-child{
   margin-right: 0px;
@@ -553,6 +554,7 @@ align-items: center;
   line-height: 22px;
   color: #FFFFFF;
   padding-right: 34px;
+  text-decoration: none;
 }
 .head__center-btn{
   font-size: 16px;
@@ -577,6 +579,7 @@ align-items: center;
   color: #FFFFFF;
   padding-right: 35px;
   padding-top: 50px;
+  text-decoration: none;
 }
 .head__bottom-btn{
   margin-right: 35px;
