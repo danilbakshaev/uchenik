@@ -1,10 +1,11 @@
 $(function() {
 
-//   $('.slider__items').slick({
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-// });
+  $('.slider__items').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+  });
+  
 	//Валидатор форм и маска для форм
 	const offerFormModal = $('.offer-form-modal')
 	offerFormModal.submit(function(e) {
