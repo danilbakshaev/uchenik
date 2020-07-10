@@ -246,6 +246,11 @@ legend {
   white-space: normal; /* 1 */
 }
 
+button{
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+}
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
@@ -487,19 +492,20 @@ img {
 }
 
 /* head */
+
 .head{
   background: #232F3F;
   padding: 25px 0;
 }
 .head__top{
 display: flex;
-margin-bottom: 30px;
+margin-bottom: 15px;
 justify-content: space-between;
 align-items: center;
 }
 .head__center{
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   align-items: center;
 }
 .head__bottom{
@@ -517,6 +523,10 @@ align-items: center;
   color: rgba(255, 255, 255, 0.7);
   margin-right: 30px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+.head__top-link:hover{
+  color: #908f8f;
 }
 .head__top-link:last-child{
   margin-right: 0px;
@@ -524,14 +534,14 @@ align-items: center;
 .head__top-link--st::before{
   content: url(/img/st.svg);
   position: absolute;
-  top: 0px;
-  left: -17px;
+  top: 4px;
+  left: -12px;
 }
 .head__top-link--phone::before{
   content: url(/img/phone.svg);
   position: absolute;
-  top: 0px;
-  left: -17px;
+  top: 1px;
+  left: -18px;
 }
 .head__top-link--phone{
   position: relative;
@@ -559,8 +569,24 @@ align-items: center;
   color: #FFFFFF;
   padding-right: 34px;
   text-decoration: none;
+  transition: all .2s linear;
 }
-.head__center-btn{
+.head__bottom-link--sale{
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-right: 34px;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+.head__bottom-link:hover{
+  color: #b5b4b4;
+}
+.head__bottom-link--sale:hover{
+  color: #b5b4b4;
+}
+.head__center-btn {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -568,15 +594,17 @@ align-items: center;
   border: 2px solid #E97327;
   box-sizing: border-box;
   margin-right: 55px;
-  padding: 10px 20px 9px 60px;
+  padding: 0px 20px 0px 60px;
   position: relative;
   transition: all 0.2s linear;
   text-decoration: none;
+  height: 45px;
+  display: flex;
+  align-items: center;
 }
 .head__center-btn:hover{
-  background-color: #E97327;
+  background-color: #37404c;
   border-color: #fff;
-  color: #fff;
 }
 .head__center-btn::before{
   content: url(/img/vector.svg);
@@ -591,6 +619,10 @@ align-items: center;
   margin-right: 35px;
   padding-top: 50px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+.head__center-link:hover{
+  color: #b5b4b4;
 }
 .head__bottom-btn{
   margin-right: 35px;
@@ -604,8 +636,7 @@ align-items: center;
   transition: all 0.2s linear;
 }
 .head__bottom-btn:hover{
-  background-color: inherit;
-  border-color: #fff;
+  background-color: #f9904d;
   color: #fff;
 }
 .head__bottom-btn::before {
@@ -623,12 +654,15 @@ align-items: center;
   line-height: 19px;
   align-items: center;
   color: rgba(35, 47, 63, 0.5);
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 .head__center-inner{
   display: flex;
-  width: 660px;
   height: 45px;
   margin-right: 35px;
+  flex-grow: 1;
 }
 .head__center-link--left{
   position: relative;
@@ -658,23 +692,27 @@ align-items: center;
   left: 16px;
 }
 .head__center-btn-left{
-  padding: 0px 20px 0 15px;
+  padding: 0px 25px 0 15px;
   position: relative;
   border: none;
   border: 2px solid #fff;
   font-size: 14px;
   line-height: 19px;
   color: #232F3F;
+  background: #DEE0E2;
+  transition: all 0.2s linear;
+}
+.head__center-btn-left:hover{
+  background-color: #c0c0c1;
 }
 .head__center-btn-left::after{
   content: url(/img/arrow.svg);
   position: absolute;  
-  right: 6px;
+  right: 10px;
   top: 9px;
 }
 .head__center-image-search{
   width: auto;
-  padding-right: 7px;
 }
 .head__center-btn-right,
 .head__center-btn-right:active,
@@ -682,15 +720,24 @@ align-items: center;
   outline: none;
   background-color: #fff;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 0;
+  transition: all 0.2s linear;
+}
+.head__center-btn-right:hover{
+background-color: #e8e8e8;
 }
 .head__link-left{
   margin-left: 20px;
 }
 a{
-  transition: all .2s linear;
+  
 }
 a:hover{
-  color: gray;
+  
 }
 .head__bottom-link:last-child {
   padding-right: 0px;
