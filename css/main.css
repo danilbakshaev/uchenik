@@ -1059,6 +1059,7 @@ background-color: #e8e8e8;
 }
 .product__items{
   display: flex;
+  justify-content: center;
 }
 .product__item--one {
   width: 30.3%;
