@@ -5,8 +5,8 @@ $(function() {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    prevArrow: $('.slick__prev'),
-    prevNext: $('.slick__next'),
+    // prevArrow: $('.slick__prev'),
+    // prevNext: $('.slick__next'),
     // prevArrow: '<div class"slick__prev slick__arrow"></div>',
     // prevNext: '<div class"slick__next slick__arrow"></div>',
   });
