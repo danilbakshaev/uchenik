@@ -1057,3 +1057,52 @@ background-color: #e8e8e8;
 .produkt__image{
   width: auto;
 }
+.product__items{
+  display: flex;
+}
+.product__item--one {
+  width: 30.3%;
+  background-image: url(/img/piano.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 110px 216px 30px;
+  margin-right: 20px;
+}
+.product__item--two {
+  width: 30.3%;
+  background-image: url(/img/gitar.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 110px 216px 30px;
+  margin-right: 20px;
+}
+.product__item--three {
+  width: 30.3%;
+  background-image: url(/img/bar.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 110px 216px 30px;
+  margin-right: 20px;
+}
+.product__top{
+  background-image: url(/img/banner.png);
+  padding: 30px 198px 50px 30px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product__bottom{
+  background-image: url(/img/push.png);
+  padding: 30px 198px 50px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product__title{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 140%;
+  color: #0E1A29;
+}
