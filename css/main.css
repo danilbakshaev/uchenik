@@ -1082,6 +1082,9 @@ background-color: #e8e8e8;
 
 /* product */
 
+.product{
+  background: #232F3F;
+}
 .produkt__image{
   width: auto;
 }
