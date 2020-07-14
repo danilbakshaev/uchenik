@@ -762,26 +762,24 @@ a:hover{
 /* slider */
 
 .slider{
+  overflow: hidden;
   background: linear-gradient(178.29deg, #0A3BA1 6.52%, rgba(133, 199, 242, 0) 88.37%);
+}
+.slider__grad-one{
+  position: relative;
+}
+.slider__grad-two{
+  background: linear-gradient(0deg, #232F3F 0%, rgba(35, 47, 63, 0) 94%);
+  z-index: 1;
+  position: relative;
+}
+.slider__items{
+  padding: 40px 0;
 }
 .slider__inner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  position: relative;
-}
-.slider__image--yamaha{
-  position: absolute;
-  right: 0;
-  width: auto;
-  top: 31px;
-  right: 283px;
-}
-.slider__image--pianino{
-  position: absolute;
-  right: 210px;
-  width: auto;
-  bottom: 0;
 }
 .slider__title{
   font-weight: 800;
@@ -801,47 +799,6 @@ a:hover{
   line-height: 140%;
   color: #FFFFFF;
 }
-/* .slider__dots{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider__dots-btn{
-  width: 15px;
-  height: 15px;
-  border-radius: 20px;
-  margin-right: 15px;
-  border: none;
-} */
-/* .arrow__btn{
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-}
-.arrow__btn--left{
-  position: absolute;
-  left: 0;
-  top: 120px;
-  border: none;
-}
-.arrow__btn--right{
-  position: absolute;
-  right: 10px;
-  top: 120px;
-  border: none;
-}
-.arrow__btn--left::after{
-  content: url(/img/left.svg);
-  position: absolute;
-  top: 19px;
-  right: 25px;
-}
-.arrow__btn--right::after{
-  content: url(/img/right.svg);
-  position: absolute;
-  top: 19px;
-  right: 21px;
-} */
 .slider__left{
   margin-left: 100px;
 }
@@ -860,25 +817,25 @@ a:hover{
   z-index: 1;
   border: none;
 }
-.slick-next{
+.slick-prev{
   top: 120px;
   left: 0px;
 }
-.slick-prev{
+.slick-next{
   right: 0;
   top: 120px;
 }
 .slick-next::after{
-  content: url(/img/left.svg);
-  position: absolute;
-  top: 19px;
-  left: 21px;
-}
-.slick-prev::after{
   content: url(/img/right.svg);
   position: absolute;
   top: 19px;
-  left: 24px;
+  left: 25px;
+}
+.slick-prev::after{
+  content: url(/img/left.svg);
+  position: absolute;
+  top: 19px;
+  left: 22px;
 }
 li  button{
   border-radius: 20px;
@@ -894,6 +851,16 @@ li{
 }
 .slick-dots .slick-active button {
   background: #fff;
+}
+.slider__grad-one::before {
+  content: '';
+  position: absolute;
+  width: 884px;
+  height: 884px;
+  background-color: #fff;
+  right: -145px;
+  border-radius: 447px;
+  top: -137px;
 }
 
 
