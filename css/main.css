@@ -1084,6 +1084,7 @@ background-color: #e8e8e8;
 
 .product{
   background: #232F3F;
+  padding: 90px 0;
 }
 .produkt__image{
   width: auto;
@@ -1092,43 +1093,37 @@ background-color: #e8e8e8;
   display: flex;
   justify-content: center;
 }
-.product__item--one {
+.product__item {
   width: 30.3%;
-  background-image: url(/img/piano.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 110px 216px 30px;
+  padding: 50px 30px;
   margin-right: 20px;
+}
+
+.product__item--one {
+  background-image: url(/img/piano.png);
 }
 .product__item--two {
-  width: 30.3%;
   background-image: url(/img/gitar.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px 110px 216px 30px;
-  margin-right: 20px;
 }
 .product__item--three {
-  width: 30.3%;
   background-image: url(/img/bar.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px 110px 216px 30px;
-  margin-right: 20px;
+}
+.product__item--two-line {
+  padding: 0;
 }
 .product__top{
   background-image: url(/img/banner.png);
-  padding: 30px 198px 50px 30px;
+  padding: 50px 30px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .product__bottom{
   background-image: url(/img/push.png);
-  padding: 30px 198px 50px 30px;
+  padding: 50px 30px;
   background-repeat: no-repeat;
   background-size: cover;
 }
