@@ -1084,7 +1084,7 @@ background-color: #e8e8e8;
 
 .product{
   background: #232F3F;
-  padding: 90px 0;
+  padding: 30px 0;
 }
 .produkt__image{
   width: auto;
@@ -1094,14 +1094,14 @@ background-color: #e8e8e8;
   justify-content: center;
 }
 .product__item {
-  width: 30.3%;
+  width: 20%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 30px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
-
 .product__item--one {
   background-image: url(/img/piano.png);
 }
@@ -1114,22 +1114,36 @@ background-color: #e8e8e8;
 .product__item--two-line {
   padding: 0;
 }
-.product__top{
-  background-image: url(/img/banner.png);
-  padding: 50px 30px;
-  margin-bottom: 20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .product__bottom{
   background-image: url(/img/push.png);
   padding: 50px 30px;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  background-position: right;
 }
 .product__title{
   font-weight: bold;
   font-size: 30px;
   line-height: 140%;
   color: #0E1A29;
+}
+.product__title--custom{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 140%;
+  color: #0E1A29;
+}
+.product__top{
+  background-image: url(/img/banner.png);
+  margin-bottom: 20px;
+}
+.product__top-wrap{
+
+  background: linear-gradient(90deg, #85C7F2 43.88%, rgba(133, 199, 242, 0) 70.45%);
+  padding: 50px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
 }
