@@ -10,6 +10,11 @@ $(function() {
     // prevArrow: '<div class"slick__prev slick__arrow"></div>',
     // prevNext: '<div class"slick__next slick__arrow"></div>',
   });
+  // $('.hits__items').slick({
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  //   arrows: true,
+  // });
   
   
 	//Валидатор форм и маска для форм
