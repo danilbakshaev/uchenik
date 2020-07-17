@@ -23,6 +23,12 @@ $(function() {
     arrows: true,
     infinite: true,
   });
+  $('.brand__items').slick({
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    arrows: true,
+    infinite: true,
+  });
   
   
 	//Валидатор форм и маска для форм

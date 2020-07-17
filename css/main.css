@@ -1379,6 +1379,10 @@ background-color: #e8e8e8;
 }
 .base__item-bottom{
   padding-top: 103px;
+  flex-grow: 1;
+}
+.base__item-subtext-subtitle{
+  flex-grow: 1;
 }
 .base__item--one{
   background: linear-gradient(360deg, #1D1004 33.61%, rgba(173, 93, 37, 0) 69.44%);
@@ -1443,4 +1447,229 @@ background-color: #e8e8e8;
 }
 .curs__item--blue{
   background: linear-gradient(360deg, #B0C2E7 60.5%, rgba(255, 255, 255, 0) 69.44%);
+}
+
+/* services */
+
+.services{
+  margin-top: 111px;
+}
+.services__image{
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+.services__image--tel{
+  z-index: 0;
+  max-height: 157px;
+  top: 50px;
+}
+.services__items{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.services__left{
+  padding-top: 62px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+.services__left--orange{
+  padding-bottom: 67px;
+  padding-top: 0;
+}
+.services__left--blue{
+  padding-bottom: 67px;
+  padding-top: 0;
+}
+.services__item{
+  width: calc(47% - 20px);
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.services__left-big{
+  background: rgba(255, 255, 255, 0.8);
+}
+.services__left-small{
+  background: rgba(255, 255, 255, 0.8);
+}
+.services__left-big-title{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 140%;
+  color: #232F3F;
+  margin: 0;
+  padding: 5px 15px;
+}
+.services__left-small-subtitle{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #232F3F;
+  margin: 0;
+  padding: 5px 15px;
+}
+.services__item--orange{
+  background: linear-gradient(104.95deg, #FF6500 39.17%, rgba(254, 125, 34, 0) 66.55%);
+  width: 57%
+}
+.services__item--blue{
+  background: linear-gradient(90deg, #85C7F2 35%, rgba(133, 199, 242, 0) 77.98%);
+  width: 34%;
+  overflow: hidden;
+}
+.services__item--one{
+  background: linear-gradient(101.27deg, #699CB1 58.76%, rgba(150, 185, 205, 0) 78.36%);
+}
+.services__item--two{
+  background: linear-gradient(90deg, #322F4F 43.64%, rgba(141, 132, 162, 0) 68.84%);
+}
+.services__item--three{
+  background: linear-gradient(111.04deg, #F2DA3D 0%, #FFEF88 100%);
+}
+.services__item--four{
+  background: linear-gradient(110.88deg, #CFD4D7 44.44%, rgba(176, 180, 181, 0) 52.91%);
+}
+.services__left-big--one{
+width: 69%;
+}
+.services__left-small--one{
+width: 61%;
+}
+.services__left-big--two{
+  width: 65%;
+}
+.services__left-small--two{
+  width: 49%;
+}
+.services__left-big--three{
+  width: 59%;
+}
+.services__left-small--three{
+  width: 59%;
+}
+.services__left-big--four{
+  width: 39%;
+}
+.services__left-small--four{
+  width: 46%;
+}
+.services__title--orange{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.services__subtitle--orange{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+.services__title--black{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  color: #0E1A29;
+}
+
+/* brand */
+
+.brand{
+  margin-top: 100px;
+}
+.brand__image{
+  width: auto;
+}
+.brand__items{
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+}
+.brand__item{
+  margin-right:70px;
+  display: flex;
+  align-items: center;
+}
+.brand__title{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+
+/* license */
+
+.license{
+  background: #fff;
+  padding-bottom: 130px;
+  padding-top: 110px;
+}
+.license__items{
+display: flex;
+justify-content: space-between;
+}
+.license__title{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 60px;
+}
+
+/* look */
+
+.look{
+  background: #fff;
+  margin-top: -1px;
+}
+.look__items{
+  display: flex;
+  justify-content: space-between;
+}
+.look__title{
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 60px;
+}
+/* shop */
+
+.shop{
+  background: #fff;
+  margin-top: -1px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.shop__title{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: rgba(14, 26, 41, 0.7);
+}
+.shop__text{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(14, 26, 41, 0.7);
+}
+
+/* discount */
+
+.discount__image{
+  width: auto;
 }
