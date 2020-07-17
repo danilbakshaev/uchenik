@@ -364,7 +364,7 @@ body {
 }
 
 img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -801,14 +801,14 @@ background-color: #e8e8e8;
   margin: 0;
 }
 .slick-arrow{
-  width: 60px;
+  /* width: 60px;
   height: 60px;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.3);
   font-size: 0;
   position: absolute;
   z-index: 1;
-  border: none;
+  border: none; */
 }
 .slick-prev{
   top: 120px;
@@ -1204,17 +1204,18 @@ background-color: #e8e8e8;
 .hits__item{
   background: linear-gradient(111.04deg, #0A3BA1 0%, #346ABC 100%);
   padding: 72px 65px;
-  width: 50%;
+  /* width: 50%; */
+  margin-right: 50px;
   position: relative;
   display: flex;
-  margin-right: 20px;
 }
+
 .hits__item--red{
   background: linear-gradient(114.08deg, #FF7070 -47.99%, #AB2222 101.39%);
-  margin-right: 0;
 }
 .hits__items{
-  display: flex;
+  /* display: flex; */
+  margin-right: -50px;
 }
 .hits__item-image{
   position: absolute;

@@ -5,16 +5,18 @@ $(function() {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    // prevArrow: $('.slick__prev'),
-    // prevNext: $('.slick__next'),
-    // prevArrow: '<div class"slick__prev slick__arrow"></div>',
-    // prevNext: '<div class"slick__next slick__arrow"></div>',
+    prevArrow: '<button type="button" class="slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next">Next</button>',
   });
-  // $('.hits__items').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  //   arrows: true,
-  // });
+  
+  $('.hits__items').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: true,
+    infinite: true,
+    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+  });
   
   
 	//Валидатор форм и маска для форм
