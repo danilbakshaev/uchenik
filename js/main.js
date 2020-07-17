@@ -17,6 +17,12 @@ $(function() {
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
   });
+  $('.curs__items').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    infinite: true,
+  });
   
   
 	//Валидатор форм и маска для форм
