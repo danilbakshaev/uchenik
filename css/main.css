@@ -1670,6 +1670,32 @@ justify-content: space-between;
 
 /* discount */
 
+.discount{
+  background: linear-gradient(125.95deg, #FF6500 59.17%, #1E52AE 50.55%);
+}
 .discount__image{
   width: auto;
+}
+.discount__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.discount__title{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.discount__subtitle{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.discount__right{
+  display: flex;
 }
