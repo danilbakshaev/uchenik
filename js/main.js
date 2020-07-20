@@ -5,8 +5,8 @@ $(function() {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
-    prevArrow: '<button type="button" class="slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next">Next</button>',
+    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
   });
   
   $('.hits__items').slick({
@@ -22,12 +22,24 @@ $(function() {
     slidesToScroll: 4,
     arrows: true,
     infinite: true,
+    prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
   });
   $('.brand__items').slick({
     slidesToShow: 6,
     slidesToScroll: 6,
     arrows: true,
     infinite: true,
+    prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+  });
+  $('.sale__items').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    infinite: true,
+    prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
   });
   
   
