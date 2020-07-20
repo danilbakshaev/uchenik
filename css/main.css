@@ -1593,6 +1593,7 @@ background-color: #e8e8e8;
 }
 .base__item-top-btn{
   background: inherit;
+  transition: 0.2s linear;
 }
 .base__item-top{
   display: flex;
@@ -1612,6 +1613,7 @@ background-color: #e8e8e8;
   color: #0E1A29;
   text-decoration: none;
 }
+
 
 
 /* curs */
@@ -1822,19 +1824,25 @@ width: 61%;
 
 .brand{
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .brand__image{
   width: auto;
 }
+.brand__image--marg{
+  margin-top: -31px;
+}
+.brand__image--blu{
+  margin-top: -18px;
+}
 .brand__items{
-  display: flex;
+  display: flex!important;
   align-items: center;
-  min-height: 200px;
 }
 .brand__item{
-  margin-right:70px;
-  display: flex;
+  display: flex!important;
   align-items: center;
+  padding-top: 50px;
 }
 .brand__title{
   font-weight: bold;
