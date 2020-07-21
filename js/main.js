@@ -18,7 +18,7 @@ $(function() {
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [
     {
-    breakpoint: 860,
+    breakpoint: 1240,
     settings: {
     slidesToShow: 1,
     slidesToScroll: 1,
