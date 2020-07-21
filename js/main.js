@@ -52,13 +52,22 @@ $(function() {
     nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
     responsive: [
       {
-      breakpoint: 860,
+      breakpoint: 1240,
       settings: {
-      slidesToShow: 2,
+      slidesToShow: 2.1,
       slidesToScroll: 2,
+      centerMode: true,
       arrows: false,
         }
       },
+      {
+        breakpoint: 770,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false,
+          }
+        },
     ] 
   });
   
