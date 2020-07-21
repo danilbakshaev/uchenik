@@ -16,6 +16,16 @@ $(function() {
     infinite: true,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+    responsive: [
+    {
+    breakpoint: 860,
+    settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+      }
+    },
+  ] 
   });
   $('.curs__items').slick({
     slidesToShow: 4,
@@ -40,6 +50,16 @@ $(function() {
     infinite: true,
     prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+    responsive: [
+      {
+      breakpoint: 860,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: false,
+        }
+      },
+    ] 
   });
   
   
