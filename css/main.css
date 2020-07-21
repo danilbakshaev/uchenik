@@ -1725,16 +1725,13 @@ li {
 .sale__items {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
   margin-bottom: -20px;
 }
 
 .sale__item {
-  width: calc(22% - 20px);
-  margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .sale__item-title-text {
@@ -1823,7 +1820,7 @@ li {
 }
 
 .sale__item-bottom-btn--white {
-  padding: 9px 30px;
+  padding: 11px 30px;
   background: #fff;
   border: 2px solid #E97327;
 }
@@ -1893,6 +1890,109 @@ li {
 .sale__slider-next {
   top: 323px;
   right: -70px;
+}
+
+.sale__item-reviews--mobile {
+  display: none;
+}
+
+.sale__item-reviews-span--mobile {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #18C166;
+}
+
+.sale__item-bottom-btn--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .sale__items {
+    margin: 0 75px -20px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .sale__icon {
+    margin-left: 0;
+  }
+
+  .sale__item-bottom-btn {
+    display: none;
+  }
+
+  .sale__item-bottom-btn--mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .sale__items {
+    margin: 0 0 -20px;
+  }
+
+  .sale__item-top-image {
+    object-fit: contain;
+  }
+
+  .sale__item {
+    height: 560px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sale__item-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .sale__item-text-bottom {
+    display: none;
+  }
+
+  .sale__item-reviews--mobile {
+    display: block;
+  }
+
+  .sale__item-reviews-span {
+    display: none;
+  }
+
+  .sale__icon {
+    margin-left: 0;
+  }
+
+  .sale__item-title-text {
+    margin: 5px 0;
+  }
+
+  .sale__item-text {
+    margin-top: 10px;
+  }
+
+  .sale__item-bottom-text {
+    display: none;
+  }
+
+  .sale__item-bottom {
+    margin-top: 10px;
+  }
+  .sale__item-block-span--blue {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .sale__item-top-image {
+    width: -webkit-fill-available;
+  }
 }
 
 /* base */
