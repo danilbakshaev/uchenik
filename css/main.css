@@ -3168,6 +3168,25 @@ li {
   line-height: 150%;
   color: rgba(14, 26, 41, 0.7);
 }
+.shop__link{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: rgba(14, 26, 41, 0.7);
+}
+@media screen and (max-width: 1240px) {
+  .shop__title{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .shop__text{
+    font-size: 14px;
+  }
+  .shop__link{
+    font-size: 14px;
+  }
+}
 
 /* discount */
 
