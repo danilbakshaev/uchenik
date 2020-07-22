@@ -27,6 +27,15 @@ $(function() {
     },
   ] 
   });
+  $('.services-mobile__items').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+  });
   $('.curs__items').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
