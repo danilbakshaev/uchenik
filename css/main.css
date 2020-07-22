@@ -2240,6 +2240,7 @@ li {
   }
   .base__inner-scroll{
     overflow: auto;
+    padding-bottom: 30px;
   }
   .base__item-bottext-link {
     font-size: 10px;
@@ -2841,6 +2842,24 @@ li {
   line-height: 140%;
   color: #0E1A29;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1240px) {
+  .license__inner{
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  .license__items{
+    overflow: scroll;
+    width: 711px;
+  }
+  .license__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .license__image{
+    width: 110px;
+    height: 160px;
+  }
 }
 
 /* look */
