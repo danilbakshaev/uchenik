@@ -3109,6 +3109,7 @@ li {
 .look__items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .look__title {
@@ -3118,6 +3119,23 @@ li {
   line-height: 140%;
   color: #0E1A29;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1240px) {
+  .look__inner{
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  .look__items{
+    overflow: scroll;
+    width: 600px;
+  }
+  .look__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .look__image{
+    
+  }
 }
 
 /* shop */
