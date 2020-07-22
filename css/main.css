@@ -2996,6 +2996,8 @@ li {
 .brand {
   margin-top: 100px;
   margin-bottom: 100px;
+  background: #232F3F;
+  padding-bottom: 25px;
 }
 
 .brand__image {
@@ -3053,6 +3055,11 @@ li {
 }
 
 
+@media screen and (max-width: 768px) {
+  .brand__item {
+    justify-content: center;
+  }
+}
 /* license */
 
 .license {
