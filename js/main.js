@@ -33,7 +33,17 @@ $(function() {
     arrows: true,
     infinite: true,
     prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
+    nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>', 
+    responsive: [
+      {
+      breakpoint: 1240,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: false,
+        }
+      },
+    ] 
   });
   $('.brand__items').slick({
     slidesToShow: 6,
@@ -71,6 +81,30 @@ $(function() {
     ] 
   });
   
+  window.addEventListener("resize", function() {
+    if (window.innerWidth <= 1240) {
+      $('.sale__items').slick('unslick');
+      sliderIsLive = false;
+    }
+    else {
+      if (sliderIsLive) {
+        $('.sale__items').slick();
+        sliderIsLive = true;
+      }
+    }
+  });
+  window.addEventListener("resize", function() {
+    if (window.innerWidth <= 1240) {
+      $('.curs__items').slick('unslick');
+      sliderIsLive = false;
+    }
+    else {
+      if (sliderIsLive) {
+        $('.curs__items').slick();
+        sliderIsLive = true;
+      }
+    }
+  });
   
 	//Валидатор форм и маска для форм
 	const offerFormModal = $('.offer-form-modal')
