@@ -55,12 +55,51 @@ $(function() {
     ] 
   });
   $('.brand__items').slick({
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 4.1,
+    slidesToScroll: 3,
+    centerMode: true,
     arrows: true,
     infinite: true,
     prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+    responsive: [
+      {
+      breakpoint: 1240,
+      settings: {
+      slidesToShow: 3.1,
+      slidesToScroll: 2,
+      centerMode: true,
+      arrows: false,
+        }
+      },
+      {
+        breakpoint: 940,
+        settings: {
+        slidesToShow: 2.1,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+          }
+        },
+      {
+        breakpoint: 768,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        centerMode: false,
+        arrows: false,
+          }
+        },        
+      {
+        breakpoint: 530,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        arrows: false,
+          }
+        }
+      ]
   });
   $('.sale__items').slick({
     slidesToShow: 4,
