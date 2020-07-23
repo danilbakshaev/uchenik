@@ -411,8 +411,8 @@ img {
 
 .modal-wrapper__close {
   position: absolute;
-  right: -30px;
-  top: -5px;
+  right: 10px;
+  top: 9px;
   width: 25px;
   height: 25px;
   background: none;
@@ -451,25 +451,8 @@ img {
   z-index: -1;
 }
 
-.modal-wrapper__callback {
-  max-width: 500px;
-  margin: 1.75rem auto;
-  background-color: #fff;
-  position: relative;
-  transition: all 0.3s linear;
-}
-
-.modal-wrapper__callback.hidden {
-  display: none;
-}
-
-.modal-wrapper__callback.animation {
-  opacity: 0;
-  transform: translateY(-100px);
-}
-
 .modal-wrapper__left-menu {
-  max-width: 500px;
+  max-width: 375px;
   position: relative;
   margin-right: auto;
   background-color: #fff;
@@ -482,6 +465,41 @@ img {
 
 .modal-wrapper__left-menu.animation {
   transform: translateX(-100px);
+}
+
+.modal-wrapper__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #232F3F;
+  padding: 15px 0;
+}
+
+.left-menu__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 45px 15px 13px;
+  border-top: 1px solid rgba(35, 47, 63, 0.05);
+  position: relative;
+}
+
+.left-menu__item:before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  right: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='15' viewBox='0 0 10 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.999998L8 7.33333L0.999999 13.6667' stroke='%23C1C4C9' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-menu__item svg {
+  margin-right: 17px;
 }
 
 /* Контейнер */
@@ -1294,6 +1312,11 @@ li {
 @media screen and (max-width: 1240px) {
   .menu-white {
     display: block;
+    z-index: 2;
+  }
+
+  .menu-white--mobile {
+    position: relative;
   }
 }
 
