@@ -2114,6 +2114,8 @@ li {
   padding: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .base__item-img {
@@ -2126,6 +2128,9 @@ li {
 .base__item-bottom {
   padding-top: 103px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .base__item-subtext-subtitle {
@@ -2137,11 +2142,11 @@ li {
 }
 
 .base__item--two {
-  background: linear-gradient(0.48deg, #1A1E2F 50.92%, rgba(26, 30, 47, 0) 74.1%);
+  background: linear-gradient(0.48deg, #1A1E2F 60%, rgba(26, 30, 47, 0) 74.1%);
 }
 
 .base__item--three {
-  background: linear-gradient(360deg, #8C909B 56.92%, rgba(220, 220, 220, 0) 69.44%);
+  background: linear-gradient(360deg, #8C909B 60%, rgba(220, 220, 220, 0) 69.44%);
 }
 
 .base__item--four {
@@ -2169,6 +2174,7 @@ li {
   font-size: 20px;
   line-height: 140%;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .base__item-subtext-subtitle {
@@ -2311,11 +2317,11 @@ li {
   }
 
   .base__item--three {
-    background: linear-gradient(360deg, #8C909B 50.92%, rgba(220, 220, 220, 0) 83.44%);
+    background: linear-gradient(360deg, #8C909B 53.92%, rgba(220, 220, 220, 0) 83.44%);
   }
 
   .base__item--four {
-    background: linear-gradient(0.48deg, #FFFFFF 50.92%, rgba(255, 255, 255, 0) 83.1%);
+    background: linear-gradient(0.48deg, #FFFFFF 53.92%, rgba(255, 255, 255, 0) 83.1%);
   }
 
   .base__item--five {
@@ -2400,7 +2406,7 @@ li {
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
-  height: 400px !important;
+  height: 416px !important;
   display: flex !important;
   overflow: hidden;
   margin: 0 10px;
@@ -2511,6 +2517,24 @@ li {
   .curs__item-subtext {
     display: block;
   }
+  .curs__item {
+    height: 440px !important;
+  }
+  .curs__item--violet {
+    background: linear-gradient(360deg, #CFC6D8 64.5%, rgba(255, 255, 255, 0) 69.44%);
+  }
+  
+  .curs__item--yellow {
+    background: linear-gradient(360deg, #FFEF88 64.5%, rgba(255, 239, 136, 0) 69.44%);
+  }
+  
+  .curs__item--green {
+    background: linear-gradient(360deg, #BBE4FF 64.5%, rgba(187, 228, 255, 0) 69.44%);
+  }
+  
+  .curs__item--blue {
+    background: linear-gradient(360deg, #B0C2E7 64.5%, rgba(255, 255, 255, 0) 69.44%);
+  }
 }
 
 @media screen and (max-width: 1240px) {
@@ -2578,6 +2602,7 @@ li {
   .curs__item-subtext-link {
     font-size: 10px;
     display: block;
+    margin-bottom: -8px;
   }
 
   .curs__item--violet {
@@ -3082,6 +3107,7 @@ li {
   display: flex !important;
   align-items: center;
   padding-top: 50px;
+  outline: none;
 }
 
 .brand__title {
