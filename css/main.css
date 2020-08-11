@@ -3918,3 +3918,160 @@ li {
     margin-top: 5px;
   }
 }
+
+/* страница catalog */
+
+/* music-catalog */
+
+.services__item--catalog{
+  width: calc(93.33% - 20px);
+  background: linear-gradient(93.58deg, rgba(199, 51, 56, 0.9) 0%, rgba(133, 2, 6, 0.9) 100%), #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px;
+}
+.services__image--catalog{
+  z-index: 0;
+  left: 45px;
+}
+.services__btn--catalog{
+  background-color: inherit;
+  border: 2px solid #FFFFFF;
+  height: 67px;
+  font-size: 16px;
+}
+.services__btn--catalog:hover{
+  background: rgba(199, 51, 56, 0.9);
+}
+.services__left--catalog{
+  display: flex;
+  padding-bottom: 0;
+  align-items: center;
+}
+.services__title--catalog{
+  margin-right: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.music__item--catalog{
+  width: calc(29.33% - 20px);
+}
+/* .catalog-red__inner{
+  background: linear-gradient(180deg, #232F3F 42%, rgba(35, 47, 63, 0) 100%);
+  transform: rotate(-180deg);
+} */
+.catalog-text-left{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.music__items--catalog{
+  width: 80%;
+}
+.music__catalog-inner{
+  display: flex;
+}
+.music__catalog-link{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.music__item-title--catalog{
+  padding-bottom: 81px;
+}
+.music__item-catalog--one{
+
+  background: linear-gradient(119.14deg, #D0E8FF 8.83%, #85C7F2 100%);
+}
+.music__item-catalog--two{
+  background: linear-gradient(124.07deg, #FFE5F1 8.2%, #FFBBDB 97.7%);
+}
+.music__item-catalog--three{
+  background: linear-gradient(124.07deg, #BBFFC6 8.2%, #6DEC81 97.7%);
+}
+.music__item-catalog--four{
+  background: linear-gradient(124.07deg, #E8E9EB 8.2%, #A4A6AB 97.7%);
+}
+.music__item-catalog--five{
+  background: linear-gradient(124.07deg, #BBCAFF 8.2%, #9CB2FD 97.7%);
+}
+.music__item-catalog--six{
+  background: linear-gradient(124.07deg, #FFEEEF 8.2%, #FF8181 97.7%);
+}
+.music__item-catalog--seven{
+  background: linear-gradient(124.07deg, #FFF0BB 8.2%, #FFCC7F 97.7%);
+}
+.music__item-catalog--eight{
+  background: linear-gradient(282.39deg, #8CCBF4 0%, #BBE4FF 100%);
+}
+
+
+/* sale-catalog */
+
+.sale__item-block-span--hit{
+  background: #85C7F2;
+  padding: 4px 22px;
+}
+.sale__item-block-span--gr{
+  background: #71D69B;
+}
+.services--catalog{
+  background-color: #fff;
+  padding-top: 0;
+}
+.services--two-catalog{
+  background-color: #fff;
+  padding-top: 0;
+}
+.look--catalog{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.catalog-links{
+  background: #232F3F;
+}
+.catalog-links__link{
+  margin-right: 5px;
+  position: relative;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  transition: all 0.2s linear;
+}
+.catalog-links__link--active{
+  opacity: 0.5;
+}
+.catalog-links__link::after{
+  content: '/';
+  position: absolute;
+  right: -8px;
+  top: 0;
+  color: #FFF;
+}
+.catalog-links__link:last-child::after{
+  content: none;
+}
+.catalog-links__btn{
+  border: 2px solid #E97327;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: inherit;
+  padding: 11px 15px;
+  margin-right: 15px;
+  transition: all 0.2s linear;
+}
+.catalog-links__btn:hover{
+  background: #F49659;
+}
+.catalog-links__btn--music{
+  height: fit-content;
+}
