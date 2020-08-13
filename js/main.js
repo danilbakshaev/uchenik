@@ -9,6 +9,14 @@ $(function () {
     nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
   });
 
+  $('.digital__slide').slick({
+    slidesToShow: 1,
+    arrows: true,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+  });
+
   $('.hits__items').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
