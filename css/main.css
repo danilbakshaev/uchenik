@@ -4123,6 +4123,20 @@ li {
 .desktop-menu__catalog-btn--pianino{
   border: none;
 }
+@media screen and (max-width: 1240px) {
+  .pianino-top-inner{
+  display: none;
+  }
+  .catalog-links{
+    display: none;
+  }
+  .digital__left{
+    display: none;
+  }
+  .discount--digital{
+    display: none;
+  }
+}
 
 
 /* цифровые пианино */
@@ -4215,6 +4229,9 @@ li {
   width: 25px;
   height: 25px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .digital__btn-color--black{
   background: #000000;
@@ -4324,6 +4341,7 @@ li {
 .digital__slide{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .digital__slide-btn{
   padding: 8px 10px;
@@ -4362,6 +4380,41 @@ li {
   padding: 10px 0;
   background: #fff;
   border: 2px solid #232F3F;
+}
+.slider-prev-digital{
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: #A7A7A7;
+  font-size: 0;
+  position: absolute;
+  z-index: 1;
+  border: none;
+}
+.slider-next-digital{
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: #A7A7A7;
+  font-size: 0;
+  position: absolute;
+  z-index: 1;
+  border: none;
+}
+.slider-next-digital::before{
+  content: url(/img/next-dig.svg);
+}
+.slider-prev-digital::before{
+  content: url(/img/next-dig.svg);
+}
+.digital__slider-next{
+  right: 0px;
+  top: -4px;
+}
+.digital__slider-prev{
+  right: 47px;
+  top: -4px;
+  transform: rotate(180deg);
 }
 
 /* sort */
@@ -4402,6 +4455,7 @@ li {
   color: rgba(14, 26, 41, 0.5);
   margin-top: 20px;
 }
+
 
 
 

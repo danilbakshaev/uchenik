@@ -13,8 +13,8 @@ $(function () {
     slidesToShow: 1,
     arrows: true,
     variableWidth: true,
-    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+    prevArrow: '<button type="button" class="slider-prev-digital digital__slider-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slider-next-digital digital__slider-next">Next</button>',
   });
 
   $('.hits__items').slick({
@@ -130,6 +130,25 @@ $(function () {
       },
     ]
   });
+
+//   $('.digital__right-inner').slick({
+//     slidesToShow: 1,
+//     arrows: true,
+//     prevArrow: '<button type="button" class="slider-prev-digital digital__slider-prev">Previous</button>',
+//     nextArrow: '<button type="button" class="slider-next-digital digital__slider-next">Next</button>',
+//     responsive: [{
+//           breakpoint: 9999,
+//           settings: "unslick"
+//       },
+//       {
+//          breakpoint: 1240,
+//          settings: {
+//          slidesToShow: 2.2,
+//          slidesToScroll: 2
+//       }
+//   },
+// ]
+//   });
 
   window.addEventListener("resize", function () {
     if (window.innerWidth <= 1240) {
