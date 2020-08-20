@@ -228,6 +228,16 @@ $(window).on('resize', function(e){
 }).trigger('resize');
 
 
+$('#cardSlider').slick({
+  slidesToShow: 4.5,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: true,
+  infinite: false,
+  prevArrow: '<button type="button" class="slide-prev card__slider-prev">Previous</button>',
+  nextArrow: '<button type="button" class="slide-next card__slider-next">Next</button>',
+});
+
 
 
 // $(window).on('resize', function(e){
