@@ -115,7 +115,7 @@ $(function () {
         breakpoint: 1240,
         settings: {
           slidesToShow: 2.1,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           centerMode: true,
           arrows: false,
         }
@@ -123,8 +123,8 @@ $(function () {
       {
         breakpoint: 770,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           arrows: false,
         }
       },
@@ -143,35 +143,136 @@ $(function () {
 //       {
 //          breakpoint: 1240,
 //          settings: {
-//          slidesToShow: 2.2,
-//          slidesToScroll: 2
+//          slidesToShow: 3,
+//          slidesToScroll: 1
 //       }
 //   },
 // ]
 //   });
 
-  window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1240) {
-      $('.sale__items').slick('unslick');
-      sliderIsLive = false;
-    } else {
-      if (sliderIsLive) {
-        $('.sale__items').slick();
-        sliderIsLive = true;
-      }
+
+
+
+// $('#whitePianino').slick({
+//   slidesToShow: 3
+// });
+$(window).on('resize', function(e){
+  // Переменная, по которой узнаем запущен слайдер или нет.
+  // Храним её в data
+  var init = $(".card-box").data('init-slider');
+  // Если мобильный
+  if(window.innerWidth < 1240){
+    // Если слайдер не запущен
+    if(init != 1){
+      // Запускаем слайдер и записываем в data init-slider = 1
+      $('#whitePianino').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 2.5,
+        responsive: [{
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+      }).data({'init-slider': 1});
+
+      $('#blackPianino').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 2.5,
+        responsive: [{
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+      }).data({'init-slider': 1});
+
+      $('#base-slick').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 2,
+        responsive: [{
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+      }).data({'init-slider': 1});
+
+      $('#slick-look').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 3.2
+      }).data({'init-slider': 1});
+
+      $('#services-slick').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 1
+      }).data({'init-slider': 1});
     }
-  });
-  window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1240) {
-      $('.curs__items').slick('unslick');
-      sliderIsLive = false;
-    } else {
-      if (sliderIsLive) {
-        $('.curs__items').slick();
-        sliderIsLive = true;
-      }
-    }
-  });
+  }
+}).trigger('resize');
+
+
+
+
+// $(window).on('resize', function(e){
+//   // Переменная, по которой узнаем запущен слайдер или нет.
+//   // Храним её в data
+//   var init = $(".card-box").data('init-slider');
+//   // Если мобильный
+//   if(window.innerWidth < 1240){
+//     // Если слайдер не запущен
+//     if(init != 1){
+//       // Запускаем слайдер и записываем в data init-slider = 1
+//       $('#blackPianino').slick({
+//         arrows: false,
+//         dots: true,
+//         slidesToShow: 2.2
+//       }).data({'init-slider': 1});
+//     }
+//   }
+// }).trigger('resize');
+
+
+
+
+  // window.addEventListener("resize", function () {
+  //   if (window.innerWidth <= 1240) {
+  //     $('.sale__items').slick('unslick');
+  //     sliderIsLive = false;
+  //   } else {
+  //     if (sliderIsLive) {
+  //       $('.sale__items').slick();
+  //       sliderIsLive = true;
+  //     }
+  //   }
+  // });
+  // window.addEventListener("resize", function () {
+  //   if (window.innerWidth <= 1240) {
+  //     $('.curs__items').slick('unslick');
+  //     sliderIsLive = false;
+  //   } else {
+  //     if (sliderIsLive) {
+  //       $('.curs__items').slick();
+  //       sliderIsLive = true;
+  //     }
+  //   }
+  // });
 
   $('a[href^="#"]').click(function(){ // #1
     let anchor = $(this).attr('href');  // #2
