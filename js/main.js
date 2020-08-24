@@ -116,14 +116,13 @@ $(function () {
         settings: {
           slidesToShow: 2.1,
           slidesToScroll: 1,
-          centerMode: true,
           arrows: false,
         }
       },
       {
         breakpoint: 770,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2.1,
           slidesToScroll: 1,
           arrows: false,
         }
@@ -197,14 +196,13 @@ $(window).on('resize', function(e){
 
       $('#base-slick').slick({
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 2,
         responsive: [{
-          breakpoint: 740,
+          breakpoint: 760,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            dots: false
           }
         },
       ]
@@ -212,9 +210,23 @@ $(window).on('resize', function(e){
 
       $('#slick-look').slick({
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 3.2
+      }).data({'init-slider': 1});
+
+      $('#cardSlider-2').slick({
+        arrows: true,
+        dots: false,
+        infinite: false,
+        slidesToShow: 2.5
+      }).data({'init-slider': 1});
+
+      $('#cardSlider-3').slick({
+        arrows: true,
+        dots: false,
+        infinite: false,
+        slidesToShow: 2.5
       }).data({'init-slider': 1});
 
       $('#services-slick').slick({
@@ -236,6 +248,16 @@ $('#cardSlider').slick({
   infinite: false,
   prevArrow: '<button type="button" class="slide-prev card__slider-prev">Previous</button>',
   nextArrow: '<button type="button" class="slide-next card__slider-next">Next</button>',
+  responsive: [{
+    breakpoint: 1240,
+    settings: {
+      slidesToShow: 2.5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false
+    }
+  },
+]
 });
 
 
