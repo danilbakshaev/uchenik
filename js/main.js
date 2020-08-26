@@ -208,6 +208,20 @@ $(window).on('resize', function(e){
       ]
       }).data({'init-slider': 1});
 
+      $('#art-slick').slick({
+        arrows: false,
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        responsive: [{
+          breakpoint: 760,
+          settings: {
+            dots: false
+          }
+        },
+      ]
+      }).data({'init-slider': 1});
+
       $('#slick-look').slick({
         arrows: false,
         dots: false,
@@ -243,7 +257,7 @@ $(window).on('resize', function(e){
 $('#cardSlider').slick({
   slidesToShow: 4.5,
   slidesToScroll: 1,
-  dots: true,
+  dots: false,
   arrows: true,
   infinite: false,
   prevArrow: '<button type="button" class="slide-prev card__slider-prev">Previous</button>',
