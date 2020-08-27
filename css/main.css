@@ -5900,3 +5900,151 @@ li {
     display: none;
   }
 }
+
+/* Order (checkout step 2.1) */
+
+.order__flex-inner{
+  display: flex;
+}
+.order__flex-item{
+  margin-right: 20px;
+  width: 50%;
+}
+.order__flex-item-two{
+  width: calc(50% - 20px);
+}
+
+
+/* Order (checkout step 3) */
+
+.ques-review--flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.digital__slide-btn--margin{
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.order-map__marginTop35{
+  margin-top: 35px;
+}
+.card__text--margin0{
+  margin: 0!important;
+}
+.order-page__circle-btn--borderBlue{
+  border: 6px solid #0066C0;
+}
+.order-check-3__text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(14, 26, 41, 0.5);
+}
+
+
+/* order-final */
+
+.wrapper-final{
+  padding: 60px 40px 95px;
+  background: #F6F6F6;
+  text-align: center;
+}
+.wrapper-final__title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #0E1A29;
+  margin-bottom: 25px;
+}
+.wrapper-final__subtitle{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 41px;
+  color: #0E1A29;
+  margin-bottom: 30px;
+}
+.wrapper-final__text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 28px;
+}
+.wrapper-final__text-blue{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0066C0;
+  text-decoration: underline;
+}
+.wrapper-final__text-bold{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0E1A29;
+  margin-bottom: 0px;
+}
+.wrapper-final__subtext{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0E1A29;
+  margin-top: 0;
+}
+.card__btn--margin42{
+  margin-top: 42px;
+  width: auto;
+  padding: 15px 120px;
+}
+.wrapper-final__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.contact-svg{
+  margin-right: 27px;
+}
+.contact-svg:last-child{
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1240px) {
+  .wrapper-final__title{
+    font-size: 26px;
+  }
+  .wrapper-final__subtitle{
+    font-size: 24px;
+  }
+  .wrapper-final__text{
+    font-size: 16px;
+  }
+  .wrapper-final__text-bold{
+    font-size: 14px;
+  }
+  .wrapper-final__subtext{
+    font-size: 14px;
+  }
+  .card__btn--margin42{
+    width: 100%;
+    padding: 15px;
+  }
+  .wrapper-final__text-blue{
+    font-size: 16px;
+  }
+  .wrapper-final{
+    padding: 0;
+    background: inherit;
+    text-align: center;
+  }
+  .wrap-displayNone{
+    display: none;
+  }
+}
