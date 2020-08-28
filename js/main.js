@@ -183,7 +183,7 @@ $(window).on('resize', function(e){
       // Запускаем слайдер и записываем в data init-slider = 1
       $('#whitePianino').slick({
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 2.5,
         responsive: [{
@@ -198,7 +198,7 @@ $(window).on('resize', function(e){
 
       $('#blackPianino').slick({
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: false,
         slidesToShow: 2.5,
         responsive: [{

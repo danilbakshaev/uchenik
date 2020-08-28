@@ -2132,7 +2132,7 @@ li {
   .sale__item-title-text {
     margin: 5px 0;
     font-size: 12px;
-    min-height: 50px;
+    min-height: 0px;
     display: flex;
     align-items: center;
   }
@@ -2790,7 +2790,6 @@ li {
   padding-top: 111px;
   display: block;
   background: #232F3F;
-  margin-bottom: 100px;
 }
 
 .services__image {
@@ -4693,7 +4692,9 @@ li {
   }
   .sale__item-horizont-inner{
     align-items: center;
-    margin-top: -90px;
+  }
+  .sale__item-horizont{
+    height: auto;
   }
 }
 
