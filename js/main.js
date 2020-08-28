@@ -41,6 +41,15 @@ $(function () {
     infinite: true,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+    responsive: [{
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false
+      }
+    }, ]
   });
   $('.curs__items').slick({
     slidesToShow: 4,
@@ -53,7 +62,15 @@ $(function () {
       breakpoint: 1240,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }, ],
+    responsive: [{
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false,
       }
     }, ]
@@ -377,29 +394,30 @@ $('#cardSlider').slick({
 (function () {
 
   //Вызов окна колбека
-  // openCallback = document.querySelector('.openCallback');
-  // callbackModal = document.querySelector('.modal-wrapper__callback');
+  openCallback = document.querySelector('.openCallback');
+  callbackModal = document.querySelector('.modal-wrapper__callback');
 
-  // openCallback.addEventListener('click', function () {
-  //   openBaseModal();
-  //   callbackModal.classList.remove('hidden');
-  //   setTimeout(function () {
-  //     callbackModal.classList.remove('animation');
-  //   }, 20);
-  // })
+  openCallback.addEventListener('click', function () {
+    openBaseModal();
+    callbackModal.classList.remove('hidden');
+    setTimeout(function () {
+      callbackModal.classList.remove('animation');
+    }, 20);
+  })
 
-  // function closecallbackPopup() {
-  //   if (!callbackModal.classList.contains('hidden')) {
-  //     callbackModal.classList.add('animation');
-  //     callbackModal.addEventListener('transitionend', function (e) {
-  //       callbackModal.classList.add('hidden');
-  //     }, {
-  //       capture: false,
-  //       once: true,
-  //       passive: false
-  //     });
-  //   }
-  // };
+  function closecallbackPopup() {
+    if (!callbackModal.classList.contains('hidden')) {
+      callbackModal.classList.add('animation');
+      callbackModal.addEventListener('transitionend', function (e) {
+        callbackModal.classList.add('hidden');
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+  };
+
 
   //Вызов окна колбека
   openLeftMenu = document.querySelector('.openMenu');
@@ -428,7 +446,7 @@ $('#cardSlider').slick({
   };
 
   function closeAllModal() {
-    // closecallbackPopup();
+    closecallbackPopup();
     closeleftMenuModal();
     closeBaseModal();
   };

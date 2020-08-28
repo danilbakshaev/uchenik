@@ -451,6 +451,23 @@ img {
   z-index: -1;
 }
 
+.modal-wrapper__callback {
+  max-width: 500px;
+  margin: 1.75rem auto;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.modal-wrapper__callback.hidden {
+  display: none;
+}
+
+.modal-wrapper__callback.animation {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
 .modal-wrapper__left-menu {
   max-width: 375px;
   position: relative;
@@ -500,6 +517,10 @@ img {
 
 .left-menu__item svg {
   margin-right: 17px;
+}
+
+.wrap-login__form{
+  text-align: center;
 }
 
 /* Контейнер */
@@ -1603,6 +1624,7 @@ li {
 .hits__items {
   /* display: flex; */
   margin-right: -20px;
+  overflow: hidden;
 }
 
 .hits__item-image {
@@ -2665,7 +2687,6 @@ li {
   }
 
   .curs-wrapper {
-    overflow-x: scroll;
     overflow-y: hidden;
     padding-bottom: 42px;
   }
@@ -2676,7 +2697,6 @@ li {
 
   .curs__items {
     margin: auto;
-    width: 1845px;
     z-index: 1;
     position: relative;
   }
@@ -3027,7 +3047,6 @@ li {
 }
 
 .services-mobile__image--man {
-  width: 220px;
   position: absolute;
   right: -50px;
   top: 0;
@@ -6047,4 +6066,85 @@ li {
   .wrap-displayNone{
     display: none;
   }
+}
+
+/* wrap-login */
+
+.card__input--bcg-gray{
+  background: #F6F6F6;
+}
+.card__link--bcg-white{
+  background: inherit;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wrap-login__form--flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.card__btn--displayFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__btn--google{
+  background: inherit;
+  color: #0E1A29;
+  border: 1px solid #B4B4B4;
+}
+.card__btn--facebook{
+  background: #415993;
+}
+.card__btn--vk{
+  background: #5476A4;
+}
+.wrap-login__svg{
+  margin-right: 10px;
+}
+.wrap-login__subtext{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 20px;
+}
+.wrap-login__inner{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrap-login__link{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0066C0;
+}
+.wrap-login__text-bottom{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  color: rgba(14, 26, 41, 0.5);
+}
+.wrapper-final__text--fz16{
+  font-size: 16px;
+}
+.wrap-login__span-left{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  color: #0E1A29;
+}
+.wrap-login__span-right{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(14, 26, 41, 0.5);
+}
+.card__title--fz26{
+  font-size: 26px;
 }
