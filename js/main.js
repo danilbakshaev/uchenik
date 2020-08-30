@@ -30,30 +30,31 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        dots: true
       }
     }, ]
   });
   $('.services-mobile__items').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    infinite: true,
+    infinite: false,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [{
-      breakpoint: 1240,
+      breakpoint: 760,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots: false
+        dots: true
       }
     }, ]
   });
-  $('.curs__items').slick({
+  $('#curs-slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     arrows: true,
     infinite: true,
     prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
@@ -123,15 +124,15 @@ $(function () {
   });
   $('.sale__items').slick({
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     arrows: true,
-    infinite: true,
+    infinite: false,
     prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
     responsive: [{
         breakpoint: 1240,
         settings: {
-          slidesToShow: 2.1,
+          slidesToShow: 4,
           slidesToScroll: 1,
           arrows: false,
         }
@@ -139,7 +140,7 @@ $(function () {
       {
         breakpoint: 770,
         settings: {
-          slidesToShow: 2.1,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
           arrows: false,
         }
@@ -215,11 +216,20 @@ $(window).on('resize', function(e){
         arrows: false,
         dots: false,
         infinite: false,
-        slidesToShow: 2,
+        slidesToShow: 4,
+        responsive: [{
+          breakpoint: 1000,
+          settings: {
+            dots: false,
+            slidesToShow: 3
+          }
+        },
+      ],
         responsive: [{
           breakpoint: 760,
           settings: {
-            dots: false
+            dots: false,
+            slidesToShow: 2
           }
         },
       ]
@@ -244,6 +254,13 @@ $(window).on('resize', function(e){
         dots: false,
         infinite: false,
         slidesToShow: 3.2
+      }).data({'init-slider': 1});
+
+      $('#slick-license').slick({
+        arrows: false,
+        dots: false,
+        infinite: false,
+        slidesToShow: 3
       }).data({'init-slider': 1});
 
       $('#cardSlider-2').slick({
