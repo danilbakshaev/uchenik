@@ -65,24 +65,20 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-      }
-    }, ],
-    responsive: [{
+      },
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: true,
-      }
-    }, ],
-    responsive: [{
+      },
       breakpoint: 380,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
       }
-    }, ]
+    }]
   });
   $('.brand__items').slick({
     slidesToShow: 4.1,
