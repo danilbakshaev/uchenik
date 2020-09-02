@@ -1523,8 +1523,11 @@ li {
   position: relative;
   padding: 20px;
   text-decoration: none;
-  transition: all 0.2s linear;
   height: 200px;
+  transition: all 0.2s linear;
+}
+.music__item:hover{
+  transform: scale(1.03);
 }
 
 .music__item-title {
@@ -1583,55 +1586,6 @@ li {
   background: linear-gradient(138.65deg, #FFE5F1 8.42%, #FFBBDB 96.86%);
 }
 
-
-
-.music__item--yellow:hover {
-  background: linear-gradient(134.53deg, #FFF0BB 8.2%, #f7d600 97.7%, #FFEF88 97.7%);
-}
-
-.music__item--blue:hover {
-  background: linear-gradient(143.97deg, #BBE4FF 12.53%, #009aff 86.83%);
-}
-
-.music__item--orange:hover {
-  background: linear-gradient(135.53deg, #FFE9D6 8.09%, #ff7c00 88.97%);
-}
-
-.music__item--violet:hover {
-  background: linear-gradient(137.16deg, #E8E9EB 6.82%, #5c6c8a 86%);
-}
-
-.music__item--dj:hover {
-  background: linear-gradient(140.09deg, #BBCAFF 8.92%, #315eff 85.59%);
-}
-
-.music__item--pink:hover {
-  background: linear-gradient(126.05deg, #FFEEEE 2.92%, #fb2c2c 110.61%);
-}
-
-.music__item--peach:hover {
-  background: linear-gradient(135.97deg, #FFF0BB 8.77%, #ffb038 96.47%);
-}
-
-.music__item--green:hover {
-  background: linear-gradient(138.65deg, #BBFFC6 8.42%, #00e926 96.86%);
-}
-
-.music__item--navy:hover {
-  background: linear-gradient(140.09deg, #E8E9EB 8.92%, #6485b1 85.59%);
-}
-
-.music__item--turquoise:hover {
-  background: linear-gradient(126.05deg, #BBE4FF 2.92%, #1c9df1 110.61%);
-}
-
-.music__item--sky:hover {
-  background: linear-gradient(135.97deg, #CCD7FF 8.77%, #0037fd 96.47%);
-}
-
-.music__item--light:hover {
-  background: linear-gradient(138.65deg, #FFE5F1 8.42%, #ff4da1 96.86%);
-}
 
 @media screen and (max-width: 1340px) {
   .music__item {
