@@ -3,6 +3,8 @@ $(function () {
   $('.slider__items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     dots: true,
     arrows: true,
     prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
@@ -22,6 +24,8 @@ $(function () {
     slidesToScroll: 2,
     arrows: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [{
@@ -39,7 +43,9 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [{
@@ -56,7 +62,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
     responsive: [
@@ -93,6 +101,8 @@ $(function () {
     centerMode: true,
     arrows: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
     responsive: [{
@@ -137,7 +147,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
     responsive: [{
