@@ -3151,12 +3151,12 @@ li {
 
 .services__item--orange:hover {
   background: linear-gradient(104.95deg, #ff5200 39.17%, rgba(254, 125, 34, 0) 66.55%);
-  width: 57%
+  width: 56%
 }
 
 .services__item--blue:hover {
   background: linear-gradient(90deg, #3cacf5 35%, rgba(133, 199, 242, 0) 77.98%);
-  width: 34%;
+  width: 33%;
   overflow: hidden;
 }
 
