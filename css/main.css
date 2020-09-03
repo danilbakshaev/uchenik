@@ -614,6 +614,11 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.header-logo{
+  width: 157px;
+  height: 91px;
+}
+
 .desktop-menu__navigate-link:last-child {
   margin-right: 0px;
 }
@@ -723,14 +728,20 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: #FFF;
-  margin-right: 35px;
+  margin-right: 20px;
   padding-top: 50px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-decoration: none;
+  border-radius: 7px;
   transition: all 0.2s linear;
+  border: 2px solid #232F3F;
 }
 
 .desktop-menu__main-link:hover {
-  color: rgba(255, 255, 255, 0.7);
+  background-color: #37404c;
+  border: 2px solid #fff;
 }
 
 .desktop-menu__catalog-btn {
@@ -791,25 +802,43 @@ img {
   position: relative;
 }
 
+.span-basket {
+  position: absolute;
+  top: 5px;
+  right: 16px;
+  background: #E97327;
+  border-radius: 20px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
 .desktop-menu__main-link--left::before {
   content: url(/img/group2.svg);
   position: absolute;
   top: 13px;
-  left: 15px;
+  left: 19px;
 }
 
 .desktop-menu__main-link--center::before {
   content: url(/img/vector3.svg);
   position: absolute;
   top: 13px;
-  left: 30px;
+  left: 36px;
 }
 
 .desktop-menu__main-link--right::before {
-  content: url(/img/group4.svg);
+  content: url(/img/bask.svg);
   position: absolute;
   top: 13px;
-  left: 16px;
+  left: 23px;
 }
 
 .desktop-menu__main-btn-left {
@@ -1357,6 +1386,7 @@ li {
 /* product */
 .product {
   background: #232F3F;
+  padding-top: 10px;
 }
 
 .product__image {
@@ -1366,7 +1396,11 @@ li {
 .product__items {
   display: flex;
   z-index: 1;
-  position: relative;
+}
+
+.product__item--width100{
+  width: 100%!important;
+  padding: 0!important;
 }
 
 .product__item {
@@ -1380,10 +1414,12 @@ li {
   margin-right: 20px;
   margin-bottom: 20px;
   transition: all 0.2s linear;
+  position: relative;
+  z-index: 1;
 }
-/* .product__item:hover {
-  background: rgba(255, 255, 255, 0.62);
-} */
+.product__item:hover {
+  transform: scale(1.03);
+}
 
 .product__item--one {
   background-image: url(/img/piano.png);
@@ -1417,6 +1453,13 @@ li {
   color: #0E1A29;
 }
 
+.product__item-grad-top-two{
+  padding-left: 25px;
+}
+.product__item-grad-bottom-two{
+  padding-left: 25px;
+}
+
 .product__title--custom {
   font-weight: bold;
   font-size: 26px;
@@ -1428,6 +1471,19 @@ li {
   width: 100%;
   background: linear-gradient(90deg, #85C7F2 43.88%, rgba(133, 199, 242, 0) 70.45%);
   position: relative;
+}
+
+.product__item-scaleControl{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.product__item--margin0{
+  margin-bottom: 0;
 }
 
 .product__image-right {
@@ -1623,6 +1679,7 @@ li {
   padding: 30px 0px 30px 30px;
   height: 176px!important;
   transition: all 0.2s linear;
+  overflow: hidden;
 }
 .hits__item:hover {
   transform: scale(1.03);
@@ -1630,6 +1687,10 @@ li {
 
 .hits__item-image{
   width: auto;
+}
+
+.hits .slick-list{
+  padding: 10px 0;
 }
 
 .hits__item--red {
@@ -1772,6 +1833,10 @@ li {
   background: #232F3F;
 }
 
+.hits-mobile-img{
+  display: none!important;
+}
+
 @media screen and (max-width: 1240px) {
   .hits {
     background: #fff;
@@ -1812,31 +1877,47 @@ li {
   .hits__item-bottom-subtitle {
     font-size: 14px;
   }
+
+  .hits-mobile-img{
+    display: block!important;
+  }
+
+  .hits__item-image{
+    display: none!important;
+  }
+
+  .hits__item-bottom{
+    width: 92%;
+  }
+
+  .hits__item{
+    height: 150px!important;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .hits__item-image{
     width: 100%;
   }
-  .hits__item{
+  /* .hits__item{
     height: 190px!important;
-  }
-  .hits__item-bottom{
+  } */
+  /* .hits__item-bottom{
     width: 82%;
   }
   .hits__item-top{
     width: 56%;
-  }
+  } */
 }
 
 @media screen and (max-width: 400px) {
-  .hits__item-bottom {
+  /* .hits__item-bottom {
     width: 45%;
   }
 
   .hits__item-top {
     width: 85%;
-  }
+  } */
 
   .hits__item-top--red {
     width: 100%;
@@ -1871,6 +1952,11 @@ li {
   background-color: #fff;
   padding: 10px;
   text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.sale__item:hover {
+  transform: scale(1.03);
 }
 
 .sale__item-title-text {
@@ -2346,16 +2432,18 @@ li {
 }
 
 .base__item {
-  width: calc(21% - 20px);
+  width: calc(25% - 20px);
   position: relative;
-  padding: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
   display: flex;
-  flex-direction: column;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.2s linear;
+}
+
+.base__item--scaleControl{
+  padding: 20px;
 }
 
 .base__item:hover{
@@ -2556,7 +2644,6 @@ li {
   .base__item {
     width: 140px;
     overflow: hidden;
-    padding: 10px;
   }
 
   .base__item-bottom {
@@ -2643,6 +2730,10 @@ li {
 
 /* curs */
 
+.curs .slick-list{
+  padding: 10px 0;
+}
+
 .curs {
   padding-top: 170px;
   padding-bottom: 45px;
@@ -2665,7 +2756,7 @@ li {
 }
 
 .curs__item-img {
-  width: auto;
+  width: 100%!important;
   position: absolute;
   top: 0em;
   right: 0;
@@ -2675,18 +2766,20 @@ li {
 .curs__items {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 75px;
 }
 
 .curs__item {
   position: relative;
-  padding: 20px;
   margin-bottom: 20px;
   overflow: hidden;
   margin: 0 10px;
   flex-direction: column;
   cursor: pointer;
   transition: all 0.2s linear;
+}
+
+.curs__item-scaleControl{
+  padding: 20px;
 }
 
 .curs__item:hover{
@@ -3040,8 +3133,8 @@ li {
 }
 
 .services__item {
-  width: calc(46% - 46px);
-  padding: 20px 40px;
+  width: calc(50% - 46px);
+  overflow: hidden;
   margin-right: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -3050,6 +3143,15 @@ li {
   transition: all 0.2s linear;
   display: flex;
   align-items: center;
+}
+
+.services__item-scaleControl{
+  padding: 20px 40px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .services__item:hover{
@@ -3085,12 +3187,16 @@ li {
 
 .services__item--orange {
   background: linear-gradient(104.95deg, #FF6500 39.17%, rgba(254, 125, 34, 0) 66.55%);
-  width: calc(56% - 26px);
+}
+.services__item--width57{
+  width: calc(60.33% - 26px);
 }
 
 .services__item--blue {
   background: linear-gradient(90deg, #85C7F2 35%, rgba(133, 199, 242, 0) 77.98%);
-  width: calc(33% - 26px);
+}
+.services__item--width33{
+  width: calc(36.33% - 26px);
   overflow: hidden;
 }
 
@@ -4035,7 +4141,8 @@ li {
 }
 
 .footer__logo {
-  width: auto;
+  width: 157px;
+  height: 91px;
 }
 
 .footer__items {
