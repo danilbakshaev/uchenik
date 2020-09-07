@@ -168,6 +168,14 @@ $(function () {
           arrows: true,
         }
       },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        }
+      },
     ]
   });
 
