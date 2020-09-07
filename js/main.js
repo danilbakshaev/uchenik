@@ -67,8 +67,7 @@ $(function () {
     autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -111,7 +110,7 @@ $(function () {
           slidesToShow: 3.1,
           slidesToScroll: 2,
           centerMode: true,
-         
+
         }
       },
       {
@@ -120,7 +119,7 @@ $(function () {
           slidesToShow: 2.1,
           slidesToScroll: 1,
           centerMode: true,
-          
+
         }
       },
       {
@@ -129,7 +128,7 @@ $(function () {
           slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: false,
-          
+
         }
       },
       {
@@ -205,11 +204,13 @@ $(function () {
   //   slidesToShow: 3
   // });
 
+
   $(window).on('resize', function(e){
 
     if(window.innerWidth < 1240){
 
       if(!$('#base-slick').hasClass('slick-initialized')) {
+
         $('#base-slick').slick({
           arrows: true,
           dots: false,
@@ -223,6 +224,7 @@ $(function () {
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1
+
               }
             },
             {
@@ -250,9 +252,11 @@ $(function () {
           prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
           nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3.2
+
         });
 
         if(!$('#slick-license').hasClass('slick-initialized'))
+
         $('#slick-license').slick({
           arrows: true,
           dots: false,
@@ -260,6 +264,7 @@ $(function () {
           prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
           nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3
+
         });
       
         if(!$('#whitePianino').hasClass('slick-initialized'))
@@ -317,6 +322,7 @@ $(function () {
         });
 
         if(!$('#cardSlider-2').hasClass('slick-initialized'))
+
         $('#cardSlider-2').slick({
           arrows: true,
           prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
@@ -327,6 +333,7 @@ $(function () {
         });
 
         if(!$('#cardSlider-3').hasClass('slick-initialized'))
+
         $('#cardSlider-3').slick({
           arrows: true,
           prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
@@ -334,14 +341,17 @@ $(function () {
           dots: false,
           infinite: false,
           slidesToShow: 2.5
+
         });
 
         if(!$('#services-slick').hasClass('slick-initialized'))
+
         $('#services-slick').slick({
           arrows: false,
           dots: true,
           infinite: false,
           slidesToShow: 2,
+
           responsive: [
             {
               breakpoint: 660,
@@ -378,8 +388,6 @@ $(function () {
     },
   ]
   });
-
-
 
   // $(window).on('resize', function(e){
   //   // Переменная, по которой узнаем запущен слайдер или нет.
@@ -425,12 +433,12 @@ $(function () {
   //   }
   // });
 
-  $('a[href^="#"]').click(function(){ // #1
-    let anchor = $(this).attr('href');  // #2
-    $('html, body').animate({           // #3
-    scrollTop:  $(anchor).offset().top  // #4
-    }, 600);                            // #5
-    });
+  // $('a[href^="#"]').click(function () { // #1
+  //   let anchor = $(this).attr('href'); // #2
+  //   $('html, body').animate({ // #3
+  //     scrollTop: $(anchor).offset().top // #4
+  //   }, 600); // #5
+  // });
 
   //Валидатор форм и маска для форм
   const offerFormModal = $('.offer-form-modal')
@@ -472,9 +480,19 @@ $(function () {
     console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
   });
+
   $('[name="tel"]').mask("+7(999)999-9999", {
     autoclear: false
   });
+
+  $('.header-banner__close').on('click', function () {
+    $('.header-banner').removeClass('header-banner--show');
+    localStorage.setItem('a', '25')
+  });
+
+  if (!localStorage.getItem('a')) {
+    $('.header-banner').addClass('header-banner--show');
+  }
 
 });
 
@@ -482,60 +500,99 @@ $(function () {
 (function () {
 
   //Вызов окна колбека
-  openCallback = document.querySelector('.openCallback');
-  callbackModal = document.querySelector('.modal-wrapper__callback');
+  if (document.querySelector('.openCallback')) {
+    openCallback = document.querySelectorAll('.openCallback');
+    callbackModal = document.querySelector('.modal-wrapper__callback');
 
-  openCallback.addEventListener('click', function () {
-    openBaseModal();
-    callbackModal.classList.remove('hidden');
-    setTimeout(function () {
-      callbackModal.classList.remove('animation');
-    }, 20);
-  })
-
-  function closecallbackPopup() {
-    if (!callbackModal.classList.contains('hidden')) {
-      callbackModal.classList.add('animation');
-      callbackModal.addEventListener('transitionend', function (e) {
-        callbackModal.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
+    for (let i = 0; i < openCallback.length; i++) {
+      openCallback[i].addEventListener('click', () => {
+        closeRegPopup();
+        openBaseModal();
+        callbackModal.classList.remove('hidden');
+        setTimeout(function () {
+          callbackModal.classList.remove('animation');
+        }, 20);
       });
     }
-  };
 
+    function closecallbackPopup() {
+      if (!callbackModal.classList.contains('hidden')) {
+        callbackModal.classList.add('animation');
+        callbackModal.addEventListener('transitionend', function (e) {
+          callbackModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
+  if (document.querySelector('.openReg')) {
+    openReg = document.querySelector('.openReg');
+    regModal = document.querySelector('.modal-wrapper__callback--reg');
+
+    openReg.addEventListener('click', function () {
+      closecallbackPopup();
+      regModal.classList.remove('hidden');
+      setTimeout(function () {
+        regModal.classList.remove('animation');
+      }, 20);
+    })
+
+    function closeRegPopup() {
+      if (!regModal.classList.contains('hidden')) {
+        regModal.classList.add('animation');
+        regModal.addEventListener('transitionend', function (e) {
+          regModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
 
   //Вызов окна колбека
-  openLeftMenu = document.querySelector('.openMenu');
-  leftMenuModal = document.querySelector('.modal-wrapper__left-menu');
+  if (document.querySelector('.openMenu')) {
+    openLeftMenu = document.querySelector('.openMenu');
+    leftMenuModal = document.querySelector('.modal-wrapper__left-menu');
 
-  openLeftMenu.addEventListener('click', function () {
-    openBaseModal();
-    leftMenuModal.classList.remove('hidden');
-    setTimeout(function () {
-      leftMenuModal.classList.remove('animation');
-    }, 20);
-  })
+    openLeftMenu.addEventListener('click', function () {
+      openBaseModal();
+      leftMenuModal.classList.remove('hidden');
+      setTimeout(function () {
+        leftMenuModal.classList.remove('animation');
+      }, 20);
+    })
 
-  function closeleftMenuModal() {
-    if (!leftMenuModal.classList.contains('hidden')) {
-      leftMenuModal.classList.add('animation');
-      leftMenuModal.addEventListener('transitionend', function (e) {
-        leftMenuModal.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
+    function closeleftMenuModal() {
+      if (!leftMenuModal.classList.contains('hidden')) {
+        leftMenuModal.classList.add('animation');
+        leftMenuModal.addEventListener('transitionend', function (e) {
+          leftMenuModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
 
-  };
 
   function closeAllModal() {
-    closecallbackPopup();
-    closeleftMenuModal();
+    if (document.querySelector('.openCallback')) {
+      closecallbackPopup();
+    }
+    if (document.querySelector('.openReg')) {
+      closeRegPopup();
+    }
+    if (document.querySelector('.openMenu')) {
+      closeleftMenuModal();
+    }
     closeBaseModal();
   };
 
