@@ -1,5 +1,9 @@
 $(function () {
 
+  
+  $('#menu').slinky();
+    
+
   $('.slider__items').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -146,8 +150,8 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    infinite: true,
-    autoplay: false,
+    infinite: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
