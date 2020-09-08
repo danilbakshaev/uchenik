@@ -253,20 +253,22 @@ $(function () {
           arrows: true,
           dots: false,
           infinite: false,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+          
+          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3.2
 
         });
 
         if(!$('#slick-license').hasClass('slick-initialized'))
-
         $('#slick-license').slick({
           arrows: true,
           dots: false,
           infinite: false,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+          prevArrow: $('#license-arrow-prev'),
+          nextArrow: $('#license-arrow-next'),
+          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3
 
         });
