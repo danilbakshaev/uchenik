@@ -1,186 +1,203 @@
 $(function () {
 
-  
-  $('#menu').slinky();
-    
 
-  $('.slider__items').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-    arrows: true,
-    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
-  });
+  // if ($('#menu')) {
+  //   $('#menu').slinky();
+  // }
 
-  $('.digital__slide').slick({
-    slidesToShow: 1,
-    arrows: true,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slider-prev-digital digital__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next-digital digital__slider-next">Next</button>',
-  });
+  if ($('.slider__items')) {
+    $('.slider__items').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    });
+  }
 
-  $('.hits__items').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    arrows: true,
-    infinite: true,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
-    responsive: [{
-      breakpoint: 1240,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true
-      }
-    }, ]
-  });
-  $('.services-mobile__items').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
-    responsive: [{
-      breakpoint: 760,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true
-      }
-    }, ]
-  });
-  $('#curs-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-  $('.brand__items').slick({
-    slidesToShow: 4.1,
-    slidesToScroll: 3,
-    centerMode: true,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    // prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
-    // nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
-    responsive: [{
+  if ($('.digital__slide')) {
+    $('.digital__slide').slick({
+      slidesToShow: 1,
+      arrows: true,
+      variableWidth: true,
+      prevArrow: '<button type="button" class="slider-prev-digital digital__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next-digital digital__slider-next">Next</button>',
+    });
+  }
+
+  if ($('.hits__items')) {
+    $('.hits__items').slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: true,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+      responsive: [{
         breakpoint: 1240,
         settings: {
-          slidesToShow: 3.1,
-          slidesToScroll: 2,
-          centerMode: true,
-
-        }
-      },
-      {
-        breakpoint: 940,
-        settings: {
-          slidesToShow: 2.1,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
-
+          arrows: false,
+          dots: true
         }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: false,
+      }, ]
+    });
+  }
 
-        }
-      },
-      {
-        breakpoint: 530,
+  if ($('.services-mobile__items')) {
+    $('.services-mobile__items').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
+      responsive: [{
+        breakpoint: 760,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
-          arrows: true,
+          arrows: false,
+          dots: true
         }
-      }
-    ]
-  });
-  $('.sale__items').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-    responsive: [{
-        breakpoint: 1240,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          arrows: true,
+      }, ]
+    });
+  }
+
+  if ($('#curs-slider')) {
+    $('#curs-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2.5,
-          slidesToScroll: 1,
-          arrows: true,
+      ]
+    });
+  }
+
+  if ($('.brand__items')) {
+    $('.brand__items').slick({
+      slidesToShow: 4.1,
+      slidesToScroll: 3,
+      centerMode: true,
+      arrows: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      // prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
+      // nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3.1,
+            slidesToScroll: 2,
+            centerMode: true,
+
+          }
+        },
+        {
+          breakpoint: 940,
+          settings: {
+            slidesToShow: 2.1,
+            slidesToScroll: 1,
+            centerMode: true,
+
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: false,
+
+          }
+        },
+        {
+          breakpoint: 530,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            arrows: true,
+          }
         }
-      },
-      {
-        breakpoint: 350,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-        }
-      },
-    ]
-  });
+      ]
+    });
+  }
+
+  if ($('.sale__items')) {
+    $('.sale__items').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
 
   //   $('.digital__right-inner').slick({
   //     slidesToShow: 1,
@@ -209,191 +226,200 @@ $(function () {
   // });
 
 
-  $(window).on('resize', function(e){
+  $(window).on('resize', function (e) {
 
-    if(window.innerWidth < 1240){
+    if (window.innerWidth < 1240) {
 
-      if(!$('#base-slick').hasClass('slick-initialized')) {
+      if ($('#base-slick')) {
+        if (!$('#base-slick').hasClass('slick-initialized')) {
+          $('#base-slick').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            slidesToShow: 4,
+            prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
 
-        $('#base-slick').slick({
-          arrows: true,
-          dots: false,
-          infinite: false,
-          slidesToShow: 4,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
               }
-            },
-            {
-              breakpoint: 760,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
+            ]
+          });
+        }
+      }
 
-        if(!$('#slick-look').hasClass('slick-initialized'))
-        $('#slick-look').slick({
-          arrows: true,
-          dots: false,
-          infinite: false,
+      if ($('#slick-look')) {
+        if (!$('#slick-look').hasClass('slick-initialized')) {
+          $('#slick-look').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            slidesToShow: 3.2
+          });
+        }
+      }
 
-          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          slidesToShow: 3.2
+      if ($('#slick-license')) {
+        if (!$('#slick-license').hasClass('slick-initialized')) {
+          $('#slick-license').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            prevArrow: $('#license-arrow-prev'),
+            nextArrow: $('#license-arrow-next'),
+            // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            slidesToShow: 3
+          });
+        }
+      }
 
-        });
-
-        if(!$('#slick-license').hasClass('slick-initialized'))
-        $('#slick-license').slick({
-          arrows: true,
-          dots: false,
-          infinite: false,
-          prevArrow: $('#license-arrow-prev'),
-          nextArrow: $('#license-arrow-next'),
-          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          slidesToShow: 3
-
-        });
-      
-        if(!$('#whitePianino').hasClass('slick-initialized'))
-        $('#whitePianino').slick({
-          arrows: true,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          dots: false,
-          infinite: false,
-          slidesToShow: 2.5,
-          responsive: [
-            {
+      if ($('#whitePianino')) {
+        if (!$('#whitePianino').hasClass('slick-initialized')) {
+          $('#whitePianino').slick({
+            arrows: true,
+            prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            dots: false,
+            infinite: false,
+            slidesToShow: 2.5,
+            responsive: [{
               breakpoint: 740,
               settings: {
                 slidesToShow: 2.5,
                 slidesToScroll: 1,
               }
-          },
-        ]
-        });
+            }, ]
+          });
+        }
+      }
 
-        if(!$('#blackPianino').hasClass('slick-initialized'))
-        $('#blackPianino').slick({
-          arrows: true,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          dots: false,
-          infinite: false,
-          slidesToShow: 2.5,
-          responsive: [
-            {
+      if ($('#blackPianino')) {
+        if (!$('#blackPianino').hasClass('slick-initialized')) {
+          $('#blackPianino').slick({
+            arrows: true,
+            prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            dots: false,
+            infinite: false,
+            slidesToShow: 2.5,
+            responsive: [{
               breakpoint: 740,
               settings: {
                 slidesToShow: 2.5,
                 slidesToScroll: 1,
               }
-            },
-          ]
-        });
+            }, ]
+          });
+        }
+      }
 
-        if(!$('#art-slick').hasClass('slick-initialized'))
-        $('#art-slick').slick({
-          arrows: false,
-          dots: false,
-          infinite: false,
-          slidesToShow: 2,
-          responsive: [
-            {
+      if ($('#art-slick')) {
+        if (!$('#art-slick').hasClass('slick-initialized')) {
+          $('#art-slick').slick({
+            arrows: false,
+            dots: false,
+            infinite: false,
+            slidesToShow: 2,
+            responsive: [{
               breakpoint: 760,
               settings: {
                 dots: false
               }
-            },
-          ]
-        });
+            }, ]
+          });
+        }
+      }
 
-        if(!$('#cardSlider-2').hasClass('slick-initialized'))
+      if ($('#cardSlider-2')) {
+        if (!$('#cardSlider-2').hasClass('slick-initialized')) {
+          $('#cardSlider-2').slick({
+            arrows: true,
+            prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            dots: false,
+            infinite: false,
+            slidesToShow: 2.5
+          });
+        }
+      }
 
-        $('#cardSlider-2').slick({
-          arrows: true,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          dots: false,
-          infinite: false,
-          slidesToShow: 2.5
-        });
+      if ($('#cardSlider-3')) {
+        if (!$('#cardSlider-3').hasClass('slick-initialized')) {
+          $('#cardSlider-3').slick({
+            arrows: true,
+            prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
+            nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            dots: false,
+            infinite: false,
+            slidesToShow: 2.5
+          });
+        }
+      }
 
-        if(!$('#cardSlider-3').hasClass('slick-initialized'))
-
-        $('#cardSlider-3').slick({
-          arrows: true,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
-          dots: false,
-          infinite: false,
-          slidesToShow: 2.5
-
-        });
-
-        if(!$('#services-slick').hasClass('slick-initialized'))
-
-        $('#services-slick').slick({
-          arrows: false,
-          dots: true,
-          infinite: false,
-          slidesToShow: 2,
-
-          responsive: [
-            {
+      if ($('#services-slick')) {
+        if (!$('#services-slick').hasClass('slick-initialized')) {
+          $('#services-slick').slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            slidesToShow: 2,
+            responsive: [{
               breakpoint: 660,
               settings: {
                 dots: false,
                 slidesToShow: 1,
               }
-            },
-          ]
-        });
-
-      };
-    }
+            }, ]
+          });
+        }
+      }
+    };
   }).trigger('resize');
 
 
 
-  $('#cardSlider').slick({
-    slidesToShow: 4.5,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: true,
-    infinite: false,
-    prevArrow: '<button type="button" class="slide-prev card__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slide-next card__slider-next">Next</button>',
-    responsive: [{
-      breakpoint: 1240,
-      settings: {
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false
-      }
-    },
-  ]
-  });
+  if ($('#cardSlider')) {
+    $('#cardSlider').slick({
+      slidesToShow: 4.5,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      infinite: false,
+      prevArrow: '<button type="button" class="slide-prev card__slider-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slide-next card__slider-next">Next</button>',
+      responsive: [{
+        breakpoint: 1240,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false
+        }
+      }, ]
+    });
+  }
+
 
   // $(window).on('resize', function(e){
   //   // Переменная, по которой узнаем запущен слайдер или нет.
@@ -447,58 +473,102 @@ $(function () {
   // });
 
   //Валидатор форм и маска для форм
-  const offerFormModal = $('.offer-form-modal')
-  offerFormModal.submit(function (e) {
-    e.preventDefault()
-  })
+  // const offerFormModal = $('.offer-form-modal')
+  // offerFormModal.submit(function (e) {
+  //   e.preventDefault()
+  // })
 
-  offerFormModal.validate({
-    errorElement: "",
-    errorPlacement: (error, element) =>
-      error.appendTo(element.parent().parent()),
-    rules: {
-      tel: {
-        maskRu: true
+  // offerFormModal.validate({
+  //   errorElement: "",
+  //   errorPlacement: (error, element) =>
+  //     error.appendTo(element.parent().parent()),
+  //   rules: {
+  //     tel: {
+  //       maskRu: true
+  //     }
+  //   },
+  //   messages: {
+  //     name: "",
+  //     tel: ""
+  //   },
+  //   submitHandler: function (form) {
+  //     const formInstance = $(form)
+
+  //     console.log('submit')
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "mail.php",
+  //       data: formInstance.serialize()
+  //     }).done(function () {
+  //       console.log('DONE')
+  //       formInput.val("");
+  //       formInput.siblings().removeClass('active')
+  //       $('.modal-wrapper-offer .success-message').addClass('show')
+  //     });
+  //     return false;
+  //   }
+  // });
+  // jQuery.validator.addMethod('maskRu', function (value, element) {
+  //   console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
+  //   return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+  // });
+
+  // $('[name="tel"]').mask("+7(999)999-9999", {
+  //   autoclear: false
+  // });
+
+  if ($('.header-banner')) {
+    $('.header-banner__close').on('click', function () {
+      $('.header-banner').removeClass('header-banner--show');
+      localStorage.setItem('a', '25')
+    });
+
+    if (!localStorage.getItem('a')) {
+      $('.header-banner').addClass('header-banner--show');
+    }
+  }
+
+  saleItem = $(".sale__item");
+  sortSvgHorizontal = $(".sort__svg--horizontal");
+  sortSvgVertical = $(".sort__svg--vertical");
+
+  catalogView = localStorage.getItem('catalogView', 'vertical')
+  if (catalogView === null || catalogView === 'vertical') {
+    console.log("vertical")
+    saleItem.removeClass('sale__item--horizont') 
+    sortSvgVertical.addClass('svg--active') 
+  } else if (catalogView === 'horizontal') {
+    console.log("horizontal")
+    saleItem.addClass('sale__item--horizont') 
+    sortSvgHorizontal.addClass('svg--active') 
+  }
+
+  $('.viewLine').on('click', function () {
+    localStorage.setItem('catalogView', 'horizontal')
+    // console.log(localStorage.catalogView);
+  });
+
+  $('.viewSquare').on('click', function () {
+    localStorage.setItem('catalogView', 'vertical')
+    // console.log(localStorage.catalogView);
+  });
+
+  musicCatalogLink = $(".music__catalog-link");
+  musicCatalogItem = $(".music__link-item");
+
+  musicCatalogLink.click(function () {
+    // Убираем со всех кнопок класс active
+    musicCatalogLink.removeClass('subcategory--active');
+    musicCatalogItem.removeClass('subcategory--active');
+
+    $(this).addClass('subcategory--active');
+
+    for (const item of musicCatalogItem) {
+      if (item.dataset.subcategory === this.dataset.subcategory) {
+        $(item).addClass('subcategory--active');
       }
-    },
-    messages: {
-      name: "",
-      tel: ""
-    },
-    submitHandler: function (form) {
-      const formInstance = $(form)
-
-      console.log('submit')
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: formInstance.serialize()
-      }).done(function () {
-        console.log('DONE')
-        formInput.val("");
-        formInput.siblings().removeClass('active')
-        $('.modal-wrapper-offer .success-message').addClass('show')
-      });
-      return false;
     }
   });
-  jQuery.validator.addMethod('maskRu', function (value, element) {
-    console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
-    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-  });
-
-  $('[name="tel"]').mask("+7(999)999-9999", {
-    autoclear: false
-  });
-
-  $('.header-banner__close').on('click', function () {
-    $('.header-banner').removeClass('header-banner--show');
-    localStorage.setItem('a', '25')
-  });
-
-  if (!localStorage.getItem('a')) {
-    $('.header-banner').addClass('header-banner--show');
-  }
 
 });
 
@@ -561,6 +631,7 @@ $(function () {
     };
   }
 
+
   //Вызов окна колбека
   if (document.querySelector('.openMenu')) {
     openLeftMenu = document.querySelector('.openMenu');
@@ -573,6 +644,7 @@ $(function () {
         leftMenuModal.classList.remove('animation');
       }, 20);
     })
+
 
     function closeleftMenuModal() {
       if (!leftMenuModal.classList.contains('hidden')) {
@@ -588,6 +660,58 @@ $(function () {
     };
   }
 
+  if (document.querySelector('.openMenuWhite')) {
+    openMenuWhite = document.querySelector('.openMenuWhite');
+    leftMenuModal = document.querySelector('.modal-wrapper__left-menu');
+
+    openMenuWhite.addEventListener('click', function () {
+      openBaseModal();
+      leftMenuModal.classList.remove('hidden');
+      setTimeout(function () {
+        leftMenuModal.classList.remove('animation');
+      }, 20);
+    })
+
+
+    function closeleftMenuModal() {
+      if (!leftMenuModal.classList.contains('hidden')) {
+        leftMenuModal.classList.add('animation');
+        leftMenuModal.addEventListener('transitionend', function (e) {
+          leftMenuModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
+  if (document.querySelector('.openCity')) {
+    openCity = document.querySelector('.openCity');
+    cityModal = document.querySelector('.modal-wrapper__city');
+
+    openCity.addEventListener('click', function () {
+      openBaseModal();
+      cityModal.classList.remove('hidden');
+      setTimeout(function () {
+        cityModal.classList.remove('animation');
+      }, 20);
+    })
+
+    function closeCityModal() {
+      if (!cityModal.classList.contains('hidden')) {
+        cityModal.classList.add('animation');
+        cityModal.addEventListener('transitionend', function (e) {
+          cityModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
 
   function closeAllModal() {
     if (document.querySelector('.openCallback')) {
@@ -598,6 +722,9 @@ $(function () {
     }
     if (document.querySelector('.openMenu')) {
       closeleftMenuModal();
+    }
+    if (document.querySelector('.openCity')) {
+      closeCityModal();
     }
     closeBaseModal();
   };
