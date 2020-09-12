@@ -106,8 +106,8 @@ $(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+    // prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
+    // nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
     responsive: [{
         breakpoint: 1240,
         settings: {
@@ -253,7 +253,7 @@ $(function () {
           arrows: true,
           dots: false,
           infinite: false,
-          
+
           // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
           // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3.2
