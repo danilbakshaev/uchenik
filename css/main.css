@@ -1107,10 +1107,13 @@ img {
   margin: 0;
   z-index: 1;
   position: absolute;
+  bottom: 0;
   padding: 0;
   bottom: 0px;
-  right: 50%;
-  left: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 .slick-prev {
@@ -1269,7 +1272,6 @@ li {
   .slider__items {
     background: linear-gradient(0deg, #0A3BA1, #0A3BA1), linear-gradient(180deg, #0A3BA1 42.5%, rgba(33, 86, 176, 0.809091) 59.26%, rgba(10, 59, 161, 0) 82.5%);
     overflow: hidden;
-    padding-bottom: 14px;
   }
 
   .slider__items::before {
