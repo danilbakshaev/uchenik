@@ -130,74 +130,141 @@
 
 		<section class="music">
 			<div class="container">
-                <div class="music__catalog-inner">
-                    <div class="catalog-text-left">
-                        <a class="music__catalog-link" href="">Цифровые пианино</a>
-                        <a class="music__catalog-link" href="">Синтезаторы</a>
-                        <a class="music__catalog-link" href="">Midi-клавиатуры</a>
-                        <a class="music__catalog-link" href="">Чехлы клавишные</a>
-                        <a class="music__catalog-link" href="">Акустические пианино</a>
-                        <a class="music__catalog-link" href="">Аксессуары для клавишных</a>
-                        <a class="music__catalog-link" href="">Рояли</a>
-                        <a class="music__catalog-link" href="">Банкетки для пианино</a>
-                        <a class="music__catalog-link" href="">Цифровые рояли</a>
-                        <a class="music__catalog-link" href="">Метрономы для пианино</a>
-                        <a class="music__catalog-link" href="">Стойки для цифровых пианино</a>
-                        <a class="music__catalog-link" href="">Усилители и комбо для клавишных инструментов</a>
-                        <a class="music__catalog-link" href="">Педали для цифровых пианино</a>
-                        <a class="music__catalog-link" href="">Наушники для цифровых пианино</a>
-                        <a class="music__catalog-link" href="">Планшеты для нот</a>
-                        <a class="music__catalog-link" href="">Курсы по фортепиано</a>
-                    </div>
-                    <div class="music__items music__items--catalog">
-                        <div class="services__item services__item--orange services__item--catalog">
-                            <div class="services__left services__left--orange services__left--catalog">
-                                <h2 class="services__title services__title--orange services__title--catalog">Специальная цена<br> для членов клуба</h2>
-                                <button class="services__btn services__btn--catalog">Зарегистрироваться</button>
-                            </div>
-                            <div class="services__right">
-                                <img class="services__image services__image--catalog" src="/img/pianino-red.png" alt="Красное пианино">
-                            </div>
-                        </div>
-                        <a href="#" class="music__item music__item--catalog music__item--yellow music__item-catalog--one">
-                            <h3 class="music__item-title music__item-title--catalog">Цифровые пианино</h3>
-                            <img class="music__item-image" src="/img/cat-1.png" alt="Ударная установка">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--blue music__item-catalog--two">
-                            <h3 class="music__item-title music__item-title--catalog">Синтезаторы</h3>
-                            <img class="music__item-image" src="/img/cat-2.png" alt="Пианино">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--orange music__item-catalog--three">
-                            <h3 class="music__item-title music__item-title--catalog">Midi-клавиатуры</h3>
-                            <img class="music__item-image" src="/img/cat-3.png" alt="Гитара">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--violet music__item-catalog--four">
-                            <h3 class="music__item-title music__item-title--catalog">Банкетки</h3>
-                            <img class="music__item-image" src="/img/cat-4.png" alt="Микрофон">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--dj music__item-catalog--five">
-                            <h3 class="music__item-title music__item-title--catalog">Акустические пианино</h3>
-                            <img class="music__item-image" src="/img/cat-5.png" alt="Dj">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--pink music__item-catalog--six">
-                            <h3 class="music__item-title music__item-title--catalog">Рояли</h3>
-                            <img class="music__item-image" src="/img/cat-6.png" alt="Домашний кинотеатр">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--peach music__item-catalog--seven">
-                            <h3 class="music__item-title music__item-title--catalog">Цифровые рояли</h3>
-                            <img class="music__item-image" src="/img/cat-7.png" alt="Саксофон">
-                        </a>
-                        <a href="#" class="music__item music__item--catalog music__item--green music__item-catalog--eight">
-                            <h3 class="music__item-title music__item-title--catalog">Метрономы</h3>
-                            <img class="music__item-image" src="/img/cat-8.png" alt="Колонка">
-						</a>
-						<button class="catalog-links__btn catalog-links__btn--music">Еще</button>
-                    </div>
-                </div>
+				<div class="music__catalog-inner">
+					<div class="catalog-text-left">
+						<button class="music__catalog-link subcategory--active" data-subcategory="1">Цифровые пианино</button>
+						<button class="music__catalog-link" data-subcategory="2">Синтезаторы</button>
+						<button class="music__catalog-link" data-subcategory="3">Midi-клавиатуры</button>
+						<button class="music__catalog-link" data-subcategory="4">Чехлы клавишные</button>
+						<button class="music__catalog-link" data-subcategory="5">Акустические пианино</button>
+						<button class="music__catalog-link" data-subcategory="6">Аксессуары для клавишных</button>
+						<button class="music__catalog-link" data-subcategory="7">Рояли</button>
+						<button class="music__catalog-link" data-subcategory="8">Банкетки для пианино</button>
+						<button class="music__catalog-link" data-subcategory="9">Цифровые рояли</button>
+						<button class="music__catalog-link" data-subcategory="10">Метрономы для пианино</button>
+						<button class="music__catalog-link" data-subcategory="11">Стойки для цифровых пианино</button>
+						<button class="music__catalog-link" data-subcategory="12">Усилители и комбо для клавишных инструментов</button>
+						<button class="music__catalog-link" data-subcategory="13">Педали для цифровых пианино</button>
+						<button class="music__catalog-link" data-subcategory="14">Наушники для цифровых пианино</button>
+						<button class="music__catalog-link" data-subcategory="15">Планшеты для нот</button>
+						<button class="music__catalog-link" data-subcategory="16">Курсы по фортепиано</button>
+					</div>
+					<div class="music__catalog-right">
+						<div class="music__link-item subcategory--active" data-subcategory="1">
+							<div class="services__item services__item--orange services__item--catalog">
+								<div class="services__left services__left--orange services__left--catalog">
+									<h2 class="services__title services__title--orange services__title--catalog">
+										Специальная
+										цена<br> для членов клуба</h2>
+									<button class="services__btn services__btn--catalog">Зарегистрироваться</button>
+								</div>
+								<div class="services__right">
+									<img class="services__image services__image--catalog" src="/img/pianino-red.png"
+										alt="Красное пианино">
+								</div>
+							</div>
+							<a href="#"
+								class="music__item music__item--catalog music__item--yellow music__item-catalog--one">
+								<h3 class="music__item-title music__item-title--catalog">Цифровые пианино</h3>
+								<img class="music__item-image" src="/img/cat-1.png" alt="Ударная установка">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--blue music__item-catalog--two">
+								<h3 class="music__item-title music__item-title--catalog">Синтезаторы</h3>
+								<img class="music__item-image" src="/img/cat-2.png" alt="Пианино">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--orange music__item-catalog--three">
+								<h3 class="music__item-title music__item-title--catalog">Midi-клавиатуры</h3>
+								<img class="music__item-image" src="/img/cat-3.png" alt="Гитара">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--violet music__item-catalog--four">
+								<h3 class="music__item-title music__item-title--catalog">Банкетки</h3>
+								<img class="music__item-image" src="/img/cat-4.png" alt="Микрофон">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--dj music__item-catalog--five">
+								<h3 class="music__item-title music__item-title--catalog">Акустические пианино</h3>
+								<img class="music__item-image" src="/img/cat-5.png" alt="Dj">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--pink music__item-catalog--six">
+								<h3 class="music__item-title music__item-title--catalog">Рояли</h3>
+								<img class="music__item-image" src="/img/cat-6.png" alt="Домашний кинотеатр">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--peach music__item-catalog--seven">
+								<h3 class="music__item-title music__item-title--catalog">Цифровые рояли</h3>
+								<img class="music__item-image" src="/img/cat-7.png" alt="Саксофон">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--green music__item-catalog--eight">
+								<h3 class="music__item-title music__item-title--catalog">Метрономы</h3>
+								<img class="music__item-image" src="/img/cat-8.png" alt="Колонка">
+							</a>
+							<button class="catalog-links__btn catalog-links__btn--music">Еще</button>
+						</div>
+						<div class="music__link-item" data-subcategory="2">
+							<div class="services__item services__item--orange services__item--catalog">
+								<div class="services__left services__left--orange services__left--catalog">
+									<h2 class="services__title services__title--orange services__title--catalog">
+										lorem ipsum qwerty</h2>
+									<button class="services__btn services__btn--catalog">Зарегистрироваться</button>
+								</div>
+								<div class="services__right">
+									<img class="services__image services__image--catalog" src="/img/pianino-red.png"
+										alt="Красное пианино">
+								</div>
+							</div>
+							<a href="#"
+								class="music__item music__item--catalog music__item--yellow music__item-catalog--one">
+								<h3 class="music__item-title music__item-title--catalog">Цифровые пианино</h3>
+								<img class="music__item-image" src="/img/cat-1.png" alt="Ударная установка">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--blue music__item-catalog--two">
+								<h3 class="music__item-title music__item-title--catalog">Синтезаторы</h3>
+								<img class="music__item-image" src="/img/cat-2.png" alt="Пианино">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--orange music__item-catalog--three">
+								<h3 class="music__item-title music__item-title--catalog">Midi-клавиатуры</h3>
+								<img class="music__item-image" src="/img/cat-3.png" alt="Гитара">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--violet music__item-catalog--four">
+								<h3 class="music__item-title music__item-title--catalog">Банкетки</h3>
+								<img class="music__item-image" src="/img/cat-4.png" alt="Микрофон">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--dj music__item-catalog--five">
+								<h3 class="music__item-title music__item-title--catalog">Акустические пианино</h3>
+								<img class="music__item-image" src="/img/cat-5.png" alt="Dj">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--pink music__item-catalog--six">
+								<h3 class="music__item-title music__item-title--catalog">Рояли</h3>
+								<img class="music__item-image" src="/img/cat-6.png" alt="Домашний кинотеатр">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--peach music__item-catalog--seven">
+								<h3 class="music__item-title music__item-title--catalog">Цифровые рояли</h3>
+								<img class="music__item-image" src="/img/cat-7.png" alt="Саксофон">
+							</a>
+							<a href="#"
+								class="music__item music__item--catalog music__item--green music__item-catalog--eight">
+								<h3 class="music__item-title music__item-title--catalog">Метрономы</h3>
+								<img class="music__item-image" src="/img/cat-8.png" alt="Колонка">
+							</a>
+							<button class="catalog-links__btn catalog-links__btn--music">Еще</button>
+						</div>
+					</div>
+				</div>
 			</div>
-        </section>
-        
-        <section class="brand brand--catalog">
+		</section>
+
+		<section class="brand brand--catalog">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="brand__title">Бренды</h2>
@@ -888,8 +955,8 @@
 				</div>
 			</div>
 		</section>
-        
-        <section class="sale">
+
+		<section class="sale">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="sale__title">Новинки</h2>
@@ -1534,8 +1601,8 @@
 				</div>
 			</div>
 		</section>
-        
-        <section class="services services--catalog">
+
+		<section class="services services--catalog">
 			<div class="container">
 				<div class="services__items">
 					<div class="services__item services__item--orange">
@@ -1560,9 +1627,9 @@
 				</div>
 			</div>
 		</section>
-	
-        
-        <section class="sale">
+
+
+		<section class="sale">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="sale__title">Цифровые пианино</h2>
@@ -2184,7 +2251,7 @@
 			</div>
 		</section>
 
-        <section class="sale">
+		<section class="sale">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="sale__title">Синтезаторы</h2>
@@ -2866,9 +2933,9 @@
 					</div>
 				</div>
 			</div>
-        </section>
-        
-        <section class="base">
+		</section>
+
+		<section class="base">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="base__title">База знаний</h2>
@@ -2983,9 +3050,9 @@
 					</div>
 				</div>
 			</div>
-        </section>
-        
-        <section class="services services--two-catalog">
+		</section>
+
+		<section class="services services--two-catalog">
 			<div class="container">
 				<div class="services__items services__items--catalog-bot">
 					<div class="services__item services__item--one">
@@ -3043,9 +3110,9 @@
 					</div>
 				</div>
 			</div>
-        </section>
+		</section>
 
-        <section class="look look--catalog">
+		<section class="look look--catalog">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="look__title">Товары, которые вы смотрели</h2>
@@ -3079,9 +3146,9 @@
 					</div>
 				</div>
 			</div>
-        </section>
-        
-        <section class="discount">
+		</section>
+
+		<section class="discount">
 			<div class="container">
 				<div class="discount__inner">
 					<div class="discount__left">
@@ -3100,7 +3167,7 @@
 
 
 
-		
+
 
 		<a class="up-btn" href="#btn-up">
 			<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
