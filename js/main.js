@@ -118,8 +118,8 @@ $(function () {
       infinite: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      // prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
-      // nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+      prevArrow: '',
+      nextArrow: '',
       responsive: [{
           breakpoint: 1240,
           settings: {

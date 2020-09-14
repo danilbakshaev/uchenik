@@ -592,7 +592,6 @@ img {
   max-width: 1340px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
 }
 
 @media screen and (max-width: 1340px) {
@@ -1116,6 +1115,10 @@ img {
 }
 
 .slider__grad-one {
+  position: relative;
+}
+
+.container--slider {
   position: relative;
 }
 
@@ -3080,12 +3083,10 @@ li {
   background: #232F3F;
 }
 
-/* .curs-svg-white{
-  transition: all 0.2s linear;
+.curs-wrapper {
+  position: relative;
 }
-.curs-svg-white:hover{
-  fill: red;
-} */
+
 .curs__title {
   font-weight: bold;
   font-size: 40px;
@@ -3381,11 +3382,6 @@ li {
     align-items: center;
     margin-bottom: 20px;
   }
-
-  .arrow-wrap--curs{
-    width: 80px;
-    display: block;
-  }
 }
 
 @media screen and (max-width: 750px) {
@@ -3425,7 +3421,7 @@ li {
 .services__image--tel {
   z-index: 0;
   max-height: 157px;
-  top: 60px;
+  top:calc(50% - 107.5px);
 }
 
 .services__btn {
@@ -3462,7 +3458,6 @@ li {
 }
 
 .services__left {
-  padding-top: 25px;
   position: relative;
   z-index: 1;
 }
@@ -3942,6 +3937,10 @@ li {
   background: #232F3F;
 }
 
+.container--brand{
+  position: relative;
+}
+
 .brand__image {
   width: auto;
 }
@@ -3982,14 +3981,12 @@ li {
   margin-bottom: 20px;
 }
 
-.section-title--brand  .prev-arrow{
-  position: relative;
-  z-index: 1;
+.arrow-wrap--brand .prev-arrow{
+  position: relative!important;
 }
 
-.section-title--brand  .next-arrow{
-  position: relative;
-  z-index: 1;
+.arrow-wrap--brand .next-arrow{
+  position: relative!important;
 }
 
 @media screen and (max-width: 1240px) {
@@ -4000,8 +3997,6 @@ li {
   .brand__title {
     font-size: 20px;
   }
-
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -4332,6 +4327,8 @@ li {
 
   .discount__title {
     font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 16px;
   }
 
   .discount__subtitle {
@@ -4346,6 +4343,14 @@ li {
 
   .discount__btn {
     font-size: 12px;
+  }
+  .discount{
+    padding: 25px 15px;
+  }
+
+  .container--discount{
+    margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -7466,7 +7471,7 @@ li {
   background: #8893a1;
 }
 
-.prew-arrow--white::after {
+.prev-arrow--white::after {
   content: url(/img/prev-wt.svg);
   position: absolute;
 }
@@ -7474,6 +7479,11 @@ li {
 .next-arrow--white::after{
   content: url(/img/next-wt.svg);
   position: absolute;
+}
+
+.arrow-wrap--top{
+  width: 80px;
+  display: none;
 }
 
 @media screen and (max-width: 1240px) {
@@ -7513,6 +7523,10 @@ li {
     content: url(/img/mob-arrow-white.svg);
     position: absolute;
   }
+
+  .arrow-wrap--top{
+    display: block;
+  }
 }
 
 
@@ -7531,4 +7545,6 @@ li {
   right: 0;
   z-index: 1;
 } */
+
+
 
