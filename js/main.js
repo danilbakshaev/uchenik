@@ -8,11 +8,11 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     dots: true,
     arrows: true,
-    prevArrow: '<button type="button" class="slider-prev slider__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next slider__slider-next">Next</button>',
+    prevArrow: $('#slider-pr'),
+    nextArrow: $('#slider-nx'),
   });
 
   $('.digital__slide').slick({
@@ -29,7 +29,7 @@ $(function () {
     arrows: true,
     infinite: true,
     autoplay: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [{
@@ -49,7 +49,7 @@ $(function () {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     prevArrow: '<button type="button" class="slider-prev hits__slider-prev">Previous</button>',
     nextArrow: '<button type="button" class="slider-next hits__slider-next">Next</button>',
     responsive: [{
@@ -68,9 +68,9 @@ $(function () {
     arrows: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slider-prev curs__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slider-next curs__slider-next">Next</button>',
+    autoplaySpeed: 5000,
+    prevArrow: $('#curs-pr'),
+    nextArrow: $('#curs-nx'),
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -105,9 +105,9 @@ $(function () {
     arrows: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    // prevArrow: '<button type="button" class="slider-prev brand__slider-prev">Previous</button>',
-    // nextArrow: '<button type="button" class="slider-next brand__slider-next">Next</button>',
+    autoplaySpeed: 5000,
+    prevArrow: $('#brand-pr'),
+    nextArrow: $('#brand-nx'),
     responsive: [{
         breakpoint: 1240,
         settings: {
@@ -152,9 +152,9 @@ $(function () {
     arrows: true,
     infinite: false,
     autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+    autoplaySpeed: 5000,
+    prevArrow: $('.sale-pr'),
+    nextArrow: $('.sale-nx'),
     responsive: [{
         breakpoint: 1240,
         settings: {
@@ -220,8 +220,8 @@ $(function () {
           dots: false,
           infinite: false,
           slidesToShow: 4,
-          prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+          prevArrow: $('#base-pr'),
+          nextArrow: $('#base-nx'),
           responsive: [
             {
               breakpoint: 1024,
@@ -251,13 +251,11 @@ $(function () {
         if(!$('#slick-look').hasClass('slick-initialized'))
         $('#slick-look').slick({
           arrows: true,
+          prevArrow: $('#look-pr'),
+          nextArrow: $('#look-nx'),
           dots: false,
           infinite: false,
-
-          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
           slidesToShow: 3.2
-
         });
 
         if(!$('#slick-license').hasClass('slick-initialized'))
@@ -265,12 +263,9 @@ $(function () {
           arrows: true,
           dots: false,
           infinite: false,
-          prevArrow: $('#license-arrow-prev'),
-          nextArrow: $('#license-arrow-next'),
-          // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-          // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+          prevArrow: $('#license-pr'),
+          nextArrow: $('#license-nx'),
           slidesToShow: 3
-
         });
       
         if(!$('#whitePianino').hasClass('slick-initialized'))
