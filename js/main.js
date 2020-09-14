@@ -10,11 +10,11 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
       dots: true,
       arrows: true,
-      prevArrow: '',
-      nextArrow: '',
+      prevArrow: '.prev-js-slider',
+      nextArrow: '.next-js-slider',
     });
   }
 
@@ -35,9 +35,9 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: false,
-      autoplaySpeed: 2000,
-      prevArrow: '',
-      nextArrow: '',
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-hits',
+      nextArrow: '.next-js-hits',
       responsive: [{
         breakpoint: 1240,
         settings: {
@@ -58,7 +58,7 @@ $(function () {
       dots: true,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
       prevArrow: '',
       nextArrow: '',
       responsive: [{
@@ -80,9 +80,9 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      prevArrow: '',
-      nextArrow: '',
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-curs',
+      nextArrow: '.next-js-curs',
       responsive: [{
           breakpoint: 1024,
           settings: {
@@ -117,9 +117,9 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      prevArrow: '',
-      nextArrow: '',
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-brand',
+      nextArrow: '.next-js-brand',
       responsive: [{
           breakpoint: 1240,
           settings: {
@@ -167,9 +167,9 @@ $(function () {
       arrows: true,
       infinite: false,
       autoplay: true,
-      autoplaySpeed: 2000,
-      prevArrow: '',
-      nextArrow: '',
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-sale',
+      nextArrow: '.next-js-sale',
       responsive: [{
           breakpoint: 1240,
           settings: {
@@ -237,8 +237,8 @@ $(function () {
             dots: false,
             infinite: false,
             slidesToShow: 4,
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.prev-js-base',
+            nextArrow: '.next-js-base',
             responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -272,8 +272,8 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
-            // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-            // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            prevArrow: '.prev-js-look',
+            nextArrow: '.next-js-look',
             slidesToShow: 3.2
           });
         }
@@ -285,10 +285,8 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
-            prevArrow: $('#license-arrow-prev'),
-            nextArrow: $('#license-arrow-next'),
-            // prevArrow: '<button type="button" class="slide-prev sale__slider-prev">Previous</button>',
-            // nextArrow: '<button type="button" class="slide-next sale__slider-next">Next</button>',
+            prevArrow: '.prev-js-license',
+            nextArrow: '.next-js-license',
             slidesToShow: 3
           });
         }
@@ -298,8 +296,8 @@ $(function () {
         if (!$('#whitePianino').hasClass('slick-initialized')) {
           $('#whitePianino').slick({
             arrows: true,
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.prev-js',
+            nextArrow: '.next-js',
             dots: false,
             infinite: false,
             slidesToShow: 2.5,
@@ -318,8 +316,8 @@ $(function () {
         if (!$('#blackPianino').hasClass('slick-initialized')) {
           $('#blackPianino').slick({
             arrows: true,
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.prev-js',
+            nextArrow: '.next-js',
             dots: false,
             infinite: false,
             slidesToShow: 2.5,
@@ -355,8 +353,8 @@ $(function () {
         if (!$('#cardSlider-2').hasClass('slick-initialized')) {
           $('#cardSlider-2').slick({
             arrows: true,
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.prev-js',
+            nextArrow: '.next-js',
             dots: false,
             infinite: false,
             slidesToShow: 2.5
@@ -368,8 +366,8 @@ $(function () {
         if (!$('#cardSlider-3').hasClass('slick-initialized')) {
           $('#cardSlider-3').slick({
             arrows: true,
-            prevArrow: '',
-            nextArrow: '',
+            prevArrow: '.prev-js',
+            nextArrow: '.next-js',
             dots: false,
             infinite: false,
             slidesToShow: 2.5
@@ -406,8 +404,8 @@ $(function () {
       dots: false,
       arrows: true,
       infinite: false,
-      prevArrow: '',
-      nextArrow: '',
+      prevArrow: '.prev-js',
+      nextArrow: '.next-js',
       responsive: [{
         breakpoint: 1240,
         settings: {
