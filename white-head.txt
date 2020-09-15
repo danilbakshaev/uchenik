@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Pianino</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+	<header>
+
+		<div class="desktop-menu" id="btn-up">
+			<div class="container">
+				<div class="desktop-menu__navigate">
+					<div class="desktop-menu__navigate-link-left">
+						<button
+							class="desktop-menu__navigate-link desktop-menu__navigate-link--st">Санкт-Петербург</button>
+						<a class="desktop-menu__navigate-link desktop-menu__navigate-link--phone"
+							href="tel:88002007015">8 800 200 70 15</a>
+					</div>
+					<div class="desktop-menu__navigate-link-right">
+						<a class="desktop-menu__navigate-link" href="#">О компании</a>
+						<a class="desktop-menu__navigate-link" href="#">Акции</a>
+						<a class="desktop-menu__navigate-link" href="#">Отзывы</a>
+						<a class="desktop-menu__navigate-link" href="#">Госзаказчикам</a>
+						<a class="desktop-menu__navigate-link" href="#">Доставка</a>
+						<a class="desktop-menu__navigate-link" href="#">Диллерам</a>
+						<a class="desktop-menu__navigate-link" href="#">Оплата</a>
+						<a class="desktop-menu__navigate-link" href="#">Контакты</a>
+					</div>
+				</div>
+				<div class="desktop-menu__main desktop-menu__main--pianino">
+					<a class="desktop-menu__main-image" href="/"><img src="/img/logo.png"
+							alt="Логотип магазина Ученик"></a>
+					<div class="desktop-menu__main-inner">
+						<button class="desktop-menu__main-btn-left">Везде</button>
+						<input class="form-input desktop-menu__main--input" name="name" type="text"
+							placeholder="Умный поиск по 17778887 товарам" required="">
+						<button class="desktop-menu__main-btn-right"><img class="desktop-menu-image-search"
+								src="/img/vector7.svg" alt=""></button>
+					</div>
+					<a class="desktop-menu__main-btn" href="#">Академия</a>
+					<a class="desktop-menu__main-link desktop-menu__main-link--left" href="#">Войти</a>
+					<a class="desktop-menu__main-link desktop-menu__main-link--center" href="#">Избранное</a>
+					<a class="desktop-menu__main-link desktop-menu__main-link--right" href="#">Корзина</a>
+				</div>
+			</div>
+		</div>
+		<div class="desktop-menu__catalog desktop-menu__catalog--pianino">
+			<div class="container">
+				<div class="pianino-top-inner">
+					<button class="desktop-menu__catalog-btn desktop-menu__catalog-btn--pianino">Каталог</button>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--sale desktop-menu__catalog-link--pianino"
+						href="#">Скидки</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Клавишные </a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Ударные</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Микрофоны</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Звук</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Dj</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Свет</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Кинотеатры</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Наушники</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Духовые</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Студия</a>
+					<a class="desktop-menu__catalog-link desktop-menu__catalog-link--pianino" href="#">Народные</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="catalog-links catalog-links--pianino">
+			<div class="container">
+				<button class="catalog-links__btn catalog-links__btn--pianino">Назад</button>
+				<a class="catalog-links__link catalog-links__link--pianino" href="#">Главная</a>
+				<a class="catalog-links__link catalog-links__link--pianino" href="#">Клавишные</a>
+				<a class="catalog-links__link catalog-links__link--pianino catalog-links__link--active"
+					href="#">Цифровое пианино</a>
+			</div>
+		</div>
+
+		<div class="mobile-menu">
+			<div class="container">
+				<div class="mobile-menu-item">
+					<a class="mobile-menu-image mobile-menu-image--logo" href="index.html"><img
+							class="mobile__menu-top-uchenik" src="/img/logo.png" alt="Логотип магазина Ученик"></a>
+					<div class="mobile-menu-item-center">
+						<input class="mobile-menu-center-input" name="name" type="text" placeholder="Искать на Ученике"
+							required="">
+						<button class="mobile-menu-btn-right"><img class="mobile-menu-image-search"
+								src="/img/vector7.svg" alt=""></button>
+					</div>
+					<div class="mobile__menu-bottom">
+						<button class="openMenu mobile__menu-bottom-btn"><img src="/img/burg.svg" alt=""></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-white">
+			<div class="container">
+				<div class="menu-white__items">
+					<a href="#" class="menu-white__item">
+						<img class="menu-white__top-image" src="/img/glavn.svg" alt="Главная">
+						<span class="menu-white__link" href="#">Главная</span>
+					</a>
+					<a href="#" class="menu-white__item">
+						<img class="menu-white__top-image" src="/img/katalog.svg" alt="Главная">
+						<span class="menu-white__link" href="#">Каталог</span>
+					</a>
+					<a href="#" class="menu-white__item">
+						<img class="menu-white__top-image" src="/img/contact.svg" alt="Главная">
+						<span class="menu-white__link" href="#">Контакты</span>
+					</a>
+					<a href="#" class="menu-white__item">
+						<img class="menu-white__top-image menu-white__top-image--small" src="/img/academ.svg"
+							alt="Главная">
+						<span class="menu-white__link" href="#">Академия</span>
+					</a>
+					<a href="#" class="menu-white__item">
+						<img class="menu-white__top-image" src="/img/prof.svg" alt="Главная">
+						<span class="menu-white__link" href="#">Профиль</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
