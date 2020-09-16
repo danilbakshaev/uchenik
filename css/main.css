@@ -904,6 +904,8 @@ img {
   width: 100%;
   border: 1px solid white;
   padding-left: 15px;
+  border-radius: 0;
+  border: none;
 }
 
 .desktop-menu__main--input::placeholder {
@@ -4213,6 +4215,7 @@ li {
   padding: 0 10px;
   width: 400px;
   border: none;
+  border-radius: 0;
 }
 
 .discount__btn {
