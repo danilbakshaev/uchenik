@@ -1586,6 +1586,7 @@ li {
   border: 1px solid white;
   padding-left: 10px;
   height: 33px;
+  border-radius: 0;
 }
 
 .mobile-menu-center-input::placeholder {
