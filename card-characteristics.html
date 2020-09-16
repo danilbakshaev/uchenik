@@ -473,21 +473,21 @@
 			</div>
 		</section>
 
-		<section class="sale  sale--individual">
+		<section class="sale sale--individual">
 			<div class="container">
 				<div class="section-title section-title--arrow">
 					<h2 class="sale__title">С этим товаром покупают</h2>
 						<div class="arrow-wrap arrow-wrap--top">
-							<button type="button" class="prev-arrow prev-arrow--white prev-js-sale">Previous</button>
-							<button type="button" class="next-arrow next-arrow--white next-js-sale">Next</button>
+							<button type="button" class="prev-arrow prev-arrow--white prev-js--tovar">Previous</button>
+							<button type="button" class="next-arrow next-arrow--white next-js--tovar">Next</button>
 						</div>
 				</div>
 				<div class="sale-wrapper">
 					<div class="arrow-wrap arrow-wrap--center">
-						<button type="button" class="prev-arrow prev-arrow--white prev-js-sale">Previous</button>
-						<button type="button" class="next-arrow next-arrow--white next-js-sale">Next</button>
+						<button type="button" class="prev-arrow prev-arrow--white prev-js--tovar">Previous</button>
+						<button type="button" class="next-arrow next-arrow--white next-js--tovar">Next</button>
 					</div>
-					<div class="sale__items">
+					<div class="sale__items sale__items--tovar">
 						<div class="sale__item">
 							<div class="sale__item-block">
 								<div class="sale__item-block-inner">
@@ -1160,12 +1160,20 @@
 			<div class="container">
 				<div class="ques-review__top">
 					<div class="ques-review__top-left">
-						<div class="digital__right-item-title">
-                            <h3 class="digital__right-title-top digital__right-title-top--char">Комплект 1</h3>
-                        </div>
-                        <div class="card__slider-wrap-char">
-                            <div class="grad-3">
-                                <div class="digital__right-inner digital__right-inner--card-slider" id="cardSlider">
+						<div class="digital__right-item-title digital__right-item-title--arrowflex">
+							<h3 class="digital__right-title-top">Комплект 1</h3>
+							<div class="arrow-wrap arrow-wrap--top">
+								<button type="button" class="prev-arrow prev-arrow--white prev-js--komplekt1">Previous</button>
+								<button type="button" class="next-arrow next-arrow--white next-js--komplekt1">Next</button>
+							</div>
+						</div>
+                        <div class="card__slider-wrap">
+							<div class="grad-1">
+								<div class="arrow-wrap arrow-wrap--center">
+									<button type="button" class="prev-arrow prev-arrow--white prev-js--komplekt1">Previous</button>
+									<button type="button" class="next-arrow next-arrow--white next-js--komplekt1">Next</button>
+								</div>
+								<div class="digital__right-inner digital__right-inner--card-slider digital__right-inner--komplekt1">
 									<div>
 										<div class="digital__right-min-item">
 											<div class="digital__right-image-wrapper">
@@ -1230,40 +1238,40 @@
 										</div>
 									</div>
 								</div>
-                                <div class="grad-2"></div>
-                            </div>
-                                
-                            <div class="card__price-slider-right-char">
-                                <div class="card__price-slider-right-1">
-                                    <div class="card__price-slider-right-1-inner card__price-slider-right-1-inner--flexNone">
-                                        <span class="card__prise-small card__prise-small--margin30">24 700 ₽</span>
-                                        <span class="card__prise-big">124 500 ₽</span>
-                                    </div>
-                                    <p class="price__card price__card--char"><a class="card__sale" href="#">Посмотреть все комплекты</a>(5)</p>
-                                </div>
-                                <div class="card__price-slider-right-2 card__price-slider-right-2-char">
-                                    <div class="sale__item-bottom">
-                                        <button class="sale__item-bottom-btn sale__item-bottom-btn--horizont sale__item-bottom-btn--horizont--char">Купить в 1 клик</button>
-                                        <button class="sale__item-bottom-btn sale__item-bottom-btn--mobile sale__item-bottom-btn--horizont-mobile sale__item-bottom-btn--horizont-mobile--char">В
-                                            корзину</button>
-                                        <button class="sale__item-bottom-btn sale__item-bottom-btn--white"><svg
-                                                width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path class="sale-path"
-                                                    d="M23.8595 2.88095L23.781 2.80238C23.6762 2.69762 23.4929 2.54048 23.2048 2.54048H5.13333L5.05476 2.09524C4.87143 0.890476 3.82381 0 2.59286 0H0.759524C0.314286 0 0 0.340476 0 0.759524C0 1.17857 0.340476 1.51905 0.759524 1.51905H2.61905C3.09048 1.51905 3.48333 1.85952 3.5619 2.30476L5.13333 11.7595C5.13333 11.8381 5.15952 11.9167 5.18571 11.969L5.44762 13.5929C5.68333 15.0333 6.96667 16.1071 8.40714 16.1071H20.5595C21.0048 16.1071 21.319 15.7667 21.319 15.3476C21.319 14.9286 20.9786 14.5881 20.5595 14.5881H8.38095C7.64762 14.5881 7.04524 14.0643 6.94048 13.3833L6.78333 12.519H20.9262C21.0833 12.5452 21.2143 12.5452 21.3452 12.4667C21.5286 12.3619 21.6857 12.1786 21.7381 11.969L23.9381 3.56191C24.0429 3.32619 23.9905 3.09048 23.8595 2.88095ZM22.2619 4.11191L20.4286 11.0262H6.54762L5.42143 4.11191H22.2619Z"
-                                                    fill="#232F3F" />
-                                                <path class="sale-path"
-                                                    d="M8.61647 16.8403C7.20219 16.8403 6.0498 17.9927 6.0498 19.407C6.0498 20.8213 7.20219 21.9737 8.61647 21.9737C10.0308 21.9737 11.1831 20.8213 11.1831 19.407C11.1831 17.9927 10.0308 16.8403 8.61647 16.8403ZM8.61647 18.3856C9.19266 18.3856 9.61171 18.8308 9.61171 19.407C9.61171 19.957 9.14028 20.4284 8.59028 20.4284C8.04028 20.4284 7.59504 19.957 7.59504 19.407C7.59504 18.857 8.04028 18.3856 8.61647 18.3856Z"
-                                                    fill="#232F3F" />
-                                                <path class="sale-path"
-                                                    d="M17.1028 16.8403C15.6885 16.8403 14.5361 17.9927 14.5361 19.407C14.5361 20.8213 15.6623 21.9999 17.1028 21.9999C18.5433 21.9999 19.6695 20.8475 19.6695 19.4332C19.6695 18.0189 18.5171 16.8403 17.1028 16.8403ZM17.0766 18.3856C17.6528 18.3856 18.098 18.8308 18.098 19.407C18.098 19.957 17.6266 20.4284 17.0766 20.4284C16.5266 20.4284 16.0552 19.957 16.0552 19.407C16.029 18.857 16.5004 18.3856 17.0766 18.3856Z"
-                                                    fill="#232F3F" />
-                                            </svg></button>
-                                    </div>
-                                    <p class="price__card price__card--char"><a class="card__sale" href="">Купить в кредит:</a>1045 ₽/мес</p>
-                                </div>
-                            </div>
-                        </div>
+								<div class="grad-2"></div>
+							</div>
+								
+							<div class="card__price-slider-right">
+								<div class="card__price-slider-right-1">
+									<div class="card__price-slider-right-1-inner">
+										<span class="card__prise-small">24 700 ₽</span>
+										<span class="card__prise-big">124 500 ₽</span>
+									</div>
+								<span class="card__prise-back-blue">Экономия 16 990 ₽</span>
+								</div>
+								<div class="card__price-slider-right-2">
+									<div class="sale__item-bottom">
+										<button class="sale__item-bottom-btn sale__item-bottom-btn--horizont">Купить в 1 клик</button>
+										<button class="sale__item-bottom-btn sale__item-bottom-btn--mobile sale__item-bottom-btn--horizont-mobile">В
+											корзину</button>
+										<button class="sale__item-bottom-btn sale__item-bottom-btn--white"><svg
+												width="24" height="22" viewBox="0 0 24 22" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path class="sale-path"
+													d="M23.8595 2.88095L23.781 2.80238C23.6762 2.69762 23.4929 2.54048 23.2048 2.54048H5.13333L5.05476 2.09524C4.87143 0.890476 3.82381 0 2.59286 0H0.759524C0.314286 0 0 0.340476 0 0.759524C0 1.17857 0.340476 1.51905 0.759524 1.51905H2.61905C3.09048 1.51905 3.48333 1.85952 3.5619 2.30476L5.13333 11.7595C5.13333 11.8381 5.15952 11.9167 5.18571 11.969L5.44762 13.5929C5.68333 15.0333 6.96667 16.1071 8.40714 16.1071H20.5595C21.0048 16.1071 21.319 15.7667 21.319 15.3476C21.319 14.9286 20.9786 14.5881 20.5595 14.5881H8.38095C7.64762 14.5881 7.04524 14.0643 6.94048 13.3833L6.78333 12.519H20.9262C21.0833 12.5452 21.2143 12.5452 21.3452 12.4667C21.5286 12.3619 21.6857 12.1786 21.7381 11.969L23.9381 3.56191C24.0429 3.32619 23.9905 3.09048 23.8595 2.88095ZM22.2619 4.11191L20.4286 11.0262H6.54762L5.42143 4.11191H22.2619Z"
+													fill="#232F3F" />
+												<path class="sale-path"
+													d="M8.61647 16.8403C7.20219 16.8403 6.0498 17.9927 6.0498 19.407C6.0498 20.8213 7.20219 21.9737 8.61647 21.9737C10.0308 21.9737 11.1831 20.8213 11.1831 19.407C11.1831 17.9927 10.0308 16.8403 8.61647 16.8403ZM8.61647 18.3856C9.19266 18.3856 9.61171 18.8308 9.61171 19.407C9.61171 19.957 9.14028 20.4284 8.59028 20.4284C8.04028 20.4284 7.59504 19.957 7.59504 19.407C7.59504 18.857 8.04028 18.3856 8.61647 18.3856Z"
+													fill="#232F3F" />
+												<path class="sale-path"
+													d="M17.1028 16.8403C15.6885 16.8403 14.5361 17.9927 14.5361 19.407C14.5361 20.8213 15.6623 21.9999 17.1028 21.9999C18.5433 21.9999 19.6695 20.8475 19.6695 19.4332C19.6695 18.0189 18.5171 16.8403 17.1028 16.8403ZM17.0766 18.3856C17.6528 18.3856 18.098 18.8308 18.098 19.407C18.098 19.957 17.6266 20.4284 17.0766 20.4284C16.5266 20.4284 16.0552 19.957 16.0552 19.407C16.029 18.857 16.5004 18.3856 17.0766 18.3856Z"
+													fill="#232F3F" />
+											</svg></button>
+									</div>
+									<p class="price__card"><a class="card__sale" href="">Купить в кредит:</a>1045 ₽/мес</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="ques-review__top-right">
 						<h3 class="ques-review__title">Вопрос-ответ</h3>
@@ -1480,18 +1488,18 @@
 		<section class="sale sale--individual">
 			<div class="container">
 				<div class="section-title section-title--arrow">
-					<h2 class="sale__title">Действующие скидки</h2>
+					<h2 class="sale__title">Вас могут заинтересовать</h2>
 						<div class="arrow-wrap arrow-wrap--top">
-							<button type="button" class="prev-arrow prev-arrow--white prev-js-sale">Previous</button>
-							<button type="button" class="next-arrow next-arrow--white next-js-sale">Next</button>
+							<button type="button" class="prev-arrow prev-arrow--white prev-js--skydk">Previous</button>
+							<button type="button" class="next-arrow next-arrow--white next-js--skydk">Next</button>
 						</div>
 				</div>
 				<div class="sale-wrapper">
 					<div class="arrow-wrap arrow-wrap--center">
-						<button type="button" class="prev-arrow prev-arrow--white prev-js-sale">Previous</button>
-						<button type="button" class="next-arrow next-arrow--white next-js-sale">Next</button>
+						<button type="button" class="prev-arrow prev-arrow--white prev-js--skydk">Previous</button>
+						<button type="button" class="next-arrow next-arrow--white next-js--skydk">Next</button>
 					</div>
-					<div class="sale__items">
+					<div class="sale__items sale__items--skydk">
 						<div class="sale__item">
 							<div class="sale__item-block">
 								<div class="sale__item-block-inner">
