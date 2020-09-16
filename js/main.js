@@ -160,43 +160,43 @@ $(function () {
     });
   }
 
-  if ($('.sale__items')) {
-    $('.sale__items').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows: true,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 5000,
-      prevArrow: '.prev-js-sale .prev-js-sale--hity',
-      nextArrow: '.next-js-sale .next-js-sale--hity',
-      responsive: [{
-          breakpoint: 1240,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-          }
-        },
-        {
-          breakpoint: 770,
-          settings: {
-            slidesToShow: 2.5,
-            slidesToScroll: 1,
-            arrows: true,
-          }
-        },
-        {
-          breakpoint: 350,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-          }
-        },
-      ]
-    });
-  }
+  // if ($('.sale__items')) {
+  //   $('.sale__items').slick({
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     arrows: true,
+  //     infinite: false,
+  //     autoplay: false,
+  //     autoplaySpeed: 5000,
+  //     prevArrow: '.prev-js-sale',
+  //     nextArrow: '.next-js-sale',
+  //     responsive: [{
+  //         breakpoint: 1240,
+  //         settings: {
+  //           slidesToShow: 4,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 770,
+  //         settings: {
+  //           slidesToShow: 2.5,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 350,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //     ]
+  //   });
+  // }
 
   if ($('.sale__items--hity')) {
     $('.sale__items--hity').slick({
