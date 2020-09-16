@@ -1087,7 +1087,7 @@ $(function () {
       }, 20);
     })
 
-    function closequestionModal() {
+    function closeQuestionModal() {
       if (!questionModal.classList.contains('hidden')) {
         questionModal.classList.add('animation');
         questionModal.addEventListener('transitionend', function (e) {
@@ -1115,7 +1115,7 @@ $(function () {
       closeCityModal();
     }
     if (document.querySelector('.openQuestion')) {
-      closequestionModal();
+      closeQuestionModal();
     }
     closeBaseModal();
   };
