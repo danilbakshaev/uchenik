@@ -21,8 +21,10 @@ $(function () {
   if ($('.digital__slide')) {
     $('.digital__slide').slick({
       slidesToShow: 1,
+      slidesToScroll: 1,
       arrows: true,
       variableWidth: true,
+      infinite: false,
       prevArrow: '',
       nextArrow: '',
     });
@@ -418,6 +420,58 @@ $(function () {
     });
   }
 
+  if ($('.slider-for')) {
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+
+    $('.slider-nav').slick({
+      variableWidth: true,
+      autoSlidesToShow: true,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+      infinite: true,
+      centerMode: true,
+      responsive: [{
+        breakpoint: 1240,
+        settings: {
+          centerMode: false,
+          infinite: false
+        }
+      }, ]
+    });
+  }
+
+  if ($('.zoom-gallery')) {
+    $('.zoom-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      closeOnContentClick: false,
+      closeBtnInside: false,
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
+      image: {
+        verticalFit: true
+      },
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300, // don't foget to change the duration also in CSS
+        opener: function (element) {
+          return element.find('img');
+        }
+      }
+    });
+  }
+
 
   // $(window).on('resize', function(e){
   //   // Переменная, по которой узнаем запущен слайдер или нет.
@@ -463,12 +517,14 @@ $(function () {
   //   }
   // });
 
-  // $('a[href^="#"]').click(function () { // #1
-  //   let anchor = $(this).attr('href'); // #2
-  //   $('html, body').animate({ // #3
-  //     scrollTop: $(anchor).offset().top // #4
-  //   }, 600); // #5
-  // });
+  if ($('a[href^="#btn-up"]')) {
+    $('a[href^="#btn-up"]').click(function () { // #1
+      let anchor = $(this).attr('href'); // #2
+      $('html, body').animate({ // #3
+        scrollTop: $(anchor).offset().top // #4
+      }, 600); // #5
+    });
+  }
 
   //Валидатор форм и маска для форм
   // const offerFormModal = $('.offer-form-modal')
@@ -526,19 +582,19 @@ $(function () {
     }
   }
 
-  saleItem = $(".sale__item");
+  saleItem = $(".sale__item--digital");
   sortSvgHorizontal = $(".sort__svg--horizontal");
   sortSvgVertical = $(".sort__svg--vertical");
 
   catalogView = localStorage.getItem('catalogView', 'vertical')
   if (catalogView === null || catalogView === 'vertical') {
     console.log("vertical")
-    saleItem.removeClass('sale__item--horizont') 
-    sortSvgVertical.addClass('svg--active') 
+    saleItem.removeClass('sale__item--horizont')
+    sortSvgVertical.addClass('svg--active')
   } else if (catalogView === 'horizontal') {
     console.log("horizontal")
-    saleItem.addClass('sale__item--horizont') 
-    sortSvgHorizontal.addClass('svg--active') 
+    saleItem.addClass('sale__item--horizont')
+    sortSvgHorizontal.addClass('svg--active')
   }
 
   $('.viewLine').on('click', function () {
@@ -711,6 +767,32 @@ $(function () {
     };
   }
 
+  if (document.querySelector('.openQuestion')) {
+    openQuestion = document.querySelector('.openQuestion');
+    questionModal = document.querySelector('.modal-wrapper__question');
+
+    openQuestion.addEventListener('click', function () {
+      openBaseModal();
+      questionModal.classList.remove('hidden');
+      setTimeout(function () {
+        questionModal.classList.remove('animation');
+      }, 20);
+    })
+
+    function closequestionModal() {
+      if (!questionModal.classList.contains('hidden')) {
+        questionModal.classList.add('animation');
+        questionModal.addEventListener('transitionend', function (e) {
+          questionModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
   function closeAllModal() {
     if (document.querySelector('.openCallback')) {
       closecallbackPopup();
@@ -723,6 +805,9 @@ $(function () {
     }
     if (document.querySelector('.openCity')) {
       closeCityModal();
+    }
+    if (document.querySelector('.openQuestion')) {
+      closequestionModal();
     }
     closeBaseModal();
   };
