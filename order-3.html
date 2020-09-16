@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>order-3</title>
+	<title>Куда доставить заказ?</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="/libs/slinky/dist/slinky.min.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
 </head>
 
 <body>
@@ -216,10 +217,11 @@
 
 		<!-- <div class="mobile-menu"></div> -->
 		<div class="mobile-menu">
-			<div class="container">
+			<div class="container container--mobile-menu">
 				<div class="mobile-menu-item">
-					<a class="mobile-menu-image mobile-menu-image--logo" href="index.html"><img
-							class="mobile__menu-top-uchenik" src="/img/new-logo.svg" alt="Логотип магазина Ученик"></a>
+					<a class="mobile-menu-image mobile-menu-image--logo" href="/"><img
+							class="mobile__menu-top-uchenik" src="/img/new-logo.svg"
+							alt="Логотип магазина Ученик"></a>
 					<div class="mobile-menu-item-center">
 						<input class="mobile-menu-center-input" name="name" type="text" placeholder="Искать на Ученике"
 							required="">
@@ -227,7 +229,8 @@
 								src="/img/vector7.svg" alt=""></button>
 					</div>
 					<div class="mobile__menu-bottom">
-						<button class="openMenu mobile__menu-bottom-btn"><img src="/img/burg.svg" alt=""></button>
+						<button class="openMenu mobile__menu-bottom-btn"><img class="mobile-burg" src="/img/burg.svg"
+								alt=""></button>
 					</div>
 				</div>
 			</div>
@@ -236,11 +239,11 @@
 		<div class="menu-white">
 			<div class="container">
 				<div class="menu-white__items">
-					<a href="#" class="menu-white__item">
+					<a href="/" class="menu-white__item">
 						<img class="menu-white__top-image" src="/img/glavn.svg" alt="Главная">
 						<span class="menu-white__link" href="#">Главная</span>
 					</a>
-					<a href="#" class="menu-white__item openMenuWhite">
+					<a class="menu-white__item openMenuWhite">
 						<img class="menu-white__top-image" src="/img/katalog.svg" alt="Главная">
 						<span class="menu-white__link" href="#">Каталог</span>
 					</a>
@@ -604,9 +607,9 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__logo-item">
+			<a href="/" class="footer__logo-item">
 				<img class="footer__logo" src="/img/new-logo.svg" alt="Логотип компании Ученик">
-			</div>
+			</a>
 			<div class="footer__items">
 				<div class="footer__item-one">
 					<div class="footer__item-inner">
@@ -688,7 +691,8 @@
 						<a class="footer__link footer__link--number" href="tel:+74994041262">+7 (499) 404-12-62</a>
 					</div>
 					<div class="footer__item-inner">
-						<p class="footer__item-time">mail@uchenikspb.rubr <br>
+						<p class="footer__item-time"><a class="footer__item-time__link"
+								href="mailto:mail@uchenikspb.ru">mail@uchenikspb.ru</a><br>
 							с 11.00 до 19.00 <br>
 							Выходной - воскресенье</p>
 						<img class="footer__item-time-image" src="/img/rayt.svg" alt="Яндекс Маркет">
@@ -1227,31 +1231,23 @@
 			</div>
 		</div>
 
-		<div class="menu-white menu-white--mobile">
-			<div class="container">
-				<div class="menu-white__items">
-					<a href="#" class="menu-white__item">
-						<img class="menu-white__top-image" src="/img/glavn.svg" alt="Главная">
-						<span class="menu-white__link" href="#">Главная</span>
-					</a>
-					<a href="#" class="menu-white__item">
-						<img class="menu-white__top-image" src="/img/katalog.svg" alt="Главная">
-						<span class="menu-white__link" href="#">Каталог</span>
-					</a>
-					<a href="#" class="menu-white__item">
-						<img class="menu-white__top-image" src="/img/contact.svg" alt="Главная">
-						<span class="menu-white__link" href="#">Контакты</span>
-					</a>
-					<a href="#" class="menu-white__item">
-						<img class="menu-white__top-image menu-white__top-image--small" src="/img/academ.svg"
-							alt="Главная">
-						<span class="menu-white__link" href="#">Академия</span>
-					</a>
-					<a href="#" class="menu-white__item">
-						<img class="menu-white__top-image" src="/img/prof.svg" alt="Главная">
-						<span class="menu-white__link" href="#">Профиль</span>
-					</a>
-				</div>
+		<div class="modal-wrapper__question hidden animation">
+			<button class="modal-wrapper__close">
+				<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M20.5671 7.35464L21.7875 8.57502L15.3625 15L21.8234 21.4609L20.5671 22.7172L14.1062 16.2563L7.68126 22.6813L6.46088 21.4609L12.8859 15.0359L6.42498 8.57502L7.68126 7.31874L14.1421 13.7796L20.5671 7.35464Z"
+						fill="#232F3F" />
+				</svg>
+			</button>
+			<div class="modal-wrapper__question-body">
+				<h5 class="question__title">Есть вопрос по этому товару?</h5>
+				<p class="question__subtitle">Напишите в этой форме, мы очень быстро ответим</p>
+				<form class="question__form">
+					<textarea class="question__input" name="" id="" cols="30" rows="0" placeholder="Ваш вопрос"></textarea>
+					<input type="text" class="question__input" placeholder="Ваш e-mail или профиль VK">
+					<button class="card__btn card__btn--question" type="submit">Отправить</button>
+				</form>
+				<p class="question__legal">Нажимая кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности сайта</p>
 			</div>
 		</div>
 
@@ -1261,6 +1257,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="/js/jquery.magnific-popup.js"></script>
 	<script src="./libs/jquery_validate/jquery.validate.min.js"></script>
 	<script src="./libs/jquery-maskedinput/jquery.maskedinput.js"></script>
 	<script src="/libs/slinky/dist/slinky.min.js"></script>
