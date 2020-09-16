@@ -79,7 +79,7 @@ $(function () {
       slidesToScroll: 1,
       arrows: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-curs',
       nextArrow: '.next-js-curs',
@@ -101,7 +101,7 @@ $(function () {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         }
@@ -113,7 +113,7 @@ $(function () {
     $('.brand__items').slick({
       slidesToShow: 4.1,
       slidesToScroll: 3,
-      centerMode: true,
+      centerMode: false,
       arrows: true,
       infinite: true,
       autoplay: true,
@@ -148,9 +148,9 @@ $(function () {
           }
         },
         {
-          breakpoint: 530,
+          breakpoint: 450,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3.5,
             slidesToScroll: 1,
             centerMode: false,
             arrows: true,
@@ -160,16 +160,54 @@ $(function () {
     });
   }
 
-  if ($('.sale__items')) {
-    $('.sale__items').slick({
+  // if ($('.sale__items')) {
+  //   $('.sale__items').slick({
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     arrows: true,
+  //     infinite: false,
+  //     autoplay: false,
+  //     autoplaySpeed: 5000,
+  //     prevArrow: '.prev-js-sale',
+  //     nextArrow: '.next-js-sale',
+  //     responsive: [{
+  //         breakpoint: 1240,
+  //         settings: {
+  //           slidesToShow: 4,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 770,
+  //         settings: {
+  //           slidesToShow: 2.5,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 350,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1,
+  //           arrows: true,
+  //         }
+  //       },
+  //     ]
+  //   });
+  // }
+
+  if ($('.sale__items--hity')) {
+    $('.sale__items--hity').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
-      prevArrow: '.prev-js-sale',
-      nextArrow: '.next-js-sale',
+      prevArrow: '.prev-js-sale--hity',
+      nextArrow: '.next-js-sale--hity',
       responsive: [{
           breakpoint: 1240,
           settings: {
@@ -197,6 +235,276 @@ $(function () {
       ]
     });
   }
+
+  if ($('.sale__items--novinky')) {
+    $('.sale__items--novinky').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-sale--novinky',
+      nextArrow: '.next-js-sale--novinky',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.sale__items--cyfrovie')) {
+    $('.sale__items--cyfrovie').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-sale--cyfrovie',
+      nextArrow: '.next-js-sale--cyfrovie',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.sale__items--syntezatory')) {
+    $('.sale__items--syntezatory').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js-sale--syntezatory',
+      nextArrow: '.next-js-sale--syntezatory',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+  if ($('.sale__items--skydky')) {
+    $('.sale__items--skydky').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js--skydky',
+      nextArrow: '.next-js--skydky',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+
+  if ($('.sale__items--skydk')) {
+    $('.sale__items--skydk').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js--skydk',
+      nextArrow: '.next-js--skydk',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+
+  if ($('.sale__items--tovar')) {
+    $('.sale__items--tovar').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js--tovar',
+      nextArrow: '.next-js--tovar',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
+
+  if ($('.sale__items--tov')) {
+    $('.sale__items--tov').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      prevArrow: '.prev-js--tov',
+      nextArrow: '.next-js--tov',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+          }
+        },
+      ]
+    });
+  }
+
 
 
   //   $('.digital__right-inner').slick({
@@ -257,7 +565,7 @@ $(function () {
               {
                 breakpoint: 480,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                   slidesToScroll: 1
                 }
               }
@@ -349,12 +657,12 @@ $(function () {
         }
       }
 
-      if ($('#cardSlider-2')) {
-        if (!$('#cardSlider-2').hasClass('slick-initialized')) {
-          $('#cardSlider-2').slick({
+      if ($('.digital__right-inner--komplekt2')) {
+        if (!$('.digital__right-inner--komplekt2').hasClass('slick-initialized')) {
+          $('.digital__right-inner--komplekt2').slick({
             arrows: true,
-            prevArrow: '.prev-js',
-            nextArrow: '.next-js',
+            prevArrow: '.prev-js--komplekt2',
+            nextArrow: '.next-js--komplekt2',
             dots: false,
             infinite: false,
             slidesToShow: 2.5
@@ -362,12 +670,12 @@ $(function () {
         }
       }
 
-      if ($('#cardSlider-3')) {
-        if (!$('#cardSlider-3').hasClass('slick-initialized')) {
-          $('#cardSlider-3').slick({
+      if ($('.digital__right-inner--komplekt3')) {
+        if (!$('.digital__right-inner--komplekt3').hasClass('slick-initialized')) {
+          $('.digital__right-inner--komplekt3').slick({
             arrows: true,
-            prevArrow: '.prev-js',
-            nextArrow: '.next-js',
+            prevArrow: '.prev-js--komplekt3',
+            nextArrow: '.next-js--komplekt3',
             dots: false,
             infinite: false,
             slidesToShow: 2.5
@@ -397,15 +705,15 @@ $(function () {
 
 
 
-  if ($('#cardSlider')) {
-    $('#cardSlider').slick({
+  if ($('.digital__right-inner--komplekt1')) {
+    $('.digital__right-inner--komplekt1').slick({
       slidesToShow: 4.5,
       slidesToScroll: 1,
       dots: false,
       arrows: true,
       infinite: false,
-      prevArrow: '.prev-js',
-      nextArrow: '.next-js',
+      prevArrow: '.prev-js--komplekt1',
+      nextArrow: '.next-js--komplekt1',
       responsive: [{
         breakpoint: 1240,
         settings: {
