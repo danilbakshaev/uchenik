@@ -908,12 +908,16 @@ $(function () {
 
   $('.viewLine').on('click', function () {
     localStorage.setItem('catalogView', 'horizontal')
-    // console.log(localStorage.catalogView);
+    saleItem.addClass('sale__item--horizont')
+    sortSvgVertical.removeClass('svg--active')
+    sortSvgHorizontal.addClass('svg--active')
   });
 
   $('.viewSquare').on('click', function () {
     localStorage.setItem('catalogView', 'vertical')
-    // console.log(localStorage.catalogView);
+    saleItem.removeClass('sale__item--horizont')
+    sortSvgHorizontal.removeClass('svg--active')
+    sortSvgVertical.addClass('svg--active')
   });
 
   musicCatalogLink = $(".music__catalog-link");
