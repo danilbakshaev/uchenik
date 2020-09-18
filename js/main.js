@@ -754,7 +754,6 @@ $(function () {
       responsive: [{
         breakpoint: 1240,
         settings: {
-          centerMode: false,
           infinite: false
         }
       }, ]
