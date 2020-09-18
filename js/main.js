@@ -892,8 +892,8 @@ $(function () {
   }
 
   saleItem = $(".sale__item--digital");
-  sortSvgHorizontal = $(".sort__svg--horizontal");
-  sortSvgVertical = $(".sort__svg--vertical");
+  sortSvgHorizontal = $(".sort--horizontal");
+  sortSvgVertical = $(".sort--vertical");
 
   catalogView = localStorage.getItem('catalogView', 'vertical')
   if (catalogView === null || catalogView === 'vertical') {
