@@ -1797,6 +1797,7 @@ li {
     display: flex;
     z-index: 1;
     justify-content: space-between;
+    margin-right: -20px;
 }
 
 .product__item--width100 {
@@ -1807,11 +1808,11 @@ li {
 .product__item {
     display: block;
     text-decoration: none;
-    width: calc(27% - 75px);
+    width: calc(22% - 20px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 22px 30px;
+    padding: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     transition: all 0.2s linear;
@@ -1821,6 +1822,10 @@ li {
 
 .product__item:hover {
     transform: scale(1.03);
+}
+
+.product__item:last-child:hover {
+    transform: scale(1);
 }
 
 .product__item--one {
@@ -1840,8 +1845,9 @@ li {
 
 .product__item--two-line {
     padding: 0;
-    margin-right: 0;
+    /* margin-right: 0; */
     margin-bottom: 0;
+    width: 24%;
 }
 
 .product__item--bottom {
@@ -1850,6 +1856,11 @@ li {
     padding: 50px 30px;
     margin-bottom: 0;
     position: relative;
+    transition: all linear 0.2s;
+}
+
+.product__item--bottom:hover {
+    transform: scale(1.03);
 }
 
 .product__title {
@@ -1878,6 +1889,11 @@ li {
     width: 100%;
     background: linear-gradient(90deg, #85C7F2 43.88%, rgba(133, 199, 242, 0) 70.45%);
     position: relative;
+    transition: all linear 0.2s;
+}
+
+.product__item--top:hover {
+    transform: scale(1.03);
 }
 
 .product__item-scaleControl {
@@ -1923,6 +1939,10 @@ li {
 
     .product__item--three {
         margin-right: 0;
+    }
+
+    .product__items {
+        margin-right: 0px;
     }
 }
 
@@ -3533,7 +3553,6 @@ li {
 
 .services__item-scaleControl {
     padding: 20px 40px;
-    width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
@@ -3669,9 +3688,9 @@ li {
 }
 
 @media screen and (max-width: 1240px) {
-    .services {
+    /* .services {
         display: none;
-    }
+    } */
 
     .services__left-big-title {
         font-size: 18px;
@@ -3692,13 +3711,69 @@ li {
     .services__item--one-displayNone {
         display: block;
     }
+
+    .services__title--orange{
+        font-size: 18px;
+    }
+
+    .services__subtitle--orange{
+        font-size: 14px;
+    }
+
+    .services__btn{
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    .services__title--black{
+        font-size: 18px;
+    }
+
+    .services__link{
+        font-size: 14px;
+    }
+
+    .services__item-scaleControl{
+        padding: 20px;
+    }
+
+    .services__item-scaleControl{
+        height: 150px;
+    }
+
+    .services {
+        padding-bottom: 40px;
+    }    
+}
+
+@media screen and (max-width: 760px) {
+    .services__item-scaleControl {
+        height: 200px;
+    }
+
+    .services__image--tel {
+        max-height: 100px;
+        top: calc(50% - 50px);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .services__item-scaleControl {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .services__image {
+        right: -30px;
+    }
 }
 
 
 
 /* services-mobile */
 
-.services-mobile {
+/* .services-mobile {
     display: none;
     background: #232F3F;
     padding-top: 50px;
@@ -3958,7 +4033,6 @@ li {
         margin-right: 0px;
     }
 
-    /* background: linear-gradient(90deg, #322F4F 74.64%, rgba(141, 132, 162, 0) 84.84%); */
 }
 
 @media screen and (max-width: 400px) {
@@ -3975,7 +4049,7 @@ li {
     .services-mobile__item--one {
         background: linear-gradient(88.27deg, #699CB1 45.17%, rgba(150, 185, 205, 0) 89.55%);
     }
-}
+} */
 
 /* brand */
 
@@ -4041,6 +4115,10 @@ li {
     display: flex;
 }
 
+.arrow-wrap--top .next-arrow{
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 1240px) {
     .brand {
         padding-top: 1px;
@@ -4057,11 +4135,23 @@ li {
     .brand--second {
         padding: 50px 0;
     }
+
+    /* .brand__image--marg {
+        margin-top: 0px;
+    } */
 }
 
 @media screen and (max-width: 768px) {
     .brand__item {
         justify-content: center;
+    }
+
+    .brand__image{
+        max-width: 100px;
+    }
+
+    .brand__image--marg {
+        margin-top: 0px;
     }
 }
 
@@ -4076,6 +4166,7 @@ li {
 .license__items {
     display: flex;
     justify-content: space-between;
+    margin-right: -20px;
 }
 
 .license__item {
@@ -4159,6 +4250,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: -20px;
 }
 
 .look__item {
@@ -5149,7 +5241,7 @@ li {
 
 .digital__right-min-item {
     text-align: center;
-    width: auto;
+    width: 70%;
     display: flex !important;
     flex-direction: column;
     justify-content: center;
@@ -5220,6 +5312,15 @@ li {
 
 @media screen and (max-width: 1240px) {
     .sale-digital-inner {
+        justify-content: space-between;
+    }
+
+    .digital__right-min-item {
+        width: auto;
+    }
+
+    .digital__right-item-title--mobile{
+        display: flex;
         justify-content: space-between;
     }
 
@@ -5803,11 +5904,11 @@ li {
 }
 
 .digital__right--card {
-    width: 30%;
+    width: 34%;
 }
 
 .digital__left--card {
-    width: 70%;
+    width: 65%;
     overflow: hidden;
     margin-right: 50px;
 }
@@ -5955,7 +6056,7 @@ li {
     width: -webkit-fill-available;
     padding: 10px 0px 50px 22px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }
 
 .card__input--min {
@@ -7058,6 +7159,18 @@ li {
     font-size: 24px;
 }
 
+.card__title--fz18{
+    font-size: 18px;
+}
+
+.card__title--margin20{
+    margin-bottom: 20px;
+}
+
+.card__text--bacg{
+    color: rgba(14, 26, 41, 0.5);
+}
+
 .card__title--fz16 {
     font-size: 16px;
     color: rgba(14, 26, 41, 0.8);
@@ -7114,8 +7227,8 @@ li {
 }
 
 .order-page__gray-btn {
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     border-radius: 20px;
     background: #C1C4C9;
     margin-right: 10px;
@@ -7947,5 +8060,40 @@ li {
 
     .brand__image {
         width: 74px;
+    }
+}
+
+
+.icon-two{
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    display: none;
+}
+
+.icon-two__btn{
+    width: 35px;
+    height: 35px;
+    background: #EF701E;
+    border-radius: 0px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.span-basket--black{
+    background: #232F3F;
+    right: 2px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    font-size: 6px;
+}
+
+@media screen and (max-width: 1240px) {
+    .icon-two{
+        display: flex;
     }
 }
