@@ -37,6 +37,7 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: false,
+      swipeToSlide: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-hits',
       nextArrow: '.next-js-hits',
@@ -56,9 +57,10 @@ $(function () {
   if ($('#curs-slider')) {
     $('#curs-slider').slick({
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       arrows: true,
       infinite: true,
+      swipeToSlide: true,
       autoplay: false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-curs',
@@ -82,7 +84,7 @@ $(function () {
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 2
           }
         }
       ]
@@ -96,6 +98,7 @@ $(function () {
       centerMode: false,
       arrows: true,
       infinite: true,
+      swipeToSlide: true,
       autoplay: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-brand',
@@ -103,26 +106,22 @@ $(function () {
       responsive: [{
           breakpoint: 1240,
           settings: {
-            slidesToShow: 3.1,
-            slidesToScroll: 2,
-            centerMode: true,
-
+            slidesToShow: 3,
+            slidesToScroll: 3,
           }
         },
         {
           breakpoint: 940,
           settings: {
-            slidesToShow: 2.1,
-            slidesToScroll: 1,
-            centerMode: true,
-
+            slidesToShow: 2,
+            slidesToScroll: 2,
           }
         },
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 3.5,
-            slidesToScroll: 1,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             centerMode: false,
 
           }
@@ -143,9 +142,10 @@ $(function () {
   if ($('.sale__items--perviy')) {
     $('.sale__items--perviy').slick({
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       arrows: true,
       infinite: false,
+      swipeToSlide: true,
       autoplay: false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-sale--perviy',
@@ -154,7 +154,7 @@ $(function () {
           breakpoint: 1240,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             arrows: true,
           }
         },
@@ -162,7 +162,7 @@ $(function () {
           breakpoint: 770,
           settings: {
             slidesToShow: 2.5,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             arrows: true,
           }
         },
@@ -525,6 +525,7 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
+            swipeToSlide: true,
             slidesToShow: 4,
             prevArrow: '.prev-js-base',
             nextArrow: '.next-js-base',
@@ -532,7 +533,7 @@ $(function () {
                 breakpoint: 1024,
                 settings: {
                   slidesToShow: 3,
-                  slidesToScroll: 1
+                  slidesToScroll: 3
 
                 }
               },
@@ -540,14 +541,14 @@ $(function () {
                 breakpoint: 760,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 1
+                  slidesToScroll: 2
                 }
               },
               {
                 breakpoint: 480,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 1
+                  slidesToScroll: 2
                 }
               }
             ]
@@ -588,7 +589,9 @@ $(function () {
             infinite: false,
             prevArrow: '.prev-js-look',
             nextArrow: '.next-js-look',
-            slidesToShow: 3.2
+            slidesToShow: 3.2,
+            slidesToScroll: 3,
+            swipeToSlide: true,
           });
         }
       }
@@ -601,7 +604,9 @@ $(function () {
             infinite: false,
             prevArrow: '.prev-js-license',
             nextArrow: '.next-js-license',
-            slidesToShow: 3
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            swipeToSlide: true,
           });
         }
       }
