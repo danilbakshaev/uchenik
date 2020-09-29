@@ -13,6 +13,7 @@ html {
     /* 1 */
     -webkit-text-size-adjust: 100%;
     /* 2 */
+    overflow-x: hidden;
 }
 
 /* Sections
@@ -382,6 +383,33 @@ template {
 
 [hidden] {
     display: none;
+}
+
+a,
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+input {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
 }
 
 body {
@@ -795,13 +823,11 @@ textarea.question__input {
 
 .desktop-menu__navigate-link--st {
     position: relative;
-    text-decoration: underline;
     background-color: inherit;
     border: none;
     transition: all 0.2s linear;
     font-size: 13px;
     line-height: 16px;
-    text-decoration-line: underline;
     color: #fff;
     padding-left: 20px;
     margin-right: 15px;
@@ -3712,35 +3738,35 @@ li {
         display: block;
     }
 
-    .services__title--orange{
+    .services__title--orange {
         font-size: 18px;
     }
 
-    .services__subtitle--orange{
+    .services__subtitle--orange {
         font-size: 14px;
     }
 
-    .services__btn{
+    .services__btn {
         font-size: 12px;
         padding: 7px 10px;
     }
 
-    .services__title--black{
+    .services__title--black {
         font-size: 18px;
     }
 
-    .services__link{
+    .services__link {
         font-size: 14px;
     }
 
-    .services__item-scaleControl{
+    .services__item-scaleControl {
         padding: 20px;
     }
 
-    .services__item-scaleControl{
+    .services__item-scaleControl {
         height: 150px;
     }
-   
+
     .services__item {
         margin-bottom: 0;
     }
@@ -4055,7 +4081,7 @@ li {
 
 .brand {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     background: #232F3F;
 }
 
@@ -4104,7 +4130,7 @@ li {
     display: flex;
 }
 
-.arrow-wrap--top .next-arrow{
+.arrow-wrap--top .next-arrow {
     margin-left: 10px;
 }
 
@@ -4132,7 +4158,7 @@ li {
         justify-content: center;
     }
 
-    .brand__image{
+    .brand__image {
         max-width: 100px;
     }
 }
@@ -5307,7 +5333,7 @@ li {
         width: auto;
     }
 
-    .digital__right-item-title--mobile{
+    .digital__right-item-title--mobile {
         display: flex;
         justify-content: space-between;
     }
@@ -7237,15 +7263,15 @@ li {
     font-size: 24px;
 }
 
-.card__title--fz18{
+.card__title--fz18 {
     font-size: 18px;
 }
 
-.card__title--margin20{
+.card__title--margin20 {
     margin-bottom: 20px;
 }
 
-.card__text--bacg{
+.card__text--bacg {
     color: rgba(14, 26, 41, 0.5);
 }
 
@@ -7840,14 +7866,14 @@ li {
 .arrow-wrap--center .prev-arrow {
     position: absolute;
     top: calc(50% - 30px);
-    left: 0;
+    left: -90px;
     z-index: 9;
 }
 
 .arrow-wrap--center .next-arrow {
     position: absolute;
     top: calc(50% - 30px);
-    right: 0;
+    right: -90px;
     z-index: 9;
 }
 
@@ -7895,6 +7921,14 @@ li {
     right: 21px;
 }
 
+/* .hits-wrapper .prev-arrow {
+    left: -90px;
+}
+
+.hits-wrapper .next-arrow {
+    right: -90px;
+} */
+
 .prev-arrow--white {
     background: #232F3F;
     opacity: 0.2;
@@ -7928,6 +7962,16 @@ li {
 .arrow-wrap--top {
     width: 80px;
     display: none;
+}
+
+@media screen and (max-width: 1920px) {
+    .arrow-wrap--center .prev-arrow {
+        left: 0px;
+    }
+
+    .arrow-wrap--center .next-arrow {
+        right: 0px;
+    }
 }
 
 @media screen and (max-width: 1240px) {
@@ -8084,6 +8128,10 @@ li {
     border: 2px solid #E97327;
 }
 
+.slick-slide {
+    outline: none !important;
+}
+
 /* правки */
 
 
@@ -8142,9 +8190,9 @@ li {
 }
 
 
-.icon-two{
+.icon-two {
     position: fixed;
-    right: 0;
+    right: -1px;
     bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -8152,16 +8200,19 @@ li {
     display: none;
 }
 
-.icon-two__btn{
-    width: 35px;
-    height: 35px;
+.icon-two__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
     background: #EF701E;
     border-radius: 0px;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.span-basket--black{
+.span-basket--black {
     background: #232F3F;
     right: 2px;
     top: 3px;
@@ -8171,7 +8222,7 @@ li {
 }
 
 @media screen and (max-width: 1240px) {
-    .icon-two{
+    .icon-two {
         display: flex;
     }
 }
