@@ -2539,6 +2539,9 @@ li {
     background: inherit;
     border: 2px solid #E97327;
 }
+.sale__item-bottom-btn--white:hover {
+    border: 2px solid #F49659;
+}
 
 .sale__item-bottom {
     display: flex;
@@ -8284,16 +8287,16 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
     background: #EF701E;
     border-radius: 0px;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
 }
 
 .icon-two__svg{
     align-self: center;
+    width: 22px;
 }
 
 .span-basket--black {

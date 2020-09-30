@@ -24,7 +24,6 @@ $(function () {
       slidesToScroll: 1,
       arrows: true,
       variableWidth: true,
-      infinite: false,
       prevArrow: '',
       nextArrow: '',
     });
@@ -37,13 +36,15 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: false,
-      swipeToSlide: true,
+      swipe:false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-hits',
       nextArrow: '.next-js-hits',
       responsive: [{
         breakpoint: 1240,
         settings: {
+          swipe:true,
+          swipeToSlide: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -123,18 +124,8 @@ $(function () {
             slidesToShow: 3,
             slidesToScroll: 3,
             centerMode: false,
-
           }
         },
-        // {
-        //   breakpoint: 450,
-        //   settings: {
-        //     slidesToShow: 3.5,
-        //     slidesToScroll: 1,
-        //     centerMode: false,
-        //     arrows: true,
-        //   }
-        // }
       ]
     });
   }
@@ -144,26 +135,22 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 4,
       arrows: true,
+      draggable: false,
       infinite: false,
-      swipeToSlide: true,
-      autoplay: false,
-      autoplaySpeed: 5000,
-      // prevArrow: '.prev-js-sale--perviy',
-      // nextArrow: '.next-js-sale--perviy',
+      prevArrow: '.prev-js-sale--perviy',
+      nextArrow: '.next-js-sale--perviy',
       responsive: [{
           breakpoint: 1240,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 2,
-            arrows: true,
+            slidesToScroll: 4,
           }
         },
         {
           breakpoint: 770,
           settings: {
             slidesToShow: 2.5,
-            slidesToScroll: 2,
-            arrows: true,
+            slidesToScroll: 2.5,
           }
         },
         {
@@ -171,7 +158,6 @@ $(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
           }
         },
       ]
