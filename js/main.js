@@ -60,9 +60,9 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 4,
       arrows: true,
-      infinite: true,
-      swipeToSlide: true,
-      autoplay: false,
+      draggable: false,
+      infinite: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-curs',
       nextArrow: '.next-js-curs',
@@ -98,8 +98,8 @@ $(function () {
       slidesToScroll: 4,
       centerMode: false,
       arrows: true,
-      infinite: true,
-      swipeToSlide: true,
+      draggable: false,
+      infinite: false,
       autoplay: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-brand',
@@ -511,8 +511,9 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
-            swipeToSlide: true,
+            draggable: false,
             slidesToShow: 4,
+            slidesToScroll: 4,
             prevArrow: '.prev-js-base',
             nextArrow: '.next-js-base',
             responsive: [{
@@ -546,11 +547,12 @@ $(function () {
       if ($('.services__items')) {
         $('.services__items').slick({
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          draggable: false,
           arrows: false,
           dots: true,
           infinite: true,
-          autoplay: false,
+          autoplay: true,
           autoplaySpeed: 5000,
           prevArrow: '',
           nextArrow: '',
@@ -559,8 +561,6 @@ $(function () {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
-              dots: true
             }
           }, ]
         });
@@ -573,11 +573,11 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
+            draggable: false,
             prevArrow: '.prev-js-look',
             nextArrow: '.next-js-look',
             slidesToShow: 3.2,
-            slidesToScroll: 3,
-            swipeToSlide: true,
+            slidesToScroll: 3.2,
           });
         }
       }
@@ -588,11 +588,11 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
+            draggable: false,
             prevArrow: '.prev-js-license',
             nextArrow: '.next-js-license',
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            swipeToSlide: true,
+            slidesToShow: 3.2,
+            slidesToScroll: 3.2,
           });
         }
       }
