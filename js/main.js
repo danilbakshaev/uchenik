@@ -57,7 +57,7 @@ $(function () {
   if ($('#curs-slider')) {
     $('#curs-slider').slick({
       slidesToShow: 4,
-      slidesToScroll: 2,
+      slidesToScroll: 4,
       arrows: true,
       infinite: true,
       swipeToSlide: true,
@@ -93,8 +93,8 @@ $(function () {
 
   if ($('.brand__items')) {
     $('.brand__items').slick({
-      slidesToShow: 4.1,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       centerMode: false,
       arrows: true,
       infinite: true,
@@ -142,14 +142,14 @@ $(function () {
   if ($('.sale__items--perviy')) {
     $('.sale__items--perviy').slick({
       slidesToShow: 4,
-      slidesToScroll: 2,
+      slidesToScroll: 4,
       arrows: true,
       infinite: false,
       swipeToSlide: true,
       autoplay: false,
       autoplaySpeed: 5000,
-      prevArrow: '.prev-js-sale--perviy',
-      nextArrow: '.next-js-sale--perviy',
+      // prevArrow: '.prev-js-sale--perviy',
+      // nextArrow: '.next-js-sale--perviy',
       responsive: [{
           breakpoint: 1240,
           settings: {

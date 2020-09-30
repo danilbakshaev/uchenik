@@ -1727,6 +1727,9 @@ li {
     padding-left: 10px;
     height: 33px;
     border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .mobile-menu-center-input::placeholder {
@@ -8287,6 +8290,10 @@ li {
     border-radius: 0px;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon-two__svg{
+    align-self: center;
 }
 
 .span-basket--black {
