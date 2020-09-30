@@ -1727,6 +1727,9 @@ li {
     padding-left: 10px;
     height: 33px;
     border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .mobile-menu-center-input::placeholder {
@@ -2535,6 +2538,9 @@ li {
     padding: 9px 30px;
     background: inherit;
     border: 2px solid #E97327;
+}
+.sale__item-bottom-btn--white:hover {
+    border: 2px solid #F49659;
 }
 
 .sale__item-bottom {
@@ -8281,12 +8287,16 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
     background: #EF701E;
     border-radius: 0px;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+.icon-two__svg{
+    align-self: center;
+    width: 22px;
 }
 
 .span-basket--black {

@@ -24,7 +24,6 @@ $(function () {
       slidesToScroll: 1,
       arrows: true,
       variableWidth: true,
-      infinite: false,
       prevArrow: '',
       nextArrow: '',
     });
@@ -37,13 +36,15 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: false,
-      swipeToSlide: true,
+      swipe:false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-hits',
       nextArrow: '.next-js-hits',
       responsive: [{
         breakpoint: 1240,
         settings: {
+          swipe:true,
+          swipeToSlide: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -57,11 +58,11 @@ $(function () {
   if ($('#curs-slider')) {
     $('#curs-slider').slick({
       slidesToShow: 4,
-      slidesToScroll: 2,
+      slidesToScroll: 4,
       arrows: true,
-      infinite: true,
-      swipeToSlide: true,
-      autoplay: false,
+      draggable: false,
+      infinite: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-curs',
       nextArrow: '.next-js-curs',
@@ -93,12 +94,12 @@ $(function () {
 
   if ($('.brand__items')) {
     $('.brand__items').slick({
-      slidesToShow: 4.1,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       centerMode: false,
       arrows: true,
-      infinite: true,
-      swipeToSlide: true,
+      draggable: false,
+      infinite: false,
       autoplay: true,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-brand',
@@ -123,18 +124,8 @@ $(function () {
             slidesToShow: 3,
             slidesToScroll: 3,
             centerMode: false,
-
           }
         },
-        // {
-        //   breakpoint: 450,
-        //   settings: {
-        //     slidesToShow: 3.5,
-        //     slidesToScroll: 1,
-        //     centerMode: false,
-        //     arrows: true,
-        //   }
-        // }
       ]
     });
   }
@@ -142,28 +133,24 @@ $(function () {
   if ($('.sale__items--perviy')) {
     $('.sale__items--perviy').slick({
       slidesToShow: 4,
-      slidesToScroll: 2,
+      slidesToScroll: 4,
       arrows: true,
+      draggable: false,
       infinite: false,
-      swipeToSlide: true,
-      autoplay: false,
-      autoplaySpeed: 5000,
       prevArrow: '.prev-js-sale--perviy',
       nextArrow: '.next-js-sale--perviy',
       responsive: [{
           breakpoint: 1240,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 2,
-            arrows: true,
+            slidesToScroll: 4,
           }
         },
         {
           breakpoint: 770,
           settings: {
             slidesToShow: 2.5,
-            slidesToScroll: 2,
-            arrows: true,
+            slidesToScroll: 2.5,
           }
         },
         {
@@ -171,7 +158,6 @@ $(function () {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
           }
         },
       ]
@@ -525,8 +511,9 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
-            swipeToSlide: true,
+            draggable: false,
             slidesToShow: 4,
+            slidesToScroll: 4,
             prevArrow: '.prev-js-base',
             nextArrow: '.next-js-base',
             responsive: [{
@@ -560,11 +547,12 @@ $(function () {
       if ($('.services__items')) {
         $('.services__items').slick({
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
+          draggable: false,
           arrows: false,
           dots: true,
           infinite: true,
-          autoplay: false,
+          autoplay: true,
           autoplaySpeed: 5000,
           prevArrow: '',
           nextArrow: '',
@@ -573,8 +561,6 @@ $(function () {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false,
-              dots: true
             }
           }, ]
         });
@@ -587,11 +573,11 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
+            draggable: false,
             prevArrow: '.prev-js-look',
             nextArrow: '.next-js-look',
             slidesToShow: 3.2,
-            slidesToScroll: 3,
-            swipeToSlide: true,
+            slidesToScroll: 3.2,
           });
         }
       }
@@ -602,11 +588,11 @@ $(function () {
             arrows: true,
             dots: false,
             infinite: false,
+            draggable: false,
             prevArrow: '.prev-js-license',
             nextArrow: '.next-js-license',
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            swipeToSlide: true,
+            slidesToShow: 3.2,
+            slidesToScroll: 3.2,
           });
         }
       }
