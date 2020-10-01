@@ -4203,7 +4203,7 @@ li {
 @media screen and (max-width: 1240px) {
     .brand {
         padding-top: 1px;
-        padding-bottom: 43px;
+        padding-bottom: 15px;
     }
 
     .brand__title {
@@ -5328,6 +5328,7 @@ li {
     margin-right: -20px;
     margin-bottom: -20px;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .digital__right-min-item {
@@ -5616,8 +5617,8 @@ li {
 .digital__label::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border: 1px solid #C4C4C4;
     left: -35px;
     top: -2px;
@@ -5646,6 +5647,16 @@ li {
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+
+.arrow-wrap--digital{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.next-arrow--univ{
+    margin-left: 10px;
 }
 
 .digital__slide-btn {
@@ -5827,6 +5838,11 @@ li {
 
 .sort-mobile {
     display: none;
+}
+
+.sort__inner-right{
+    display: flex;
+    align-items: center;
 }
 
 .sort-mobile-center {
@@ -6045,7 +6061,7 @@ li {
     }
 
     .sale__item-bottom-btn {
-        padding: 8px 4px;
+        padding: 8px 8px;
         line-height: 100%;
     }
 }
@@ -8047,7 +8063,7 @@ li {
     display: none;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1540px) {
     .arrow-wrap--center .prev-arrow {
         left: 0px;
     }
@@ -8070,7 +8086,7 @@ li {
     .next-arrow {
         width: 30px;
         height: 30px;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     .prev-arrow::after {
