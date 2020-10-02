@@ -942,7 +942,7 @@ textarea.question__input {
     top: 41px;
     left: 0;
     visibility: hidden;
-    background: #fff;
+    background: #F6F6F6;
     z-index: 2;
     padding-bottom: 34px;
     padding-top: 22px;
@@ -2423,11 +2423,11 @@ li {
     margin-top: 0;
 }
 
-.sale__item:not(:first-child) {
+.noContent:not(:first-child) {
     display: none;
 }
 
-.sale__items.slick-initialized .sale__item:not(:first-child) {
+.sale__items.slick-initialized .noContent:not(:first-child) {
         display: block;
 }
 
