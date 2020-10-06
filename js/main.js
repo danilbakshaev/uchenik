@@ -376,10 +376,10 @@ $(function () {
       slidesToShow: 4,
       slidesToScroll: 4,
       arrows: true,
-      draggable: false,
+      // draggable: false,
       infinite: false,
-      prevArrow: '.prev-js-sale--tovar',
-      nextArrow: '.next-js-sale--tovar',
+      prevArrow: '.prev-js--tovar',
+      nextArrow: '.next-js--tovar',
       responsive: [{
           breakpoint: 1240,
           settings: {
@@ -684,7 +684,17 @@ $(function () {
             nextArrow: '.next-js--komplekt2',
             dots: false,
             infinite: false,
-            slidesToShow: 2.5
+            slidesToShow: 2.5,
+            slidesToScroll: 2.5,
+            responsive: [{
+              breakpoint: 440,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: true,
+                dots: false
+              }
+            }, ]
           });
         }
       }
@@ -697,7 +707,17 @@ $(function () {
             nextArrow: '.next-js--komplekt3',
             dots: false,
             infinite: false,
-            slidesToShow: 2.5
+            slidesToShow: 2.5,
+            slidesToScroll: 2.5,
+            responsive: [{
+              breakpoint: 440,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: true,
+                dots: false
+              }
+            }, ]
           });
         }
       }
@@ -740,6 +760,13 @@ $(function () {
           slidesToScroll: 1,
           arrows: true,
           dots: false
+        },
+        breakpoint: 440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: true,
+          dots: false
         }
       }, ]
     });
@@ -755,15 +782,16 @@ $(function () {
     });
 
     $('.slider-nav').slick({
-      variableWidth: true,
-      autoSlidesToShow: true,
-      slidesToScroll: 1,
+      // variableWidth: true,
+      // autoSlidesToShow: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
       asNavFor: '.slider-for',
       dots: false,
       arrows: false,
       focusOnSelect: true,
       infinite: true,
-      centerMode: true,
+      // centerMode: true,
       responsive: [{
         breakpoint: 1240,
         settings: {
