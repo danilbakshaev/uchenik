@@ -5444,9 +5444,6 @@ li {
         margin-bottom: 50px;
     }
 
-    .digital__right-item {
-        margin-bottom: 0px;
-    }
 
     .card__slider-wrap{
         margin-bottom: 0!important;
@@ -6382,6 +6379,19 @@ li {
     margin-right: 5px;
 }
 
+.card__nav-item {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+}
+.card__nav-item img {
+    align-self: center;
+}
+
 .card__left-items {
     width: 40%;
     margin-right: 20px;
@@ -6396,6 +6406,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .sale__digital-button--card {
@@ -6405,8 +6416,8 @@ li {
 }
 
 .sale__digital-button--card:hover{
-background: #E97327;
-color: #fff;
+    background: #E97327;
+    color: #fff;
 }
 
 .card__right-item-bottom-text {
@@ -6634,6 +6645,8 @@ color: #fff;
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 30px;
     }
 
     .card__in--displayNone {
@@ -6697,6 +6710,10 @@ color: #fff;
 @media screen and (max-width: 768px) {
     .img-adapt {
         height: 140px;
+    }
+    .card__nav-item {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -7281,7 +7298,7 @@ color: #fff;
 
 .ques-review__top-right--colorWhite {
     background: inherit;
-    width: 100%;
+    width: calc(100% - 40px);
 }
 
 .digital__slide-btn--colorWhite {
@@ -8311,7 +8328,7 @@ color: #fff;
     border: 2px solid transparent;
 }
 
-.slider-nav .slick-current {
+.slider-nav .slick-current .card__nav-item{
     border: 2px solid #E97327;
 }
 

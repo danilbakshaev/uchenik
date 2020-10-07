@@ -778,26 +778,20 @@ $(function () {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
+      draggable: false,
       asNavFor: '.slider-nav'
     });
 
     $('.slider-nav').slick({
-      // variableWidth: true,
-      // autoSlidesToShow: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      autoSlidesToShow: true,
+      slidesToShow: 7,
       asNavFor: '.slider-for',
       dots: false,
       arrows: false,
       focusOnSelect: true,
-      infinite: true,
-      // centerMode: true,
-      responsive: [{
-        breakpoint: 1240,
-        settings: {
-          infinite: false
-        }
-      }, ]
+      infinite: false,
+      draggable: false,
+      variableWidth:true,
     });
   }
 
