@@ -7754,6 +7754,10 @@ li {
         display: block;
     }
 
+    .card__input--card-ques {
+        margin-right: 0px;
+    }
+
     .order-page__orange-btn {
         border-radius: 30px;
         background: #E97327;
