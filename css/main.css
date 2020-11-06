@@ -8754,6 +8754,12 @@ iframe{
         margin-right: 0;
         margin-bottom: 10px;
     }
+    .contacts__wrap {
+        flex-wrap: wrap;
+    }
+    .contacts__phone:last-child {
+        margin-left: 37px;
+    }
 }
 
 .contacts__left--payment{
@@ -8803,7 +8809,9 @@ iframe{
 .contacts--payment{
     margin-bottom: 130px;
 }
-
+.contacts-payment__wrap {
+    max-width: 1000px;
+}
 .contacts__link--payment{
     margin-bottom: 10px;
 }
@@ -8928,6 +8936,7 @@ iframe{
 
 .delivery__regulations{
     margin-top: 100px;
+    max-width: 1000px;
 }
 
 .delivery__regulations-title{
