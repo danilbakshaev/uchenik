@@ -474,12 +474,12 @@ $(function () {
   if ($('#map-contact')) {
     ymaps.ready(function () {
       var myMapContact = new ymaps.Map('map-contact', {
-        center: [59.897767, 30.418519],
-        zoom: 17,
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
         // controls: []
       });
 
-      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
         hintContent: '',
         balloonContent: ''
       }, {
@@ -509,7 +509,7 @@ $(function () {
     ymaps.ready(function () {
       var myMapContact = new ymaps.Map('map-delivery', {
         center: [59.897767, 30.418519],
-        zoom: 17,
+        zoom: 13,
         // controls: []
       });
 
