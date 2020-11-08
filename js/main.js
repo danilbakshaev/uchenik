@@ -539,6 +539,40 @@ $(function () {
     });
   }
 
+  if ($('#map-about')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-about', {
+        center: [59.897767, 30.418519],
+        zoom: 17,
+        // controls: []
+      });
+
+      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMapContact.geoObjects
+        .add(placemark8);
+
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
+
 
 
 

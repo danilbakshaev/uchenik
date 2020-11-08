@@ -8715,7 +8715,7 @@ iframe{
 
 .contacts__map{
     margin-top: 100px;
-    width: 100%px;
+    width: 100%;
     height: 500px;
 }
 
@@ -9513,4 +9513,13 @@ iframe{
 
 .information__link:hover{
     color: #0066c0c7;
+}
+
+.brand__title--black{
+    color: #0E1A29;
+}
+
+.brand--white{
+    background: #fff;
+    padding: 0;
 }
