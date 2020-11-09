@@ -440,6 +440,40 @@ $(function () {
     });
   }
 
+  if ($('.trade__items')) {
+    $('.trade__items').slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: true,
+      draggable: false,
+      infinite: false,
+      prevArrow: '.prev-js-trade',
+      nextArrow: '.next-js-trade',
+      responsive: [{
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 2.5,
+          }
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+
 
 
   //   $('.digital__right-inner').slick({
