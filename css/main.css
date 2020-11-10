@@ -9075,7 +9075,7 @@ iframe{
     width: 30px;
     height: 19px;
     position: absolute;
-    top: 44px;
+    top: calc(50% - 9.5px);
     right: 35px;
 }
 
@@ -9495,6 +9495,7 @@ iframe{
 
 .magazine{
     background: linear-gradient(180deg, #A7C2DF 0%, #BFE1F3 59.75%, #C4E7F7 82.37%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #85C7F2 0%, rgba(181, 220, 255, 0.625) 54.81%, rgba(206, 232, 255, 0.322452) 82.37%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
 }
 
 .magazine__wrap{
@@ -9528,12 +9529,15 @@ iframe{
     font-size: 40px;
     line-height: 140%;
     color: #0E1A29;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .magazine__subtitle{
     font-size: 24px;
     line-height: 140%;
     color: #0E1A29;
+    margin: 0;
 }
 
 .advantage__number{
@@ -9615,6 +9619,7 @@ iframe{
 
     .article__send-left{
         width: 100%;
+        margin-right: 0;
     }
 
     .article__send-name{
@@ -10063,6 +10068,7 @@ color: #0066c0c7;
    .business__items {
     flex-direction: column;
     align-items: center;
+    margin-right: 0;
    }
 
    .sound__item--business{
@@ -10147,6 +10153,7 @@ color: #0066c0c7;
 
 .sale__digital-button--customers{
     width: 236px;
+    height: 40px;
 }
 
 .article__title--customers{
@@ -10212,4 +10219,430 @@ color: #0066c0c7;
     .video__item {
         width: 100%;
     }
+}
+
+/* dealers */
+
+.magazine--dealers{
+    background: linear-gradient(179.53deg, #F1E0D2 0.43%, #F5E7CC 67.84%, #FFF4DC 103.94%, rgba(255, 255, 255, 0) 113.25%);
+}
+
+.gradient{
+    background: linear-gradient(0deg, #fff 20%, rgba(255, 255, 255, 0) 100.51%);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -1px;
+}
+
+.digital__input-in--dealers{
+    width: 100%;
+}
+
+.article__send-btn--dealers{
+    align-items: flex-end;
+    margin-top: 120px;
+}
+
+.article__title--dealers{
+    margin-bottom: 16px;
+}
+
+.form__inner{
+    width: 50%;
+    padding: 60px 88px;
+    margin-right: 20px;
+    background: #F6F6F6;
+}
+
+.form__top{
+    display: flex;
+    margin-right: -20px;
+}
+
+.form__title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 140%;
+    color: #0E1A29;
+    margin-bottom: 41px;
+    margin-top: 0;
+}
+
+.form__contact{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.form__link{
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(14, 26, 41, 0.7);
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.form__city{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0E1A29;
+}
+
+.article__summary--dealers{
+    margin-top: 20px;
+}
+
+.sound__item--dealers{
+    width: 100%;
+}
+
+.sound__text--dealers{
+    font-size: 18px;
+}
+
+.wholesale__title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 140%;
+    color: #0E1A29;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.wholesale__wrap{
+    display: flex;
+    margin-right: -20px;
+}
+
+.wholesale__inner{
+    margin-right: 20px;
+    width: 50%;
+}
+
+.wholesale__text{
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(14, 26, 41, 0.7);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wholesale__text--bottom{
+    margin-top: 30px;
+}
+
+.wholesale{
+    margin-top: 81px;
+}
+
+.business--dealers{
+    margin-top: 100px;
+    margin-bottom: 151px;
+}
+
+@media screen and (max-width: 1340px) {
+    
+}
+
+@media screen and (max-width: 1240px) {
+    .gradient{
+        height: 80px;
+    }
+
+    .form__top{
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .form__inner{
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        margin-right: 0;
+    }
+
+    .form__inner--center{
+        margin-bottom: 0;
+    }
+
+    .sound__text--dealers{
+        text-align: initial;
+    }
+
+    .sound__item--dealers{
+        align-items: flex-start;
+    }
+
+    .form__title{
+        font-size: 20px;
+    }
+
+    .wholesale__text{
+        font-size: 16px;
+    }
+
+    .business--dealers{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .article__send-btn--dealers{
+        margin-top: 20px;
+    }
+
+    .wholesale{
+        margin-top: 20px;
+    }
+
+    .wholesale__title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 860px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    .wholesale__wrap{
+        flex-direction: column;
+    }
+
+    .wholesale__inner{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* rent */
+
+.magazine--rent{
+    background: linear-gradient(179.51deg, #CBCCC6 0.44%, #DEDEDB 85.98%, #EDEEEC 91.43%, rgba(255, 255, 255, 0) 108.26%);
+}
+
+.magazine__subtitle--rent{
+    margin-bottom: 14px;
+}
+
+.rent__text{
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(14, 26, 41, 0.7);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.piano__items{
+    display: flex;
+    margin-right: -20px;
+    width: 80%;
+}
+
+.piano__item{
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.piano__top{
+    height: 268px;
+    display: flex;
+    align-items: center;
+}
+
+.piano__bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.piano__link{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #0E1A29;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.piano__text{
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(35, 47, 63, 0.7);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.piano__price{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0E1A29;
+}
+
+.piano__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    color: #0E1A29;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.call__title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #0E1A29; 
+}
+
+.call{
+    margin: 74px 0;
+}
+
+.article__price{
+    font-size: 24px;
+    line-height: 140%;
+    color: #0E1A29;
+    margin-top: 10px;
+}
+
+.article__title--rent{
+    margin-bottom: 15px;
+}
+
+.article__title--rent{
+    margin-bottom: 10px;
+}
+
+.article__demands--rent{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.article__text--rent{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.article__item--rent{
+    margin-top: 30px;
+}
+
+.set{
+    margin-top: 78px;
+    margin-bottom: 98px;
+}
+
+.set__text{
+    font-size: 20px;
+    line-height: 150%;
+    color: #0E1A29;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.set__call{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: #0E1A29;
+}
+
+.article__inner--check::after{
+    background-image: url("data:image/svg+xml,%3Csvg width='31' height='19' viewBox='0 0 31 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.999997 18L15.4762 2L29.9524 18' stroke='%230055A6' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width: 1340px) {
+    
+}
+
+@media screen and (max-width: 1240px) {
+   .rent__text{
+       font-size: 16px;
+       text-align: center;
+   }
+
+   .piano__items{
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+   }
+
+   .piano__item{
+       width: 100%;
+       margin-bottom: 20px;
+       margin-right: 0;
+   }
+
+   .piano__image{
+       width: auto;
+   }
+
+   .piano__title{
+       font-size: 20px;
+       text-align: center;
+   }
+
+   .piano__top{
+       height: auto;
+       justify-content: center;
+   }
+
+   .piano__bottom{
+       align-items: center;
+   }
+
+   .piano__link{
+       font-size: 18px;
+   }
+
+   .call{
+       margin: 30px 0;
+   }
+
+   .article__inner{
+       padding: 20px;
+   }
+
+   .set{
+       margin-top: 30px;
+       margin-bottom: 30px;
+   }
+
+   .set__text{
+       font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 860px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    
 }
