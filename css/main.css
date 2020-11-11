@@ -10528,6 +10528,11 @@ iframe {
     font-size: 20px;
     line-height: 140%;
     color: #0E1A29;
+    text-decoration: none;
+}
+
+.call__title:hover{
+    text-decoration: underline;
 }
 
 .call {
@@ -10646,7 +10651,6 @@ iframe {
    .set__text{
        font-size: 16px;
    }
-}
 
     .piano__items {
         flex-direction: column;
@@ -10667,15 +10671,6 @@ iframe {
     .piano__title {
         font-size: 20px;
         text-align: center;
-    }
-
-    .piano__top {
-        height: auto;
-        justify-content: center;
-    }
-
-    .piano__bottom {
-        align-items: center;
     }
 
     .piano__link {
