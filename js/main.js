@@ -36,14 +36,14 @@ $(function () {
       arrows: true,
       infinite: true,
       autoplay: false,
-      swipe:false,
+      swipe: false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-hits',
       nextArrow: '.next-js-hits',
       responsive: [{
         breakpoint: 1240,
         settings: {
-          swipe:true,
+          swipe: true,
           swipeToSlide: true,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -54,7 +54,7 @@ $(function () {
     });
   }
 
-  
+
   if ($('#curs-slider')) {
     $('#curs-slider').slick({
       slidesToShow: 4,
@@ -164,7 +164,7 @@ $(function () {
     });
   }
 
-  
+
   if ($('.sale__items--hity')) {
     $('.sale__items--hity').slick({
       slidesToShow: 4,
@@ -682,7 +682,7 @@ $(function () {
           autoplay: true,
           autoplaySpeed: 5000,
           prevArrow: '.prev-js-services--perviy',
-            nextArrow: '.next-js-services--perviy',
+          nextArrow: '.next-js-services--perviy',
           responsive: [{
             breakpoint: 760,
             settings: {
@@ -695,7 +695,7 @@ $(function () {
 
       if ($('.services__items--top')) {
         if (!$('.services__items--top').hasClass('slick-initialized')) {
-        $('.services__items--top').slick({
+          $('.services__items--top').slick({
             arrows: true,
             dots: false,
             draggable: false,
@@ -717,7 +717,7 @@ $(function () {
 
       if ($('.services__items--bottom')) {
         if (!$('.services__items--bottom').hasClass('slick-initialized')) {
-        $('.services__items--bottom').slick({
+          $('.services__items--bottom').slick({
             arrows: true,
             dots: false,
             draggable: false,
@@ -736,7 +736,7 @@ $(function () {
           });
         }
       }
-    
+
 
       if ($('#slick-look')) {
         if (!$('#slick-look').hasClass('slick-initialized')) {
@@ -950,7 +950,7 @@ $(function () {
       focusOnSelect: true,
       infinite: false,
       draggable: false,
-      variableWidth:true,
+      variableWidth: true,
     });
   }
 
@@ -1085,6 +1085,14 @@ $(function () {
     if (!localStorage.getItem('a')) {
       $('.header-banner').addClass('header-banner--show');
     }
+  }
+
+  if ($(".article-hide")) {
+    $(".article-hide").hide()
+    $(".article__inner").click(function () {
+      $(this).toggleClass("article__inner--active");
+      $(this).children(".article-hide").slideToggle("slow");
+    });
   }
 
   saleItem = $(".sale__item--digital");
