@@ -5988,10 +5988,6 @@ li {
     padding: 0;
 }
 
-.sale__item--horizont .sale__item-up {
-    /* width: 33.33333%; */
-}
-
 .sale__item--horizont .sale__item-top {
     width: 260px;
     height: 260px;
@@ -8609,7 +8605,7 @@ iframe{
 
 /* contacts */
 
-.contacts__title{
+.title-link__title{
     font-weight: bold;
     font-size: 36px;
     line-height: 140%;
@@ -8627,29 +8623,33 @@ iframe{
     margin-bottom: 40px;
 }
 
-.contacts__link{
+.title-link__link{
     font-weight: 600;
     font-size: 14px;
-    line-height: 19px;
     text-align: center;
     color: #0E1A29;
     text-decoration: none;
     background: #F6F6F6;
-    padding: 10px;
+    padding: 0 15px;
+    min-height: 40px;
     margin-right: 20px;
     transition: all 0.2s linear;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.contacts__link:hover{
+
+.title-link__link:hover{
     color: #0066C0;
 }
 
-.contacts__link--active{
+.title-link__link--active{
     border: 2px solid #0066C0;
     background: #fff;
 }
 
-.contacts__link:last-child{
+.title-link__link:last-child{
     margin-right: 0px;
 }
 
@@ -8673,7 +8673,7 @@ iframe{
     line-height: 150%;
     color: #0E1A29;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .contacts__text:last-child{
@@ -8721,7 +8721,7 @@ iframe{
     height: 500px;
 }
 
-.contacts__top{
+.title-link{
     margin-top: 40px;
 }
 
@@ -8730,7 +8730,7 @@ iframe{
 }
 
 @media screen and (max-width: 1240px) {
-    .contacts__title{
+    .title-link__title{
         font-size: 20px;
         margin-bottom: 20px;
     }
@@ -8783,12 +8783,12 @@ iframe{
 }
 
 @media screen and (max-width: 460px) {
-    .contacts__location{
+    .title-link__wrap{
         display: flex;
         flex-direction: column;
     }
 
-    .contacts__link{
+    .title-link__link{
         margin-right: 0;
         margin-bottom: 10px;
     }
@@ -8850,11 +8850,9 @@ iframe{
 .contacts-payment__wrap {
     max-width: 1000px;
 }
-.contacts__link--payment{
-    margin-bottom: 10px;
-}
 
-.contacts__location--payment{
+
+.title-link__wrap{
     display: flex;
     flex-wrap: wrap;
 }
@@ -9957,8 +9955,6 @@ iframe{
     margin-bottom: 60px;
 }
 
-color: #0066c0c7;
-}
 
 @media screen and (max-width: 1340px) {
     
