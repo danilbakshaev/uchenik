@@ -8696,6 +8696,25 @@ iframe {
     background: #fff;
 }
 
+.title-link__link--active1 {
+    border: 2px solid #0066C0;
+    background: #fff;
+}
+
+.title-link__link--active2 {
+    border: 2px solid #0066C0;
+    background: #fff;
+}
+
+.title-link__link--active3 {
+    border: 2px solid #0066C0;
+    background: #fff;
+}
+
+.title-link__link--active4 {
+    border: 2px solid #0066C0;
+    background: #fff;
+}
 
 .title-link__link:last-child {
     margin-right: 0px;

@@ -1142,10 +1142,34 @@ $(function () {
   });
 
   $(".contacts__bottom").not(":first").hide();
-  $(".title-link__link").click(function () {
-    $(".title-link__link").removeClass("title-link__link--active").eq($(this).index()).addClass("title-link__link--active");
+  $(".title-link__link--contact").click(function () {
+    $(".title-link__link--contact").removeClass("title-link__link--active").eq($(this).index()).addClass("title-link__link--active");
     $(".contacts__bottom").hide().eq($(this).index()).fadeIn()
   }).eq(0).addClass("title-link__link--active");
+
+  $(".instrument-tab1").not(":first").hide();
+  $(".title-link__link--choose").click(function () {
+    $(".title-link__link--choose").removeClass("title-link__link--active1").eq($(this).index()).addClass("title-link__link--active1");
+    $(".instrument-tab1").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active1");
+
+  $(".instrument-tab2").not(":first").hide();
+  $(".title-link__link--object").click(function () {
+    $(".title-link__link--object").removeClass("title-link__link--active3").eq($(this).index()).addClass("title-link__link--active3");
+    $(".instrument-tab2").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active3");
+
+  $(".instrument-tab3").not(":first").hide();
+  $(".title-link__link--advice").click(function () {
+    $(".title-link__link--advice").removeClass("title-link__link--active2").eq($(this).index()).addClass("title-link__link--active2");
+    $(".instrument-tab3").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active2");
+
+  $(".instrument-tab4").not(":first").hide();
+  $(".title-link__link--instrument").click(function () {
+    $(".title-link__link--instrument").removeClass("title-link__link--active4").eq($(this).index()).addClass("title-link__link--active4");
+    $(".instrument-tab4").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active4");
 
 });
 
