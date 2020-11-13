@@ -521,9 +521,77 @@ $(function () {
   });
 
 
-  if ($('#map-contact')) {
+  if ($('#map-contact-spb')) {
     ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-contact', {
+      var myMapContact = new ymaps.Map('map-contact-spb', {
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
+        // controls: []
+      });
+
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMapContact.geoObjects
+        .add(placemark8);
+
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
+
+  if ($('#map-contact-moscow')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-contact-moscow', {
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
+        // controls: []
+      });
+
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+      myMapContact.geoObjects
+        .add(placemark8);
+
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
+
+  if ($('#map-contact-murmansk')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-contact-murmansk', {
         center: [59.8894701, 30.3423895],
         zoom: 13,
         // controls: []
@@ -1141,10 +1209,10 @@ $(function () {
     }
   });
 
-  $(".contacts__bottom").not(":first").hide();
+  $(".contacts__bottom--contacts").not(":first").hide();
   $(".title-link__link--contact").click(function () {
     $(".title-link__link--contact").removeClass("title-link__link--active").eq($(this).index()).addClass("title-link__link--active");
-    $(".contacts__bottom").hide().eq($(this).index()).fadeIn()
+    $(".contacts__bottom--contacts").hide().eq($(this).index()).fadeIn()
   }).eq(0).addClass("title-link__link--active");
 
   $(".instrument-tab1").not(":first").hide();
@@ -1170,6 +1238,12 @@ $(function () {
     $(".title-link__link--instrument").removeClass("title-link__link--active4").eq($(this).index()).addClass("title-link__link--active4");
     $(".instrument-tab4").hide().eq($(this).index()).fadeIn()
   }).eq(0).addClass("title-link__link--active4");
+
+  $(".contacts-payment").not(":first").hide();
+  $(".title-link__link--payment").click(function () {
+    $(".title-link__link--payment").removeClass("title-link__link--active5").eq($(this).index()).addClass("title-link__link--active5");
+    $(".contacts-payment").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active5");
 
 });
 

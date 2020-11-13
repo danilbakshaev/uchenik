@@ -8684,6 +8684,7 @@ iframe {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    border: 2px solid transparent;
 }
 
 
@@ -8715,6 +8716,15 @@ iframe {
     border: 2px solid #0066C0;
     background: #fff;
 }
+
+.title-link__link--active5 {
+    border: 2px solid #0066C0;
+    background: #fff;
+}
+
+/* .contacts--payment .contacts__bottom{
+    display: block;
+} */
 
 .title-link__link:last-child {
     margin-right: 0px;
@@ -11502,4 +11512,38 @@ screen and (max-height: 300px) {
 
 .curs--white .curs__title{
     color: #000000;
+}
+
+.base__item--full{
+
+}
+
+.instrument__left-wrap--none{
+    display: none;
+}
+
+@media all and (max-width: 1240px) {
+    .base__item--full{
+        width: 100%;
+    }
+
+    .instrument .base__item {
+        height: 250px;
+    }
+
+    .instrument__items--column{
+        flex-direction: column-reverse;
+    }
+
+    .instrument__left{
+        width: 100%;
+    }
+
+    .instrument__right{
+        width: 100%;
+    }
+
+    .instrument__left-wrap--none{
+        display: flex;
+    }
 }
