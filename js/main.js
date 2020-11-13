@@ -503,7 +503,7 @@ $(function () {
   // });
 
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('.reviews-61__photos').magnificPopup({
       delegate: 'a',
       type: 'image',
@@ -512,10 +512,10 @@ $(function () {
       gallery: {
         enabled: true,
         navigateByImgClick: true,
-        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
       },
       image: {
-        
+
       }
     });
   });
@@ -1140,6 +1140,12 @@ $(function () {
       }
     }
   });
+
+  $(".contacts__bottom").not(":first").hide();
+  $(".title-link__link").click(function () {
+    $(".title-link__link").removeClass("title-link__link--active").eq($(this).index()).addClass("title-link__link--active");
+    $(".contacts__bottom").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("title-link__link--active");
 
 });
 
