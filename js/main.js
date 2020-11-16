@@ -761,6 +761,28 @@ $(function () {
         });
       }
 
+      if ($('.item__head-wrap')) {
+        $('.item__head-wrap').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          draggable: false,
+          arrows: true,
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          prevArrow: '.prev-js-services--perviy',
+          nextArrow: '.next-js-services--perviy',
+          responsive: [{
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }, ]
+        });
+      }
+
       if ($('.services__items--top')) {
         if (!$('.services__items--top').hasClass('slick-initialized')) {
           $('.services__items--top').slick({
