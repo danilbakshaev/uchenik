@@ -11706,6 +11706,16 @@ screen and (max-height: 300px) {
     background: linear-gradient(90.18deg, #85CCF2 -14.24%, #0066C0 128.97%);
 }
 
+.discount--knowledges {
+    background: linear-gradient(90.18deg, #85CCF2 -14.24%, #0066C0 128.97%);
+}
+
+.discount--knowledges .discount__image {
+    width: 118px !important;
+    top: -15px;
+    left: 45%;
+} 
+
 .discount__image--knowledge {
     width: 9%;
     position: absolute;
@@ -11734,6 +11744,20 @@ screen and (max-height: 300px) {
         font-size: 16px;
         margin-bottom: 20px;
     }
+    .discount--knowledges .discount__image--mobile {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 18px !important;
+        right: 0 !important;
+        width: 118px !important;
+    }
+}
+
+@media all and (max-width: 398px) {
+    .discount--knowledges .discount__image--mobile {
+        top: 32px !important;
+    }
 }
 
 /* choose */
@@ -11744,6 +11768,8 @@ screen and (max-height: 300px) {
 
 .music--choose {
     background: #fff;
+    padding: 0;
+    margin-top: 30px;
 }
 
 .music--choose .music__catalog-link,
