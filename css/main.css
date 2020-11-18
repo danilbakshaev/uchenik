@@ -12156,3 +12156,68 @@ screen and (max-height: 300px) {
 .base__item--grad3{
     background: linear-gradient(360deg, #655C61 40.28%, rgba(255, 255, 255, 0) 89.17%);
 }
+
+.footer__item-four--knowledge{
+    flex-direction: initial;
+}
+
+.footer__item-inner--knowledge{
+    margin-right: 80px;
+}
+
+.footer__link--knowledge{
+    font-size: 16px;
+}
+
+.wrapper-final__inner--knowledge{
+    margin-bottom: 0;
+}
+
+.footer__item-inner--knowledge{
+    margin-bottom: 22px;
+}
+
+.contact-svg__link--cnowledge{
+    margin-right: 10px;
+}
+
+.contact-svg__link--cnowledge:first-child{
+    margin-right: 5px;
+}
+
+.footer__bottom--knowledge{
+    justify-content: space-between;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 1240px) {
+    .wrapper-final__inner--knowledge{
+        display: none;
+    }
+
+    .footer-mobile-inner--knowledge{
+        justify-content: flex-start;
+    }
+
+    .footer__item-two--knowledge{
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .footer__inner{
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__item-inner--knowledge{
+        margin-right: 20px;
+    }
+}
