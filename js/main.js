@@ -831,7 +831,7 @@ $(function () {
         if (!$('.services__items--white2').hasClass('slick-initialized')) {
           $('.services__items--white2').slick({
             arrows: true,
-            dots: false,
+            dots: true,
             draggable: false,
             prevArrow: '.prev-js-services--white2',
             nextArrow: '.next-js-services--white2',

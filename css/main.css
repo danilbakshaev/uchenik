@@ -2322,6 +2322,14 @@ li {
     .hits__item-width .hits__item-top {
         width: 73%;
     }
+
+    .services--white .slick-dots button {
+        background: rgba(35, 47, 63, 0.3);
+    }
+    
+    .services--white .slick-active button {
+        background: #232F3F;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2977,6 +2985,7 @@ li {
     color: #FFFFFF;
     opacity: 0.5;
     transition: all 0.2s linear;
+    text-decoration: none;
 }
 
 .base__item-bottext-link:hover {
@@ -11896,6 +11905,10 @@ screen and (max-height: 300px) {
         min-height: 160px;
     }
 
+    .base__item--scaleControl{
+        padding: 10px;
+    }
+
     .knowledge .base__item {
         min-height: 160px;
     }
@@ -12100,4 +12113,20 @@ screen and (max-height: 300px) {
 
 .base__item-bottext--init{
     justify-content: initial;
+}
+
+.base__item--grad0{
+    background: linear-gradient(0.42deg, #EDEDED 50.92%, rgba(255, 255, 255, 0) 74.1%);
+}
+
+.base__item--grad1{
+    background: linear-gradient(360deg, #AA7634 47.22%, rgba(221, 161, 107, 0) 69.44%);
+}
+
+.base__item--grad2{
+    background: linear-gradient(360deg, #1F1F1F 51.11%, rgba(0, 0, 0, 0) 69.44%);
+}
+
+.base__item--grad3{
+    background: linear-gradient(360deg, #655C61 40.28%, rgba(255, 255, 255, 0) 89.17%);
 }
