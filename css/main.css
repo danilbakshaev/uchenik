@@ -11580,6 +11580,10 @@ screen and (max-height: 300px) {
     padding: 0;
 }
 
+.title-wrap{
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 1340px) {}
 
 @media screen and (max-width: 1240px) {
