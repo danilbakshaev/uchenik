@@ -521,175 +521,175 @@ $(function () {
   });
 
 
-  // if ($('#map-contact-spb')) {
-  //   ymaps.ready(function () {
-  //     var myMapContact = new ymaps.Map('map-contact-spb', {
-  //       center: [59.8894701, 30.3423895],
-  //       zoom: 13,
-  //       // controls: []
-  //     });
+  if ($('#map-contact-spb')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-contact-spb', {
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
+        // controls: []
+      });
 
-  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-  //       hintContent: '',
-  //       balloonContent: ''
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/map-check.svg',
-  //       // Размеры метки.
-  //       iconImageSize: [44, 55],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
 
-  //     myMapContact.geoObjects
-  //       .add(placemark8);
+      myMapContact.geoObjects
+        .add(placemark8);
 
-  //     // myMap.behaviors.get('drag').disable();
-  //     myMapContact.behaviors.get('scrollZoom').disable();
-  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-  //     myMapContact.behaviors.get('dblClickZoom').disable();
-  //   });
-  // }
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
 
-  // if ($('#map-contact-moscow')) {
-  //   ymaps.ready(function () {
-  //     var myMapContact = new ymaps.Map('map-contact-moscow', {
-  //       center: [59.8894701, 30.3423895],
-  //       zoom: 13,
-  //       // controls: []
-  //     });
+  if ($('#map-contact-moscow')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-contact-moscow', {
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
+        // controls: []
+      });
 
-  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-  //       hintContent: '',
-  //       balloonContent: ''
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/map-check.svg',
-  //       // Размеры метки.
-  //       iconImageSize: [44, 55],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
 
-  //     myMapContact.geoObjects
-  //       .add(placemark8);
+      myMapContact.geoObjects
+        .add(placemark8);
 
-  //     // myMap.behaviors.get('drag').disable();
-  //     myMapContact.behaviors.get('scrollZoom').disable();
-  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-  //     myMapContact.behaviors.get('dblClickZoom').disable();
-  //   });
-  // }
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
 
-  // if ($('#map-contact-murmansk')) {
-  //   ymaps.ready(function () {
-  //     var myMapContact = new ymaps.Map('map-contact-murmansk', {
-  //       center: [59.8894701, 30.3423895],
-  //       zoom: 13,
-  //       // controls: []
-  //     });
+  if ($('#map-contact-murmansk')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-contact-murmansk', {
+        center: [59.8894701, 30.3423895],
+        zoom: 13,
+        // controls: []
+      });
 
-  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-  //       hintContent: '',
-  //       balloonContent: ''
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/map-check.svg',
-  //       // Размеры метки.
-  //       iconImageSize: [44, 55],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
+      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
 
-  //     myMapContact.geoObjects
-  //       .add(placemark8);
+      myMapContact.geoObjects
+        .add(placemark8);
 
-  //     // myMap.behaviors.get('drag').disable();
-  //     myMapContact.behaviors.get('scrollZoom').disable();
-  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-  //     myMapContact.behaviors.get('dblClickZoom').disable();
-  //   });
-  // }
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
 
-  // if ($('#map-delivery')) {
-  //   ymaps.ready(function () {
-  //     var myMapContact = new ymaps.Map('map-delivery', {
-  //       center: [59.897767, 30.418519],
-  //       zoom: 13,
-  //       // controls: []
-  //     });
+  if ($('#map-delivery')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-delivery', {
+        center: [59.897767, 30.418519],
+        zoom: 13,
+        // controls: []
+      });
 
-  //     placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
-  //       hintContent: '',
-  //       balloonContent: ''
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/map-check.svg',
-  //       // Размеры метки.
-  //       iconImageSize: [44, 55],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
+      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
 
-  //     myMapContact.geoObjects
-  //       .add(placemark8);
+      myMapContact.geoObjects
+        .add(placemark8);
 
-  //     // myMap.behaviors.get('drag').disable();
-  //     myMapContact.behaviors.get('scrollZoom').disable();
-  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-  //     myMapContact.behaviors.get('dblClickZoom').disable();
-  //   });
-  // }
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
 
-  // if ($('#map-about')) {
-  //   ymaps.ready(function () {
-  //     var myMapContact = new ymaps.Map('map-about', {
-  //       center: [59.897767, 30.418519],
-  //       zoom: 17,
-  //       // controls: []
-  //     });
+  if ($('#map-about')) {
+    ymaps.ready(function () {
+      var myMapContact = new ymaps.Map('map-about', {
+        center: [59.897767, 30.418519],
+        zoom: 17,
+        // controls: []
+      });
 
-  //     placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
-  //       hintContent: '',
-  //       balloonContent: ''
-  //     }, {
-  //       // Опции.
-  //       // Необходимо указать данный тип макета.
-  //       iconLayout: 'default#image',
-  //       // Своё изображение иконки метки.
-  //       iconImageHref: 'img/map-check.svg',
-  //       // Размеры метки.
-  //       iconImageSize: [44, 55],
-  //       // Смещение левого верхнего угла иконки относительно
-  //       // её "ножки" (точки привязки).
-  //       iconImageOffset: [-5, -38]
-  //     });
+      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/map-check.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
 
-  //     myMapContact.geoObjects
-  //       .add(placemark8);
+      myMapContact.geoObjects
+        .add(placemark8);
 
-  //     // myMap.behaviors.get('drag').disable();
-  //     myMapContact.behaviors.get('scrollZoom').disable();
-  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-  //     myMapContact.behaviors.get('dblClickZoom').disable();
-  //   });
-  // }
+      // myMap.behaviors.get('drag').disable();
+      myMapContact.behaviors.get('scrollZoom').disable();
+      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+      myMapContact.behaviors.get('dblClickZoom').disable();
+    });
+  }
 
 
 
