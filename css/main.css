@@ -12177,11 +12177,11 @@ screen and (max-height: 300px) {
     margin-bottom: 22px;
 }
 
-.contact-svg__link--cnowledge{
+.contact-svg__link--knowledge{
     margin-right: 10px;
 }
 
-.contact-svg__link--cnowledge:first-child{
+.contact-svg__link--knowledge:first-child{
     margin-right: 5px;
 }
 
@@ -12192,6 +12192,45 @@ screen and (max-height: 300px) {
 .footer__inner{
     display: flex;
     flex-direction: column;
+}
+
+.select-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-right: 88px;
+    margin-left: 32px;
+}
+
+.select-wrap__btn{
+    background: none;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+    transition: all 0.2s linear;
+}
+
+.select-wrap__btn:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.select-wrap__btn svg{
+    margin-left: 10px;
+}
+
+.select-wrap__link{
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.select-wrap__link:hover{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @media all and (max-width: 1240px) {
