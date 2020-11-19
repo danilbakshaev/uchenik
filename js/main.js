@@ -35,7 +35,7 @@ $(function () {
       slidesToScroll: 2,
       arrows: true,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       swipe: false,
       autoplaySpeed: 5000,
       prevArrow: '.prev-js-hits',

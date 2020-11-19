@@ -3155,7 +3155,7 @@ li {
     }
 
     .base__item-bottom {
-        padding-top: 0px;
+        padding-top: 70px;
     }
 
     .base__item-bottom-title {
@@ -3241,12 +3241,7 @@ li {
         margin-bottom: 45px;
     }
 
-    /* .base__item-bottom-title {
-        min-height: 30px;
-    } */
-
     .base__item-bottom {
-        padding-top: 0px;
         min-height: 76px;
     }
 
@@ -3259,6 +3254,10 @@ li {
 @media screen and (max-width: 400px) {
     .base__item-top {
         margin-bottom: 35px;
+    }
+
+    .base__item-bottom {
+        padding-top: 40px;
     }
 }
 
