@@ -521,175 +521,175 @@ $(function () {
   });
 
 
-  if ($('#map-contact-spb')) {
-    ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-contact-spb', {
-        center: [59.8894701, 30.3423895],
-        zoom: 13,
-        // controls: []
-      });
+  // if ($('#map-contact-spb')) {
+  //   ymaps.ready(function () {
+  //     var myMapContact = new ymaps.Map('map-contact-spb', {
+  //       center: [59.8894701, 30.3423895],
+  //       zoom: 13,
+  //       // controls: []
+  //     });
 
-      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-        hintContent: '',
-        balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-check.svg',
-        // Размеры метки.
-        iconImageSize: [44, 55],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+  //       hintContent: '',
+  //       balloonContent: ''
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/map-check.svg',
+  //       // Размеры метки.
+  //       iconImageSize: [44, 55],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
 
-      myMapContact.geoObjects
-        .add(placemark8);
+  //     myMapContact.geoObjects
+  //       .add(placemark8);
 
-      // myMap.behaviors.get('drag').disable();
-      myMapContact.behaviors.get('scrollZoom').disable();
-      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-      myMapContact.behaviors.get('dblClickZoom').disable();
-    });
-  }
+  //     // myMap.behaviors.get('drag').disable();
+  //     myMapContact.behaviors.get('scrollZoom').disable();
+  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+  //     myMapContact.behaviors.get('dblClickZoom').disable();
+  //   });
+  // }
 
-  if ($('#map-contact-moscow')) {
-    ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-contact-moscow', {
-        center: [59.8894701, 30.3423895],
-        zoom: 13,
-        // controls: []
-      });
+  // if ($('#map-contact-moscow')) {
+  //   ymaps.ready(function () {
+  //     var myMapContact = new ymaps.Map('map-contact-moscow', {
+  //       center: [59.8894701, 30.3423895],
+  //       zoom: 13,
+  //       // controls: []
+  //     });
 
-      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-        hintContent: '',
-        balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-check.svg',
-        // Размеры метки.
-        iconImageSize: [44, 55],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+  //       hintContent: '',
+  //       balloonContent: ''
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/map-check.svg',
+  //       // Размеры метки.
+  //       iconImageSize: [44, 55],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
 
-      myMapContact.geoObjects
-        .add(placemark8);
+  //     myMapContact.geoObjects
+  //       .add(placemark8);
 
-      // myMap.behaviors.get('drag').disable();
-      myMapContact.behaviors.get('scrollZoom').disable();
-      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-      myMapContact.behaviors.get('dblClickZoom').disable();
-    });
-  }
+  //     // myMap.behaviors.get('drag').disable();
+  //     myMapContact.behaviors.get('scrollZoom').disable();
+  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+  //     myMapContact.behaviors.get('dblClickZoom').disable();
+  //   });
+  // }
 
-  if ($('#map-contact-murmansk')) {
-    ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-contact-murmansk', {
-        center: [59.8894701, 30.3423895],
-        zoom: 13,
-        // controls: []
-      });
+  // if ($('#map-contact-murmansk')) {
+  //   ymaps.ready(function () {
+  //     var myMapContact = new ymaps.Map('map-contact-murmansk', {
+  //       center: [59.8894701, 30.3423895],
+  //       zoom: 13,
+  //       // controls: []
+  //     });
 
-      placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
-        hintContent: '',
-        balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-check.svg',
-        // Размеры метки.
-        iconImageSize: [44, 55],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     placemark8 = new ymaps.Placemark([59.8977864, 30.4184471], {
+  //       hintContent: '',
+  //       balloonContent: ''
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/map-check.svg',
+  //       // Размеры метки.
+  //       iconImageSize: [44, 55],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
 
-      myMapContact.geoObjects
-        .add(placemark8);
+  //     myMapContact.geoObjects
+  //       .add(placemark8);
 
-      // myMap.behaviors.get('drag').disable();
-      myMapContact.behaviors.get('scrollZoom').disable();
-      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-      myMapContact.behaviors.get('dblClickZoom').disable();
-    });
-  }
+  //     // myMap.behaviors.get('drag').disable();
+  //     myMapContact.behaviors.get('scrollZoom').disable();
+  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+  //     myMapContact.behaviors.get('dblClickZoom').disable();
+  //   });
+  // }
 
-  if ($('#map-delivery')) {
-    ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-delivery', {
-        center: [59.897767, 30.418519],
-        zoom: 13,
-        // controls: []
-      });
+  // if ($('#map-delivery')) {
+  //   ymaps.ready(function () {
+  //     var myMapContact = new ymaps.Map('map-delivery', {
+  //       center: [59.897767, 30.418519],
+  //       zoom: 13,
+  //       // controls: []
+  //     });
 
-      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
-        hintContent: '',
-        balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-check.svg',
-        // Размеры метки.
-        iconImageSize: [44, 55],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+  //       hintContent: '',
+  //       balloonContent: ''
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/map-check.svg',
+  //       // Размеры метки.
+  //       iconImageSize: [44, 55],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
 
-      myMapContact.geoObjects
-        .add(placemark8);
+  //     myMapContact.geoObjects
+  //       .add(placemark8);
 
-      // myMap.behaviors.get('drag').disable();
-      myMapContact.behaviors.get('scrollZoom').disable();
-      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-      myMapContact.behaviors.get('dblClickZoom').disable();
-    });
-  }
+  //     // myMap.behaviors.get('drag').disable();
+  //     myMapContact.behaviors.get('scrollZoom').disable();
+  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+  //     myMapContact.behaviors.get('dblClickZoom').disable();
+  //   });
+  // }
 
-  if ($('#map-about')) {
-    ymaps.ready(function () {
-      var myMapContact = new ymaps.Map('map-about', {
-        center: [59.897767, 30.418519],
-        zoom: 17,
-        // controls: []
-      });
+  // if ($('#map-about')) {
+  //   ymaps.ready(function () {
+  //     var myMapContact = new ymaps.Map('map-about', {
+  //       center: [59.897767, 30.418519],
+  //       zoom: 17,
+  //       // controls: []
+  //     });
 
-      placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
-        hintContent: '',
-        balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'img/map-check.svg',
-        // Размеры метки.
-        iconImageSize: [44, 55],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38]
-      });
+  //     placemark8 = new ymaps.Placemark([59.897767, 30.418519], {
+  //       hintContent: '',
+  //       balloonContent: ''
+  //     }, {
+  //       // Опции.
+  //       // Необходимо указать данный тип макета.
+  //       iconLayout: 'default#image',
+  //       // Своё изображение иконки метки.
+  //       iconImageHref: 'img/map-check.svg',
+  //       // Размеры метки.
+  //       iconImageSize: [44, 55],
+  //       // Смещение левого верхнего угла иконки относительно
+  //       // её "ножки" (точки привязки).
+  //       iconImageOffset: [-5, -38]
+  //     });
 
-      myMapContact.geoObjects
-        .add(placemark8);
+  //     myMapContact.geoObjects
+  //       .add(placemark8);
 
-      // myMap.behaviors.get('drag').disable();
-      myMapContact.behaviors.get('scrollZoom').disable();
-      myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
-      myMapContact.behaviors.get('dblClickZoom').disable();
-    });
-  }
+  //     // myMap.behaviors.get('drag').disable();
+  //     myMapContact.behaviors.get('scrollZoom').disable();
+  //     myMapContact.behaviors.get('rightMouseButtonMagnifier').disable();
+  //     myMapContact.behaviors.get('dblClickZoom').disable();
+  //   });
+  // }
 
 
 
@@ -700,17 +700,17 @@ $(function () {
 
     if (window.innerWidth < 1240) {
 
-      if ($('#base-slick')) {
-        if (!$('#base-slick').hasClass('slick-initialized')) {
-          $('#base-slick').slick({
+      
+        if (!$('#base-slick0').hasClass('slick-initialized')) {
+          $('#base-slick0').slick({
             arrows: true,
             dots: false,
             infinite: false,
             draggable: false,
             slidesToShow: 4,
             slidesToScroll: 4,
-            prevArrow: '.prev-js-base',
-            nextArrow: '.next-js-base',
+            prevArrow: '.prev-js-base0',
+            nextArrow: '.next-js-base0',
             responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -736,7 +736,312 @@ $(function () {
             ]
           });
         }
-      }
+     
+
+     
+        if (!$('#base-slick1').hasClass('slick-initialized')) {
+          $('#base-slick1').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base1',
+            nextArrow: '.next-js-base1',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+      
+
+     
+        if (!$('#base-slick2').hasClass('slick-initialized')) {
+          $('#base-slick2').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base2',
+            nextArrow: '.next-js-base2',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+      
+
+     
+        if (!$('#base-slick3').hasClass('slick-initialized')) {
+          $('#base-slick3').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base3',
+            nextArrow: '.next-js-base3',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+     
+
+      
+      
+        if (!$('#base-slick4').hasClass('slick-initialized')) {
+          $('#base-slick4').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base4',
+            nextArrow: '.next-js-base4',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+    
+
+     
+        if (!$('#base-slick5').hasClass('slick-initialized')) {
+          $('#base-slick5').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base5',
+            nextArrow: '.next-js-base5',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+     
+
+    
+        if (!$('#base-slick6').hasClass('slick-initialized')) {
+          $('#base-slick6').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base6',
+            nextArrow: '.next-js-base6',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+    
+
+      
+        if (!$('#base-slick7').hasClass('slick-initialized')) {
+          $('#base-slick7').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base7',
+            nextArrow: '.next-js-base7',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+     
+
+     
+        if (!$('#base-slick8').hasClass('slick-initialized')) {
+          $('#base-slick8').slick({
+            arrows: true,
+            dots: false,
+            infinite: false,
+            draggable: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.prev-js-base8',
+            nextArrow: '.next-js-base8',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+
+                }
+              },
+              {
+                breakpoint: 760,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
+          });
+        }
+    
 
 
       if ($('.services__items--perviy')) {

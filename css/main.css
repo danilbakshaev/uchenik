@@ -2887,9 +2887,22 @@ li {
 }
 
 
-.base__item--scaleControl {
+.instrument .base__item--scaleControl {
     padding: 20px;
     width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.knowledge .base__item--scaleControl {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.base__item--scaleControl {
+    padding: 20px;
     position: relative;
     display: flex;
 }
@@ -7818,6 +7831,10 @@ li {
     display: none;
 }
 
+.instrument--choose3{
+    margin-top: 70px!important;
+}
+
 @media screen and (max-width: 1240px) {
     .digital--displayNone {
         display: none;
@@ -11781,8 +11798,11 @@ screen and (max-height: 300px) {
     margin-top: 30px;
 }
 
-.music--choose .music__catalog-link,
-.music__title {
+.music__title--choose {
+    color: #0E1A29;
+}
+
+.music__catalog-link--choose{
     color: #0E1A29;
 }
 
