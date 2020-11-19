@@ -1000,6 +1000,11 @@ textarea.question__input {
     padding-left: 20px;
 }
 
+.desktop-menu__catalog-popup__subcategory--big{
+    width: 1100px;
+    height: 1300px;
+}
+
 .desktop-menu__catalog-popup__item:hover .desktop-menu__catalog-popup__subcategory {
     display: flex;
     flex-wrap: wrap;
@@ -11801,6 +11806,7 @@ screen and (max-height: 300px) {
 
 .music__title--choose {
     color: #0E1A29;
+    margin-bottom: 10px;
 }
 
 .music__catalog-link--choose{
@@ -12261,6 +12267,55 @@ screen and (max-height: 300px) {
 
 .select-wrap__link:hover{
     color: rgba(255, 255, 255, 0.7);
+}
+
+.music__subtitle--black{
+    color: #000000;
+    margin-top: 0;
+}
+
+.music__item-catalog--nine{
+    background: linear-gradient(282.39deg, #FFE743 0%, #FFF1BC 100%);
+}
+.music__item-catalog--ten{
+    background: linear-gradient(124.07deg, #BCFFC6 8.2%, #6CEC81 97.7%);
+}
+.music__item-catalog--eleven{
+    background: linear-gradient(101.77deg, #E9EAEC -7.24%, #BABCC0 104.25%);
+}
+.music__item-catalog--twelve{
+    background: linear-gradient(282.39deg, #FFF1BC 0%, #FFCE83 100%);
+}
+.music__item-catalog--thirteen{
+    background: linear-gradient(124.07deg, #BCCAFF 8.2%, #85A0FF 97.7%);
+}
+.music__item-catalog--fourteen{
+    background: linear-gradient(282.39deg, #8CCBF4 0%, #BBE4FF 100%);
+}
+
+.music__item--choose{
+    height: 170px;
+}
+
+.popup-item{
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.popup-item__title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E1A29;   
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.desktop-menu__catalog-popup__link--knowledge{
+    width: 100%;
 }
 
 @media all and (max-width: 1240px) {
