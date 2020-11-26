@@ -2931,6 +2931,10 @@ li {
     justify-content: space-between;
 }
 
+.base__item--noScale:hover{
+    transform: initial;
+}
+
 .base__item--deskNone {
     display: none;
 }
@@ -11626,7 +11630,7 @@ screen and (max-height: 300px) {
 
 @media screen and (max-width: 1080px) {
     .base__item-bottom-title--head {
-        font-size: 18px;
+        font-size: 18px!important;
         color: #0E1A29;
     }
 
@@ -11657,6 +11661,14 @@ screen and (max-height: 300px) {
 
     .base__item--scaleControl-top {
         padding: 20px 0px 20px 20px;
+    }
+
+    .base__item--height{
+        min-height: 140px;
+    }
+
+    .base__item--scaleControl-top{
+        width: 30%;
     }
 }
 
@@ -12068,15 +12080,19 @@ screen and (max-height: 300px) {
 
 .text-page__images img {
     margin-right: 20px;
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px); */
 }
 
-.text-page__images--33 img {
+/* .text-page__images--33 img {
     width: calc(33.33333% - 20px)
 }
 
 .text-page__images img:last-child {
     margin-right: 0;
+} */
+
+.text-page__images a {
+    margin-right: 20px;
 }
 
 .text-page__content h2 {
@@ -12435,6 +12451,9 @@ screen and (max-height: 300px) {
     color: rgba(14, 26, 41, 0.5);
     margin-top: 30px;
     margin-bottom: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .text-page__banner {
@@ -12713,6 +12732,12 @@ screen and (max-height: 300px) {
     .text-page__share img {
         width: 100%;
         height: auto;
+    }
+}
+
+@media all and (max-width: 678px) {
+    .text-page__content p {
+        font-size: 14px;
     }
 }
 
