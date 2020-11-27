@@ -3203,7 +3203,7 @@ li {
     }
 
     .base__item--four {
-        background: linear-gradient(0.48deg, #FFFFFF 18.92%, rgba(255, 255, 255, 0) 83.1%);
+        background: linear-gradient(0.48deg, #FFFFFF 50.92%, rgba(255, 255, 255, 0) 83.1%);
     }
 
     .base__item--five {
@@ -3211,7 +3211,7 @@ li {
     }
 
     .base__item--six {
-        background: linear-gradient(0.48deg, #FFFFFF 18.92%, rgba(255, 255, 255, 0) 83.1%);
+        background: linear-gradient(0.48deg, #FFFFFF 50.92%, rgba(255, 255, 255, 0) 83.1%);
     }
 
     .base__item--seven {
@@ -11706,6 +11706,14 @@ screen and (max-height: 300px) {
     .knowledge .base__item-bottom{
         padding-top: 0;
     }
+
+    .base__item--white {
+        background: linear-gradient(360deg, #E8E8E8 50.13%, rgba(255, 255, 255, 0) 78.61%);
+    }
+
+    .base__item--black {
+        background: linear-gradient(360deg, #292621 50.28%, rgba(255, 255, 255, 0) 89.17%);
+    }
 }
 
 @media screen and (max-width: 460px) {}
@@ -12028,6 +12036,10 @@ screen and (max-height: 300px) {
     .discount__left--knowledge {
         width: 70%;
     }
+
+    /* .base__item-img{
+        height: 59%;
+    } */
 }
 
 @media all and (max-width: 450px) {
