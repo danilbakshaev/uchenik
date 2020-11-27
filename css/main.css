@@ -11587,6 +11587,8 @@ screen and (max-height: 300px) {
     margin-top: 40px;
 }
 
+
+
 @media screen and (max-width: 1340px) {}
 
 @media screen and (max-width: 1240px) {
@@ -11669,6 +11671,22 @@ screen and (max-height: 300px) {
 
     .base__item--scaleControl-top{
         width: 30%;
+    }
+
+    .base__item-span{
+        margin-left: 0px;
+    }
+
+    .base__item-span--head{
+        font-size: 10px;
+    }
+
+    .tag-none{
+        display: none;
+    }
+
+    .knowledge .base__item-bottom{
+        padding-top: 0;
     }
 }
 
@@ -11974,7 +11992,7 @@ screen and (max-height: 300px) {
     }
 
     .base__item--scaleControl {
-        padding: 10px;
+        padding: 10px!important;
     }
 
     .knowledge .base__item {
@@ -11996,7 +12014,7 @@ screen and (max-height: 300px) {
 
 @media all and (max-width: 450px) {
     .base__item--scaleControl-big {
-        padding: 10px;
+        padding: 10px!important;
     }
 }
 
