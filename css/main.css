@@ -517,6 +517,23 @@ img {
     transform: translateX(-100px);
 }
 
+
+.modal-wrapper__rubric {
+    max-width: 390px;
+    position: relative;
+    margin-right: auto;
+    background-color: #fff;
+    transition: all 0.3s linear;
+}
+
+.modal-wrapper__rubric.hidden {
+    display: none;
+}
+
+.modal-wrapper__rubric.animation {
+    transform: translateX(-100px);
+}
+
 .modal-wrapper__title {
     font-weight: bold;
     font-size: 14px;
@@ -1805,6 +1822,7 @@ li {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .openMenuWhite {
@@ -12863,4 +12881,8 @@ screen and (max-height: 300px) {
         -ms-transform: rotate(180deg);
          -o-transform: rotate(180deg);
             transform: rotate(180deg);
+}
+
+.slinky-theme-default li {
+    background: #fff;
 }
