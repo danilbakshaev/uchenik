@@ -1815,7 +1815,7 @@ $(function () {
   
     function closeRubricModal() {
       if (!rubricModal.classList.contains('hidden')) {
-        body.style.height = "100%"
+        body.style.maxHeight = "100%"
         rubricModal.classList.add('animation');
         rubricModal.addEventListener('transitionend', function (e) {
           rubricModal.classList.add('hidden');
