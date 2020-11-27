@@ -5,6 +5,10 @@ $(function () {
     $('#menu').slinky();
   }
 
+  if ($('#rubric')) {
+    $('#rubric').slinky();
+  }
+
   if ($('.slider__items')) {
     $('.slider__items').slick({
       slidesToShow: 1,
@@ -1792,6 +1796,38 @@ $(function () {
     };
   }
 
+  if (document.querySelector('.openRubric')) {
+    openRubric = document.querySelectorAll('.openRubric');
+    rubricModal = document.querySelector('.modal-wrapper__rubric');
+
+    if (document.querySelector('.openRubric')) {
+      for (let i = 0; i < openRubric.length; i++) {
+        openRubric[i].addEventListener('click', () => {
+          openBaseModal();
+          body.style.maxHeight = "100vh"
+          rubricModal.classList.remove('hidden');
+          setTimeout(function () {
+            rubricModal.classList.remove('animation');
+          }, 20);
+        });
+      }
+    }
+  
+    function closeRubricModal() {
+      if (!rubricModal.classList.contains('hidden')) {
+        body.style.height = "100%"
+        rubricModal.classList.add('animation');
+        rubricModal.addEventListener('transitionend', function (e) {
+          rubricModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
   if (document.querySelector('.openCity')) {
     openCity = document.querySelector('.openCity');
     cityModal = document.querySelector('.modal-wrapper__city');
@@ -1853,6 +1889,9 @@ $(function () {
     }
     if (document.querySelector('.openMenu')) {
       closeleftMenuModal();
+    }
+    if (document.querySelector('.openRubric')) {
+      closeRubricModal();
     }
     if (document.querySelector('.openCity')) {
       closeCityModal();
