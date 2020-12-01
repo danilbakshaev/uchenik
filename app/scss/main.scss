@@ -13255,6 +13255,7 @@ img.mfp-img {
 // user-account-orders.html
 
 .user-account {
+  margin-bottom: 95px;
 }
 
 .user-account__inner {
@@ -13341,7 +13342,10 @@ img.mfp-img {
 }
 
 .user-account__active-orders {
-  padding: 25px;
+  padding-top: 25px;
+  padding-left: 23px;
+  padding-right: 26px;
+  padding-bottom: 30px;
   background: #F6F6F6;
 }
 
@@ -13352,11 +13356,21 @@ img.mfp-img {
   font-size: 24px;
   line-height: 33px;
   color: #0E1A29;
+  margin-bottom: 20px;
 }
-// user-account__order
+
+.user-account__order {
+  
+}
+
+.user-account__top {
+  display: flex;
+  justify-content: space-between;
+}
 
 .user-account__info {
   display: flex;
+  margin-bottom: 25px;
 }
 
 .user-account__order-number {
@@ -13392,13 +13406,51 @@ img.mfp-img {
 
 .user-account__product {
   display: flex;
+  align-items: center;
 }
 
 .user-account__product img {
   width: 132px;
   height: 103px;
+  margin-right: 35px;
 }
 
 // user-account__wrapper
-// user-account__title
-// user-account__count
+.user-account__title-name {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 15px;
+}
+
+.user-account__count {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0E1A29;
+}
+
+.user-account__count--top {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+.user-account__card-online {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(14, 26, 41, 0.55);
+}
+
+.user-account__wrapper-top {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
