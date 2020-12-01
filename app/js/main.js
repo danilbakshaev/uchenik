@@ -22,6 +22,30 @@ $(function () {
     });
   }
 
+  if ($('.product-appraisal')) {
+    $('.product-appraisal').slick({
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: false,
+      arrows: true,
+      prevArrow: '.prev-js-digital--33',
+      nextArrow: '.next-js-digital--33',
+      responsive: [{
+        breakpoint: 1240,
+        settings: {
+          swipe: true,
+          swipeToSlide: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          dots: true
+        }
+      }, ]
+    });
+  }
+
   if ($('.digital__slide')) {
     $('.digital__slide').slick({
       slidesToShow: 1,
