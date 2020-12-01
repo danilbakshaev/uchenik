@@ -5623,36 +5623,36 @@ transform: rotate(-180deg);
   margin-bottom: 50px;
 }
 
-.digital__price-title{
+.digital__price-title {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-top: 0;
 }
 
-.search-text{
+.search-text {
   font-size: 20px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.search-name{
+.search-name {
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
 }
 
-.search-number{
+.search-number {
   font-size: 20px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
 }
 
-.search-inner{
+.search-inner {
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -5715,30 +5715,30 @@ transform: rotate(-180deg);
   justify-content: flex-end;
 }
 
-.category-wrapper{
+.category-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
 }
 
-.category-wrapper__title{
+.category-wrapper__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-top: 0;
 }
 
-.category-wrapper__link{
+.category-wrapper__link {
   font-size: 16px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
   text-decoration: none;
   margin-bottom: 5px;
   transition: all 0.2s linear;
 }
 
-.category-wrapper__link:hover{
+.category-wrapper__link:hover {
   opacity: 0.7;
 }
 
@@ -5794,19 +5794,19 @@ transform: rotate(-180deg);
     margin-bottom: 0 !important;
   }
 
-  .search-text{
+  .search-text {
     font-size: 16px;
   }
 
-  .search-name{
-    font-size: 16px;
-  }
-  
-  .search-number{
+  .search-name {
     font-size: 16px;
   }
 
-  .search-inner{
+  .search-number {
+    font-size: 16px;
+  }
+
+  .search-inner {
     width: 80%;
     margin-top: 20px;
   }
@@ -13303,7 +13303,7 @@ img.mfp-img {
   font-size: 14px;
   line-height: 150%;
   text-decoration-line: underline;
-  color: #0066C0;
+  color: #0066c0;
 }
 
 .user-account__profile-link {
@@ -13317,7 +13317,7 @@ img.mfp-img {
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-bottom: 15px;
   &:last-child {
     margin-bottom: 0;
@@ -13338,7 +13338,7 @@ img.mfp-img {
   font-weight: bold;
   font-size: 36px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
 }
 
 .user-account__active-orders {
@@ -13346,7 +13346,8 @@ img.mfp-img {
   padding-left: 23px;
   padding-right: 26px;
   padding-bottom: 30px;
-  background: #F6F6F6;
+  background: #f6f6f6;
+  margin-bottom: 40px;
 }
 
 .user-account__title-active {
@@ -13355,12 +13356,11 @@ img.mfp-img {
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-bottom: 20px;
 }
 
 .user-account__order {
-  
 }
 
 .user-account__top {
@@ -13373,12 +13373,16 @@ img.mfp-img {
   margin-bottom: 25px;
 }
 
+.user-account__top-row {
+  display: flex;
+}
+
 .user-account__order-number {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-bottom: 10px;
 }
 
@@ -13387,21 +13391,22 @@ img.mfp-img {
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
-  color: #0E1A29;
+  color: #0e1a29;
 }
 // user-account__wrap
 .user-account__status {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0066C0;
+  background: #0066c0;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
-  color: #FFFFFF;  
+  color: #ffffff;
   min-width: 100px;
-  min-height: 25px;
+  height: 25px;
+  margin-left: 20px;
 }
 
 .user-account__product {
@@ -13422,7 +13427,7 @@ img.mfp-img {
   font-weight: bold;
   font-size: 20px;
   line-height: 140%;
-  color: #0E1A29;
+  color: #0e1a29;
   margin-bottom: 15px;
 }
 
@@ -13431,7 +13436,7 @@ img.mfp-img {
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
-  color: #0E1A29;
+  color: #0e1a29;
 }
 
 .user-account__count--top {
@@ -13453,4 +13458,13 @@ img.mfp-img {
   display: flex;
   flex-direction: column;
   text-align: right;
+}
+
+.user-account__status--green {
+  background: #18c166;
+}
+
+.user-account__completed-orders {
+  padding: 25px 26px 30px 23px;
+  background: rgb(246, 246, 246);
 }
