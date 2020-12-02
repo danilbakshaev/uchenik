@@ -1,0 +1,88 @@
+@@include('./include/head.html')
+
+@@include('./include/header-white.html')
+
+<main>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs-inner">
+        <button class="breadcrumbs-btn">Назад</button>
+        <a class="breadcrumbs-link" href="#">Главная</a>
+        <a class="breadcrumbs-link" href="#">Кабинет пользователя</a>
+        <a class="breadcrumbs-link breadcrumbs-link--active" href="#">Мои заказы</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="user-account">
+    <div class="container">
+      <div class="user-account__inner">
+        <div class="user-account__left">
+          <div class="user-account__profile">
+            <img class="user-account__img" src="/img/user-account-avatar.png" alt="Константин Константинопольский">
+            <span class="user-account__name">Константин Константинопольский</span>
+            <a class="user-account__profile-edit" href="#">Изменить профиль</a>
+          </div>
+          <div class="user-account__profile-link">
+            <a class="user-account__link" href="#">Личная информация</a>
+            <a class="user-account__link" href="#">Избраное</a>
+            <a class="user-account__link" href="#">Мои заказы</a>
+            <a class="user-account__link" href="#">Мои курсы</a>
+            <a class="user-account__link" href="#">Мои отзывы</a>
+            <a class="user-account__link user-account__link--active" href="#">Служба поддержки</a>
+          </div>
+        </div>
+
+        <div class="user-account__rigth">
+
+          <h1 class="user-account__title">Служба поддержки</h1>
+          <form class="user-account__form">
+            <h2 class="user-account__form-title">Возникли вопросы? Напишите нам!</h2>
+            <div class="user-account__form-wrap">
+              <input class="user-account__form-name" type="text" placeholder="Константин Константинопольский">
+              <input class="user-account__form-mail" type="mail" placeholder="example@gmail.com">
+            </div>
+            <textarea class="user-account__form-text" placeholder="Напишите ваш вопрос"></textarea>
+            <button class="user-account__form-btn">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.48223 0.524843L7.51777 0.524843L7.51777 5.97662L13 5.97662L13 7.04261L7.51777 7.04261L7.51777 12.4944L6.48223 12.4944L6.48223 7.04261L1 7.04261L1 5.97662L6.48223 5.97662L6.48223 0.524843Z"
+                  fill="#232F3F" stroke="#232F3F" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div>
+                <span>Добавьте фотографии</span>
+                <p>до 10 изображений в формате PNG, JPEG</p>
+              </div>
+            </button>
+
+            <button class="user-account__form-btn-send" type="submit">Отправить вопрос</button>
+
+            <p class="user-account__form-privacy">
+              Нажимая кнопку «Отправить», вы соглашаетесь с 
+              <a href="#">политикой конфиденциальности сайта</a>
+            </p>
+          </form>
+
+          <div class="call-back">
+
+            <div class="call-back-left">
+              <h3>Мы всегда на связи! Закажите обратный звонок</h3>
+              <p>Оставьте заявку и наш специалист перезвонит в ближайшее время</p>
+            </div>
+
+            <div class="call-back-rigth">
+              <button>Заказать звонок</button>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('./include/discount.html')
+</main>
+
+@@include('./include/footer.html')
