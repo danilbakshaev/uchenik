@@ -13339,9 +13339,10 @@ img.mfp-img {
   font-size: 36px;
   line-height: 140%;
   color: #0e1a29;
+  margin-bottom: 40px;
 }
 
-.user-account__active-orders {
+.order-active__items {
   padding-top: 25px;
   padding-left: 23px;
   padding-right: 26px;
@@ -13350,7 +13351,7 @@ img.mfp-img {
   margin-bottom: 40px;
 }
 
-.user-account__title-active {
+.order-active__title {
   margin: 0;
   font-style: normal;
   font-weight: bold;
@@ -13360,7 +13361,8 @@ img.mfp-img {
   margin-bottom: 20px;
 }
 
-.user-account__order {
+.order-active__item {
+
 }
 
 .user-account__top {
@@ -13465,6 +13467,24 @@ img.mfp-img {
 }
 
 .user-account__completed-orders {
+  position: relative;
   padding: 25px 26px 30px 23px;
   background: rgb(246, 246, 246);
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    max-height: 2px;
+    width: calc(100% - 49px);
+    border: 1px solid #ffffff;
+  }
+}
+
+.user-account__completed-orders:last-child::before {
+  content: none;
+  display: none;
+}
+
+.order-active__items--last {
+  margin-top: 20px;
 }
