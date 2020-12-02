@@ -13400,7 +13400,7 @@ img.mfp-img {
   margin-bottom: 40px;
 }
 
-.order-active__title {
+.order__title {
   margin: 0;
   font-style: normal;
   font-weight: bold;
@@ -13573,3 +13573,98 @@ img.mfp-img {
   margin-top: 20px;
 }
 
+// user-account-orders-inside.html
+
+.order-list {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #0066C0;
+  margin-bottom: 20px;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.total {
+  display: flex;
+  background: #f6f6f6;
+  padding: 25px 26px 30px 23px;
+}
+
+.total__left {
+  margin-right: 130px;
+}
+
+.total__sum {
+  display: flex;
+  align-items: baseline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 10px;
+
+  div {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+.total__card,
+.total__count,
+.total__delivery {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(14, 26, 41, 0.55);
+  margin: 0;
+}
+
+.total__card {
+  margin-bottom: 22px;
+}
+
+.total__count {
+  margin-bottom: 10px;
+}
+
+.total__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0E1A29;
+  margin-bottom: 10px;
+}
+
+.total__adress {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px; 
+  color: #0E1A29;
+  margin-bottom: 24px;
+}
+
+.total__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #0066C0;
+}
+
+.user-account--inside {
+  margin-bottom: 0;
+}
