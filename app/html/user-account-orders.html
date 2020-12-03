@@ -3,7 +3,158 @@
 @@include('./include/header-white.html')
 
 <main>
-	Я делаю это
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs-inner">
+				<button class="breadcrumbs-btn">Назад</button>
+				<a class="breadcrumbs-link" href="#">Главная</a>
+				<a class="breadcrumbs-link" href="#">Кабинет пользователя</a>
+				<a class="breadcrumbs-link breadcrumbs-link--active" href="#">Мои заказы</a>
+			</div>
+		</div>
+	</div>
+
+	<section class="user-account">
+		<div class="container">
+			<div class="user-account__inner">
+				<div class="user-account__left">
+					<div class="user-account__profile">
+						<img class="user-account__img" src="/img/user-account-avatar.png" alt="Константин Константинопольский">
+						<span class="user-account__name">Константин Константинопольский</span>
+						<a class="user-account__profile-edit" href="#">Изменить профиль</a>
+					</div>
+					<div class="user-account__profile-link">
+						<a class="user-account__link" href="#">Личная информация</a>
+						<a class="user-account__link" href="#">Избраное</a>
+						<a class="user-account__link user-account__link--active" href="#">Мои заказы</a>
+						<a class="user-account__link" href="#">Мои курсы</a>
+						<a class="user-account__link" href="#">Мои отзывы</a>
+						<a class="user-account__link" href="#">Служба поддержки</a>
+					</div>
+				</div>
+				<div class="user-account__rigth">
+					<h1 class="user-account__title">Мои заказы</h1>
+
+					<!-- Активные заказы -->
+					<div class="order-active">
+
+						<h2 class="order-active__title">Активные заказы</h2>
+						<div class="order-active__items">
+							<div class="order-active__item">
+								<div class="user-account__top">
+									<div class="user-account__info">
+										<div>
+											<div class="user-account__top-row">
+												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<span class="user-account__status">У курьера</span>
+											</div>
+											<div class="user-account__order-date">Будет доставлено вовремя: 7 мая c 09:00 до 20:00</div>
+										</div>
+									</div>
+									<div class="user-account__wrapper-top">
+										<span class="user-account__count user-account__count--top">16 000 ₽</span>
+										<span class="user-account__card-online">Оплачено картой онлайн</span>
+									</div>
+								</div>
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Выполненые заказы -->
+					<div class="order-done">
+						<h2 class="order__title">Выполненые заказы</h2>
+						
+						<div class="user-account__completed-orders">
+							<div class="user-account__order">
+								<div class="user-account__top">
+									<div class="user-account__info">
+										<div>
+											<div class="user-account__top-row">
+												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<span class="user-account__status user-account__status--green">Выполнен</span>
+											</div>
+											<div class="user-account__order-date">Доставлено: 20 апреля</div>
+										</div>
+									</div>
+									<div class="user-account__wrapper-top">
+										<span class="user-account__count user-account__count--top">48 000 ₽</span>
+										<span class="user-account__card-online">Оплачено картой онлайн</span>
+									</div>
+								</div>
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-account__completed-orders">
+							<div class="user-account__order">
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-account__completed-orders">
+							<div class="user-account__order">
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="order-active__items order-active__items--last">
+							<div class="user-account__order">
+								<div class="user-account__top">
+									<div class="user-account__info">
+										<div>
+											<div class="user-account__top-row">
+												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<span class="user-account__status user-account__status--green">Выполнен</span>
+											</div>
+											<div class="user-account__order-date">Доставлено: 20 апреля</div>
+										</div>
+									</div>
+									<div class="user-account__wrapper-top">
+										<span class="user-account__count user-account__count--top">16 000 ₽</span>
+										<span class="user-account__card-online">Оплачено картой онлайн</span>
+									</div>
+								</div>
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	@@include('./include/discount.html')
 </main>
