@@ -1761,6 +1761,7 @@ $(function () {
     if (document.querySelector('.openReg')) {
       for (let i = 0; i < openReg.length; i++) {
         openReg[i].addEventListener('click', () => {
+          body.style.maxHeight = "100vh";
           closecallbackPopup();
           openBaseModal();
           regModal.classList.remove('hidden');
@@ -1773,6 +1774,7 @@ $(function () {
 
     function closeRegPopup() {
       if (!regModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
         regModal.classList.add('animation');
         regModal.addEventListener('transitionend', function (e) {
           regModal.classList.add('hidden');
@@ -1790,6 +1792,7 @@ $(function () {
     loginModal = document.querySelector('.modal-wrapper__callback--login');
 
     openLogin.addEventListener('click', function () {
+      body.style.maxHeight = "100vh";
       closecallbackPopup();
       closeRegPopup();
       openBaseModal();
@@ -1801,6 +1804,7 @@ $(function () {
 
     function closeLoginPopup() {
       if (!loginModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
         loginModal.classList.add('animation');
         loginModal.addEventListener('transitionend', function (e) {
           loginModal.classList.add('hidden');
@@ -1820,6 +1824,7 @@ $(function () {
     if (document.querySelector('.openRecovery')) {
       for (let i = 0; i < openRecovery.length; i++) {
         openRecovery[i].addEventListener('click', () => {
+          body.style.maxHeight = "100vh";
           closecallbackPopup();
           openBaseModal();
           recoveryModal.classList.remove('hidden');
@@ -1832,9 +1837,125 @@ $(function () {
 
     function closeLoginPopup() {
       if (!recoveryModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
         recoveryModal.classList.add('animation');
         recoveryModal.addEventListener('transitionend', function (e) {
           recoveryModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
+  if (document.querySelector('.openSuccess')) {
+    openSuccess = document.querySelector('.openSuccess');
+    successModal = document.querySelector('.modal-wrapper__callback--success');
+
+    openSuccess.addEventListener('click', function () {
+      openBaseModal();
+      body.style.maxHeight = "100vh";
+      successModal.classList.remove('hidden');
+      setTimeout(function () {
+        successModal.classList.remove('animation');
+      }, 20);
+    })
+
+
+    function closeSuccessModal() {
+      if (!successModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
+        successModal.classList.add('animation');
+        successModal.addEventListener('transitionend', function (e) {
+          successModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
+  if (document.querySelector('.openOrderInOne')) {
+    openOrderInOne = document.querySelector('.openOrderInOne');
+    orderInOneModal = document.querySelector('.modal-wrapper__orderinone');
+
+    openOrderInOne.addEventListener('click', function () {
+      openBaseModal();
+      body.style.maxHeight = "100vh";
+      orderInOneModal.classList.remove('hidden');
+      setTimeout(function () {
+        orderInOneModal.classList.remove('animation');
+      }, 20);
+    })
+
+
+    function closeOrderInOneModal() {
+      if (!orderInOneModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
+        orderInOneModal.classList.add('animation');
+        orderInOneModal.addEventListener('transitionend', function (e) {
+          orderInOneModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+
+  if (document.querySelector('.openBasket')) {
+    openBasket = document.querySelector('.openBasket');
+    basketModal = document.querySelector('.modal-wrapper--basket');
+
+    openBasket.addEventListener('click', function () {
+      openBaseModal();
+      body.style.maxHeight = "100vh";
+      basketModal.classList.remove('hidden');
+      setTimeout(function () {
+        basketModal.classList.remove('animation');
+      }, 20);
+    })
+
+
+    function closeBasketModal() {
+      if (!basketModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
+        basketModal.classList.add('animation');
+        basketModal.addEventListener('transitionend', function (e) {
+          basketModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }
+  if (document.querySelector('.openCredit')) {
+    openCredit = document.querySelector('.openCredit');
+     creditModal = document.querySelector('.modal-wrapper--credit');
+
+    openCredit.addEventListener('click', function () {
+      openBaseModal();
+      body.style.maxHeight = "100vh";
+      creditModal.classList.remove('hidden');
+      setTimeout(function () {
+        creditModal.classList.remove('animation');
+      }, 20);
+    })
+
+
+    function closeCreditModal() {
+      if (!creditModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
+        creditModal.classList.add('animation');
+        creditModal.addEventListener('transitionend', function (e) {
+          creditModal.classList.add('hidden');
         }, {
           capture: false,
           once: true,
@@ -1939,6 +2060,7 @@ $(function () {
     if (document.querySelector('.openCity')) {
       for (let i = 0; i < openCity.length; i++) {
         openCity[i].addEventListener('click', () => {
+          body.style.maxHeight = "100vh";
           openBaseModal();
           cityModal.classList.remove('hidden');
           setTimeout(function () {
@@ -1950,6 +2072,7 @@ $(function () {
 
     function closeCityModal() {
       if (!cityModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
         cityModal.classList.add('animation');
         cityModal.addEventListener('transitionend', function (e) {
           cityModal.classList.add('hidden');
@@ -1967,6 +2090,7 @@ $(function () {
     questionModal = document.querySelector('.modal-wrapper__question');
 
     openQuestion.addEventListener('click', function () {
+      body.style.maxHeight = "100vh";
       openBaseModal();
       questionModal.classList.remove('hidden');
       setTimeout(function () {
@@ -1976,9 +2100,36 @@ $(function () {
 
     function closeQuestionModal() {
       if (!questionModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
         questionModal.classList.add('animation');
         questionModal.addEventListener('transitionend', function (e) {
           questionModal.classList.add('hidden');
+        }, {
+          capture: false,
+          once: true,
+          passive: false
+        });
+      }
+    };
+  }if (document.querySelector('.openReview')) {
+    openReview = document.querySelector('.openReview');
+    reviewModal = document.querySelector('.modal-wrapper__review');
+
+    openReview.addEventListener('click', function () {
+      body.style.maxHeight = "100vh";
+      openBaseModal();
+      reviewModal.classList.remove('hidden');
+      setTimeout(function () {
+        reviewModal.classList.remove('animation');
+      }, 20);
+    })
+
+    function closeReviewModal() {
+      if (!reviewModal.classList.contains('hidden')) {
+        body.style.maxHeight = "100%";
+        reviewModal.classList.add('animation');
+        reviewModal.addEventListener('transitionend', function (e) {
+          reviewModal.classList.add('hidden');
         }, {
           capture: false,
           once: true,
@@ -1997,6 +2148,21 @@ $(function () {
     }
     if (document.querySelector('.openLogin')) {
       closeLoginPopup();
+    }
+    if (document.querySelector('.openSuccess')) {
+      closeSuccessModal();
+    }
+    if (document.querySelector('.openOrderInOne')) {
+      closeOrderInOneModal();
+    }
+    if (document.querySelector('.openBasket')) {
+      closeBasketModal();
+    }
+    if (document.querySelector('.openCredit')) {
+      closeCreditModal();
+    }
+    if (document.querySelector('.openReview')) {
+      closeReviewModal();
     }
     if (document.querySelector('.openMenu')) {
       closeleftMenuModal();
