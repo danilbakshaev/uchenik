@@ -5704,7 +5704,7 @@ transform: rotate(-180deg);
 }
 
 .sale__item--digital {
-  width: calc(31.33% - 20px);
+  width: calc(30.33% - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -13385,6 +13385,66 @@ img.mfp-img {
 
 // user-account-orders.html
 
+.user-account__title-top{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  color: #0E1A29;  
+  margin-top: 0;
+  margin-top: 62px;
+}
+
+.user-account__title-top--favorites{
+  margin-top: 20px;
+}
+
+.user-account__box{
+  display: flex;
+  padding: 20px;
+  background: #F6F6F6;
+  margin-bottom: 20px;
+}
+
+.user-account__left-item{
+  width: 10%;
+  margin-right: 25px;
+}
+
+.user-account__item-title{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.user-account__data{
+  font-size: 12px;
+  line-height: 150%;
+  color: #B7B9BE;
+  margin-left: 20px;
+}
+
+.user-account__svg-wrap{
+  margin-bottom: 25px;
+}
+
+.user-account__text{
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(14, 26, 41, 0.8);
+  margin-top: 0;
+}
+
+.reviews-61__photos--user-account{
+  margin-bottom: 0;
+}
+
+.user-account__right-item{
+  width: 85%;
+}
+
 .user-account {
   margin-bottom: 95px;
 }
@@ -13492,7 +13552,7 @@ img.mfp-img {
 
 .arrow-wrap--product-appraisal {
   position: absolute;
-  top: calc(50% - 30px);
+  top: 50%;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -13601,6 +13661,22 @@ img.mfp-img {
   margin-right: 35px;
 }
 
+.user-account__mobile-link{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  align-items: center;
+  color: #232F3F;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  display: none;
+}
+
+.user-account__mobile-link:hover{
+  opacity: 0.7;
+}
+
 // user-account__wrapper
 // user-account__title
 // user-account__count
@@ -13624,6 +13700,8 @@ img.mfp-img {
     position: relative;
     width: auto;
     display: initial;
+    display: flex;
+    margin-left: 10px;
   }
 
   .section-title--product-appraisal {
@@ -13633,6 +13711,44 @@ img.mfp-img {
 
   .product-appraisal .slick-list {
     overflow: unset;
+  }
+
+  .user-account__left{
+    display: none;
+  }
+
+  .user-account__left-item{
+    display: none;
+  }
+
+  .product-appraisal__btn-slide-inner{
+    margin-top: 20px;
+  }
+
+  .user-account__title-top{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .user-account__svg-wrap{
+    margin-bottom: 10px;
+  }
+
+  .user-account--reviews{
+    margin-bottom: 0;
+  }
+
+  .section-none{
+    display: none;
+  }
+
+  .user-account__box:last-child{
+    margin-bottom: 56px;
+  }
+
+  .user-account__mobile-link{
+    display: flex;
   }
 }
 
