@@ -1,0 +1,160 @@
+@@include('./include/head.html')
+
+@@include('./include/header-white.html')
+
+<main>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs-inner">
+        <button class="breadcrumbs-btn">Назад</button>
+        <a class="breadcrumbs-link" href="#">Главная</a>
+        <a class="breadcrumbs-link" href="#">Кабинет пользователя</a>
+        <a class="breadcrumbs-link breadcrumbs-link--active" href="#">Мои заказы</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="user-account">
+    <div class="container">
+      <div class="user-account__inner">
+        <div class="user-account__left">
+          <div class="user-account__profile">
+            <img class="user-account__img" src="/img/user-account-avatar.png" alt="Константин Константинопольский">
+            <span class="user-account__name">Константин Константинопольский</span>
+            <a class="user-account__profile-edit" href="#">Изменить профиль</a>
+          </div>
+          <div class="user-account__profile-link">
+            <a class="user-account__link" href="#">Личная информация</a>
+            <a class="user-account__link" href="#">Избраное</a>
+            <a class="user-account__link" href="#">Мои заказы</a>
+            <a class="user-account__link user-account__link--active" href="#">Мои курсы</a>
+            <a class="user-account__link" href="#">Мои отзывы</a>
+            <a class="user-account__link" href="#">Служба поддержки</a>
+          </div>
+        </div>
+
+        <div class="user-account__rigth">
+          <h1 class="user-account__title">Мои курсы</h1>
+          
+
+          <div class="courses">
+            <h2 class="courses__title">Активные курсы</h2>
+            <div class="courses__items">
+              <a href="#" class="courses__item">
+                <img class="courses__img" src="/img/active-courses.jpg" alt="Синтезаторы серии Yamaha PSR-S">
+                <button class="courses__btn">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.2858 1.34791C19.2406 0.484847 17.8996 0.00950673 16.5096 0.00950673C14.9021 0.00950673 13.3469 0.648775 12.2433 1.7639C11.9859 2.02289 11.7505 2.30835 11.5321 2.62465C10.4041 0.988707 8.58192 0 6.61838 0C6.25866 0 5.89381 0.0331454 5.53383 0.0984083C3.67564 0.436799 2.21519 1.45891 1.19308 3.13545C-0.270198 5.53887 -0.386078 7.75832 0.83773 9.92073C1.49421 11.079 2.34828 12.2121 3.4503 13.3843C5.47782 15.5398 7.87739 17.5848 11.0044 19.8219C11.1709 19.9404 11.3481 20 11.5303 20C11.8129 20 12.0041 19.8569 12.1131 19.7747C14.8921 17.7919 17.1725 15.8815 19.0857 13.9323C20.1617 12.8357 21.3806 11.4883 22.2717 9.81282C22.6456 9.10726 23.0726 8.16018 23.0477 7.09028C22.9917 4.74852 22.0628 2.81633 20.2858 1.34791Z"
+                      fill="#E94A27" />
+                  </svg>
+                </button>
+                <div class="courses__wrap">
+                  <div class="courses__row">
+                    <h3 class="courses__sub-title">Синтезаторы серии Yamaha PSR-S</h3>
+                  </div>
+                  <div class="courses__row">
+                    <p class="courses__description">Обучающий курс для начинающих исполнителей на PSR S серии</p>
+                  </div>
+                  <div class="courses__row">
+                    <span class="courses__count">7/95 уроков</span>
+                    <div class="courses__line">
+                      <div class="courses__line-progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="#" class="courses__item">
+                <img class="courses__img" src="/img/active-courses2.jpg" alt="Клавиши Casio">
+                <button class="courses__btn">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.2858 1.34791C19.2406 0.484847 17.8996 0.00950673 16.5096 0.00950673C14.9021 0.00950673 13.3469 0.648775 12.2433 1.7639C11.9859 2.02289 11.7505 2.30835 11.5321 2.62465C10.4041 0.988707 8.58192 0 6.61838 0C6.25866 0 5.89381 0.0331454 5.53383 0.0984083C3.67564 0.436799 2.21519 1.45891 1.19308 3.13545C-0.270198 5.53887 -0.386078 7.75832 0.83773 9.92073C1.49421 11.079 2.34828 12.2121 3.4503 13.3843C5.47782 15.5398 7.87739 17.5848 11.0044 19.8219C11.1709 19.9404 11.3481 20 11.5303 20C11.8129 20 12.0041 19.8569 12.1131 19.7747C14.8921 17.7919 17.1725 15.8815 19.0857 13.9323C20.1617 12.8357 21.3806 11.4883 22.2717 9.81282C22.6456 9.10726 23.0726 8.16018 23.0477 7.09028C22.9917 4.74852 22.0628 2.81633 20.2858 1.34791Z"
+                      fill="#E94A27" />
+                  </svg>
+                </button>
+                <div class="courses__wrap courses__wrap--yellow">
+                  <div class="courses__row">
+                    <h3 class="courses__sub-title">Знакомство с клавишами от Casio</h3>
+                  </div>
+                  <div class="courses__row">
+                    <p class="courses__description">Курс предназначен для начинающих. Для тех, кто хочет получить
+                      начальну...</p>
+                  </div>
+                  <div class="courses__row">
+                    <span class="courses__count">5/10 уроков</span>
+                    <div class="courses__line">
+                      <div class="courses__line-progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+  
+              <a href="#" class="courses__item">
+                <img class="courses__img" src="/img/active-courses3.jpg" alt="Синтезатор">
+                <button class="courses__btn">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.2858 1.34791C19.2406 0.484847 17.8996 0.00950673 16.5096 0.00950673C14.9021 0.00950673 13.3469 0.648775 12.2433 1.7639C11.9859 2.02289 11.7505 2.30835 11.5321 2.62465C10.4041 0.988707 8.58192 0 6.61838 0C6.25866 0 5.89381 0.0331454 5.53383 0.0984083C3.67564 0.436799 2.21519 1.45891 1.19308 3.13545C-0.270198 5.53887 -0.386078 7.75832 0.83773 9.92073C1.49421 11.079 2.34828 12.2121 3.4503 13.3843C5.47782 15.5398 7.87739 17.5848 11.0044 19.8219C11.1709 19.9404 11.3481 20 11.5303 20C11.8129 20 12.0041 19.8569 12.1131 19.7747C14.8921 17.7919 17.1725 15.8815 19.0857 13.9323C20.1617 12.8357 21.3806 11.4883 22.2717 9.81282C22.6456 9.10726 23.0726 8.16018 23.0477 7.09028C22.9917 4.74852 22.0628 2.81633 20.2858 1.34791Z"
+                      fill="#E94A27" />
+                  </svg>
+                </button>
+                <div class="courses__wrap courses__wrap--blue">
+                  <div class="courses__row">
+                    <h3 class="courses__sub-title">Основы музыки</h3>
+                  </div>
+                  <div class="courses__row">
+                    <p class="courses__description">Как проходить этот курс: Делайте каждое упражнение поочередно,
+                      не
+                      ...</p>
+                  </div>
+                  <div class="courses__row">
+                    <span class="courses__count">5/10 уроков</span>
+                    <div class="courses__line">
+                      <div class="courses__line-progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <h2 class="courses__title">Завершенные курсы</h2>
+            <div class="courses__items">
+              <a href="#" class="courses__item">
+                <img class="courses__img" src="/img/active-courses4.jpg" alt="Синтезаторы серии Yamaha PSR-S">
+                <button class="courses__btn">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.2858 1.34791C19.2406 0.484847 17.8996 0.00950673 16.5096 0.00950673C14.9021 0.00950673 13.3469 0.648775 12.2433 1.7639C11.9859 2.02289 11.7505 2.30835 11.5321 2.62465C10.4041 0.988707 8.58192 0 6.61838 0C6.25866 0 5.89381 0.0331454 5.53383 0.0984083C3.67564 0.436799 2.21519 1.45891 1.19308 3.13545C-0.270198 5.53887 -0.386078 7.75832 0.83773 9.92073C1.49421 11.079 2.34828 12.2121 3.4503 13.3843C5.47782 15.5398 7.87739 17.5848 11.0044 19.8219C11.1709 19.9404 11.3481 20 11.5303 20C11.8129 20 12.0041 19.8569 12.1131 19.7747C14.8921 17.7919 17.1725 15.8815 19.0857 13.9323C20.1617 12.8357 21.3806 11.4883 22.2717 9.81282C22.6456 9.10726 23.0726 8.16018 23.0477 7.09028C22.9917 4.74852 22.0628 2.81633 20.2858 1.34791Z"
+                      fill="#E94A27" />
+                  </svg>
+                </button>
+                <div class="courses__wrap courses__wrap--light-blue">
+                  <div class="courses__row">
+                    <h3 class="courses__sub-title">Курс Сергея Большакова по игре на гитаре</h3>
+                  </div>
+                  <div class="courses__row">
+                    <p class="courses__description">Изучив этот авторский курс вы научитесь основным азам игры на ...</p>
+                  </div>
+                  <div class="courses__row">
+                    <span class="courses__count">15/15 уроков</span>
+                    <div class="courses__line">
+                      <div class="courses__line-progress courses__line-progress--green"></div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('./include/discount.html')
+</main>
+
+@@include('./include/footer.html')
