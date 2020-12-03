@@ -14686,3 +14686,132 @@ img.mfp-img {
     color: #fff;
   }
 }
+
+
+// user-account-courses.html
+.courses__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -22px;
+  margin-bottom: 55px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.courses__item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 22px);
+  margin-right: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s linear;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.courses__img {
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.courses__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  transition: all .2s linear;
+  svg {
+    min-width: 24px;
+    min-height: 20px;
+  }
+}
+
+.courses__btn:hover  {
+  transform: scale(1.20);
+}
+
+.courses__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 203px 20px 29px 20px;
+  position: relative;
+  flex-grow: 1;
+  background: linear-gradient(360deg, #CFC6D8 53.5%, rgba(255, 255, 255, 0) 69.44%);
+}
+
+.courses__wrap--yellow {
+  background: linear-gradient(360deg, #FFEF88 56.5%, rgba(255, 239, 136, 0) 69.44%);
+}
+
+.courses__wrap--blue {
+  background: linear-gradient(360deg, #BBE4FF 52.5%, rgba(187, 228, 255, 0) 69.44%);
+}
+
+.courses__wrap--light-blue {
+  background: linear-gradient(360deg, #B0C2E7 53.5%, rgba(255, 255, 255, 0) 69.44%);
+}
+
+.courses__sub-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 11px;
+}
+
+.courses__description {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(14, 26, 41, 0.7);
+  margin-bottom: 30px;
+}
+
+.courses__count {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #0E1A29;
+  margin-bottom: 11px;
+}
+
+.courses__line {
+  background: #F6F6F6;
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+}
+
+.courses__line-progress {
+  background: #0066C0;
+  border-radius: 5px;
+  width: 35%;
+  height: 100%;
+}
+
+.courses__line-progress--green {
+  background: #18C166;
+  width: 100%;
+}
