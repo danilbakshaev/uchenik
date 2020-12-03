@@ -13450,7 +13450,7 @@ img.mfp-img {
 }
 
 .modal-wrapper__basket {
-  max-width: 830px;
+  max-width: 760px;
   height: 430px;
   margin: 1.75rem auto;
   background-color: #F6F6F6;
@@ -13624,9 +13624,7 @@ img.mfp-img {
 }
 .modal-wrapper__review-form__photo svg {
   cursor: pointer;
-}
-.modal-wrapper__review-form__text {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .modal-wrapper__review-form__text-top {
   font-size: 14px;
@@ -13694,8 +13692,32 @@ img.mfp-img {
   .modal-wrapper__orderinone .sale__item-title-text {
     font-size: 20px;
   }
+  .modal-wrapper__callback,
+  .modal-wrapper__review,
+  .modal-wrapper__orderinone {
+    margin-bottom: calc(1.75rem + 50px);
+  }
 } 
 @media screen and (max-width: 1080px) {
+  .modal-wrapper__question-body {
+    padding: 40px 30px;
+  }
+  .modal-wrapper__review {
+    max-width: 100%;
+    width: 95%;
+    height: auto;
+    margin: 1.75rem auto;
+    margin-bottom: calc(1.75rem + 50px);
+  }
+  .modal-wrapper__review-form textarea {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-wrapper__review {
+    padding: 40px 16px;
+  }
   .modal-wrapper__orderinone {
     max-width: 100%;
     width: 100%;
@@ -13710,21 +13732,6 @@ img.mfp-img {
     margin: 1.75rem auto;
     padding: 40px 16px;
   }
-  .modal-wrapper__question-body {
-    padding: 40px 30px;
-  }
-  .modal-wrapper__review {
-    max-width: 100%;
-    width: 95%;
-    height: auto;
-    margin: 1.75rem auto;
-    padding: 40px 16px;
-  }
-  .modal-wrapper__review-form textarea {
-    width: calc(100% - 20px);
-  }
-}
-@media screen and (max-width: 768px) {
   .wrapper-final__text--desktop {
     display: none;
   }
