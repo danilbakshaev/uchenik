@@ -15170,6 +15170,9 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 1240px) {
+  .user-account--courses {
+    margin-bottom: 28px;
+  }
   .courses__title {
     font-size: 20px;
   }
@@ -15197,4 +15200,251 @@ img.mfp-img {
     margin-bottom: 22px;
     margin-right: 0;
   }
+}
+
+// Mobile profile (authorized)
+.profile-authorized {
+  margin-bottom: 50px;
+}
+
+.profile-authorized__top {
+  background: #0066C0;
+}
+
+.profile-authorized__top-inner {
+  display: flex;
+  position: relative;
+  padding: 15px 0;
+}
+
+.profile-authorized__img {
+  width: 80px;
+  height: 80px;
+}
+
+.profile-authorized__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.profile-authorized__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.profile-authorized__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.profile-authorized__arrow {
+  position: absolute;
+  top: calc(50% - 8.5px);
+  right: 0;
+}
+
+.profile-authorized__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  border: 1px solid rgba(35, 47, 63, 0.05);
+}
+
+.profile-authorized__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0E1A29;
+  text-decoration: none;
+}
+
+.profile-authorized__link--bold {
+  display: flex;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0E1A29;
+  svg {
+    margin-right: 14px;
+  }
+}
+
+.profile-authorized__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.profile-authorized__phone {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  color: #0E1A29;
+  margin-bottom: 3px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.profile-authorized__socials {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  svg {
+    margin-right: 15px;
+  }
+}
+
+// mobile-user-account.html
+.mobile-account__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0E1A29;
+  margin-bottom: 20px;
+}
+
+.mobile-account__item {
+  background: #F6F6F6;
+  padding: 20px 13px 30px;
+  margin-bottom: 20px;
+}
+
+.mobile-account__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-account__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mobile-account__sup {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0E1A29;
+  margin-bottom: 10px;
+}
+
+.mobile-account__ipt {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #CACDD1;
+}
+
+.mobile-account__wrap-btn {
+  display: flex;
+  margin-right: -10px;
+}
+
+.mobile-account__btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #CACDD1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.mobile-account__btn--active {
+  border: 1px solid #0066C0;
+  color: #0066C0;
+}
+
+.mobile-account__wrapper--row {
+  display: flex;
+  flex-direction: row;
+  margin-right: -10px;
+  margin-bottom: 0;
+}
+
+.mobile-account__width {
+  display: flex;
+  flex-direction: column;
+  input {
+    margin-right: 10px;
+    width: calc(100% - 10px);
+  }
+}
+
+.save-card {
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 5px;
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.save-card__icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 0;
+}
+
+.add-card {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0E1A29;
+  background-color: transparent;
+  width: 132px;
+  height: 40px;
+  margin-bottom: 20px;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.save-changes {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0066C0;
+  width: 100%;
+  height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
 }

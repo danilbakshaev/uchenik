@@ -1,0 +1,101 @@
+@@include('./include/head.html')
+
+@@include('./include/header-white.html')
+
+<main>
+
+  <section class="mobile-account">
+    <a class="user-account__mobile-link user-account__mobile-link--order container-true" href="#">
+      <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 14L2 7.66667L9 1.33333" stroke="#C1C4C9" stroke-width="1.5"></path>
+      </svg>&nbsp;
+      Профиль
+    </a>
+    <h1 class="user-account__title container-true">Личная информация</h1>
+    <div class="mobile-account__item">
+      <h2 class="mobile-account__title">Учётные данные</h2>
+      <form class="mobile-account__form">
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Фамиля Имя</span>
+          <input class="mobile-account__ipt" type="text" placeholder="Константин Константинопольский">
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Дата рождения</span>
+          <input class="mobile-account__ipt" type="text" placeholder="13 августа 1987">
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Пол</span>
+          <div class="mobile-account__wrap-btn">
+            <button class="mobile-account__btn mobile-account__btn--active">Мужской</button>
+            <button class="mobile-account__btn">Женский</button>
+          </div>
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Телефон</span>
+          <input class="mobile-account__ipt" type="tel" placeholder="+7 (999) 999 99 99">
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Эл. почта</span>
+          <input class="mobile-account__ipt" type="email" placeholder="example@gmail.com">
+        </div>
+      </form>
+    </div>
+    <div class="mobile-account__item">
+      <h2 class="mobile-account__title">Адрес доставки</h2>
+      <form class="mobile-account__form">
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Страна</span>
+          <input class="mobile-account__ipt" type="text" placeholder="Россия">
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Город</span>
+          <input class="mobile-account__ipt" type="text" placeholder="Санкт-Петербург">
+        </div>
+        <div class="mobile-account__wrapper">
+          <span class="mobile-account__sup">Улица</span>
+          <input class="mobile-account__ipt" type="text" placeholder="Белоостровская 45 К2">
+        </div>
+        <div class="mobile-account__wrapper mobile-account__wrapper--row">
+          <div class="mobile-account__width">
+            <span class="mobile-account__sup">Квартира/Офис</span>
+            <input class="mobile-account__ipt" type="text" placeholder="Мужской">
+          </div>
+          <div class="mobile-account__width">
+            <span class="mobile-account__sup">Индекс</span>
+            <input class="mobile-account__ipt" type="text" placeholder="1477867">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="mobile-account__item">
+      <h2 class="mobile-account__title">Сохраненные карты</h2>
+      <button class="save-card">
+        <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="15" height="15" rx="7.5" fill="#EB001B" />
+          <rect opacity="0.6" x="10" width="15" height="15" rx="7.5" fill="#F79E1B" />
+        </svg>
+        MasterCard **6565
+        <svg class="save-card__icon" width="23" height="24" viewBox="0 0 23 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.4253 6.26598L17.3406 7.18127L12.5219 12L17.3675 16.8457L16.4253 17.7879L11.5797 12.9422L6.76095 17.7609L5.84566 16.8457L10.6644 12.0269L5.81873 7.18127L6.76095 6.23905L11.6066 11.0847L16.4253 6.26598Z"
+            fill="#C1C4C9" stroke="#C1C4C9" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="add-card">
+        <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.48223 0.524599L7.51777 0.524599L7.51777 5.97637L13 5.97637L13 7.04236L7.51777 7.04236L7.51777 12.4941L6.48223 12.4941L6.48223 7.04236L1 7.04237L1 5.97638L6.48223 5.97637L6.48223 0.524599Z"
+            fill="#0E1A29" stroke="#0E1A29" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Добавить карту
+      </button>
+      <button class="save-changes">Сохранить изменения</button>
+    </div>
+  </section>
+
+</main>
+
+<div class="section-none">
+  @@include('./include/footer.html')
+</div>
