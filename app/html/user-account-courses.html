@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <section class="user-account">
+  <section class="user-account user-account--courses">
     <div class="container">
       <div class="user-account__inner">
         <div class="user-account__left">
@@ -35,6 +35,12 @@
         </div>
 
         <div class="user-account__rigth">
+          <a class="user-account__mobile-link user-account__mobile-link--order" href="#">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 14L2 7.66667L9 1.33333" stroke="#C1C4C9" stroke-width="1.5"></path>
+            </svg>&nbsp;
+            Профиль
+          </a>
           <h1 class="user-account__title">Мои курсы</h1>
           
 
@@ -154,7 +160,12 @@
     </div>
   </section>
 
-  @@include('./include/discount.html')
+  <div class="section-none">
+    @@include('./include/discount.html')
+  </div>
+
 </main>
 
-@@include('./include/footer.html')
+<div class="section-none">
+  @@include('./include/footer.html')
+</div>
