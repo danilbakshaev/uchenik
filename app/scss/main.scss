@@ -14390,7 +14390,10 @@ img.mfp-img {
   }
 
   .section-none{
-    display: none;
+    // display: none;
+    max-height: 0;
+    width: 0;
+    overflow: hidden;
   }
 
   .user-account__box:last-child{
