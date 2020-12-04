@@ -15,8 +15,14 @@
 		</div>
 	</div>
 
-	<section class="user-account">
-		<div class="container">
+	<section class="user-account user-account--orders">
+		<div class="container container--order-mobile">
+			<a class="user-account__mobile-link user-account__mobile-link--order container-true" href="#">
+				<svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M9 14L2 7.66667L9 1.33333" stroke="#C1C4C9" stroke-width="1.5"></path>
+				</svg>&nbsp;
+				Профиль
+			</a>
 			<div class="user-account__inner">
 				<div class="user-account__left">
 					<div class="user-account__profile">
@@ -34,12 +40,18 @@
 					</div>
 				</div>
 				<div class="user-account__rigth">
-					<h1 class="user-account__title">Мои заказы</h1>
+					<h1 class="user-account__title container-true">Мои заказы</h1>
+					<button class="all-orders container-true">
+						Все заказы
+						<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.666 1L7.33268 8L0.999349 1" stroke="#C1C4C9" stroke-width="1.5"/>
+						</svg>							
+					</button>
 
 					<!-- Активные заказы -->
 					<div class="order-active">
 
-						<h2 class="order-active__title">Активные заказы</h2>
+						<h2 class="order__title">Активные заказы</h2>
 						<div class="order-active__items">
 							<div class="order-active__item">
 								<div class="user-account__top">
@@ -47,6 +59,7 @@
 										<div>
 											<div class="user-account__top-row">
 												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<div class="user-account__order-date user-account__order-date--mobile">Будет доставлено вовремя: 7 мая c 09:00 до 20:00</div>
 												<span class="user-account__status">У курьера</span>
 											</div>
 											<div class="user-account__order-date">Будет доставлено вовремя: 7 мая c 09:00 до 20:00</div>
@@ -64,6 +77,10 @@
 										<span class="user-account__count">16 000 ₽</span>
 									</div>
 								</div>
+								<div class="user-account__wrapper-top user-account__wrapper-top--mobile">
+									<span class="user-account__count user-account__count--top">16 000 ₽</span>
+									<span class="user-account__card-online">Оплачено картой онлайн</span>
+								</div>
 							</div>
 						</div>
 
@@ -72,7 +89,7 @@
 					<!-- Выполненые заказы -->
 					<div class="order-done">
 						<h2 class="order__title">Выполненые заказы</h2>
-						
+
 						<div class="user-account__completed-orders">
 							<div class="user-account__order">
 								<div class="user-account__top">
@@ -80,6 +97,63 @@
 										<div>
 											<div class="user-account__top-row">
 												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<div class="user-account__order-date user-account__order-date--show">Доставлено: 20 апреля</div>
+												<span class="user-account__status user-account__status--green">Выполнен</span>
+											</div>
+											<div class="user-account__order-date">Доставлено: 20 апреля</div>
+										</div>
+									</div>
+									<div class="user-account__wrapper-top">
+										<span class="user-account__count user-account__count--top">48 000 ₽</span>
+										<span class="user-account__card-online">Оплачено картой онлайн</span>
+									</div>
+								</div>
+								<div class="user-account__product user-account__product--line">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-account__completed-orders">
+							<div class="user-account__order">
+								<div class="user-account__product user-account__product--line">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-account__completed-orders user-account__completed-orders--last">
+							<div class="user-account__order">
+								<div class="user-account__product">
+									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
+									<div class="user-account__wrapper">
+										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
+										<span class="user-account__count">16 000 ₽</span>
+									</div>
+								</div>
+								<div class="user-account__wrapper-top user-account__wrapper-top--mobile">
+									<span class="user-account__count user-account__count--top">40 000 ₽</span>
+									<span class="user-account__card-online">Оплачено картой онлайн</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user-account__completed-orders user-account__completed-orders--mobile">
+							<div class="user-account__order">
+								<div class="user-account__top">
+									<div class="user-account__info">
+										<div>
+											<div class="user-account__top-row">
+												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+												<div class="user-account__order-date user-account__order-date--show">Доставлено: 20 апреля</div>
 												<span class="user-account__status user-account__status--green">Выполнен</span>
 											</div>
 											<div class="user-account__order-date">Доставлено: 20 апреля</div>
@@ -97,34 +171,14 @@
 										<span class="user-account__count">16 000 ₽</span>
 									</div>
 								</div>
-							</div>
-						</div>
-
-						<div class="user-account__completed-orders">
-							<div class="user-account__order">
-								<div class="user-account__product">
-									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
-									<div class="user-account__wrapper">
-										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
-										<span class="user-account__count">16 000 ₽</span>
-									</div>
+								<div class="user-account__wrapper-top user-account__wrapper-top--mobile">
+									<span class="user-account__count user-account__count--top">16 000 ₽</span>
+									<span class="user-account__card-online">Оплачено картой онлайн</span>
 								</div>
 							</div>
 						</div>
 
-						<div class="user-account__completed-orders">
-							<div class="user-account__order">
-								<div class="user-account__product">
-									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
-									<div class="user-account__wrapper">
-										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
-										<span class="user-account__count">16 000 ₽</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="order-active__items order-active__items--last">
+						<div class="order-active__item order-active__item--last order-active__item--desktop">
 							<div class="user-account__order">
 								<div class="user-account__top">
 									<div class="user-account__info">
@@ -156,7 +210,11 @@
 		</div>
 	</section>
 
-	@@include('./include/discount.html')
+	<div class="section-none">
+		@@include('./include/discount.html')
+	</div>
 </main>
 
-@@include('./include/footer.html')
+<div class="section-none">
+	@@include('./include/footer.html')
+</div>
