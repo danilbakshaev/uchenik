@@ -14489,7 +14489,7 @@ img.mfp-img {
   .all-orders {
     display: flex;
   }
-  .container--order-mobile {
+  .container--mobile {
     max-width: 100%;
     margin: 0;
   }
@@ -14635,6 +14635,10 @@ img.mfp-img {
   text-decoration-line: underline;
   color: #0066c0;
   margin-bottom: 20px;
+  transition: all linear 0.2s;
+  &:hover {
+    color: #e97327;
+  }
 
   svg {
     margin-right: 10px;
@@ -14713,10 +14717,67 @@ img.mfp-img {
   line-height: 19px;
   text-decoration-line: underline;
   color: #0066c0;
+  transition: all linear 0.2s;
+  &:hover {
+    color: #e97327;
+  }
 }
 
 .user-account--inside {
   margin-bottom: 0;
+}
+
+.total__left--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .order-list {
+    color: #232F3F;
+    text-decoration: none;
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .order-list {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .total {
+    flex-direction: column-reverse;
+  }
+  .total__left {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .total__left--desktop {
+    display: none;
+  }
+  .total__left--mobile {
+    display: flex;
+  }
+  .total__link {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .total__sum {
+    margin-top: 23px;
+  }
+  .total__card {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .user-account__product--line::before {
+    display: none;
+  }
 }
 
 // user-account-support-service.html

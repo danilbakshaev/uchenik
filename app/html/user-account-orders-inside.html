@@ -17,7 +17,7 @@
 	</div>
 
 	<section class="user-account user-account--inside">
-		<div class="container">
+		<div class="container container--mobile">
 			<div class="user-account__inner">
 				<div class="user-account__left">
 					<div class="user-account__profile">
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<div class="user-account__rigth">
-					<a class="order-list" href="#">
+					<a class="order-list container-true" href="#">
             <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.63158 13L2 7L8.63158 1" stroke="#232F3F" stroke-opacity="0.5" stroke-width="2"/>
             </svg>              
@@ -50,14 +50,15 @@
 									<div class="user-account__info">
 										<div>
 											<div class="user-account__top-row">
-												<div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+                        <div class="user-account__order-number">Заказ от 4 мая № 35554315-0015</div>
+                        <div class="user-account__order-date user-account__order-date--mobile">Будет доставлено вовремя: 7 мая c 09:00 до 20:00</div>
 												<span class="user-account__status user-account__status">У курьера</span>
 											</div>
 											<div class="user-account__order-date">Доставлено: 20 апреля</div>
 										</div>
 									</div>
 								</div>
-								<div class="user-account__product">
+								<div class="user-account__product user-account__product--line">
 									<img src="/img/pian.png" alt="Цифровое фортепиано Artesia A-61">
 									<div class="user-account__wrapper">
 										<h3 class="user-account__title-name">Цифровое фортепиано Artesia A-61</h3>
@@ -81,13 +82,21 @@
             
             <div class="total">
 
-              <div class="total__left">
+              <div class="total__left total__left--desktop">
                 <span class="total__sum">Итого 
                   <div>32 000 ₽</div>
                 </span>
                 <p class="total__card">Оплачено картой онлайн</p>
                 <p class="total__count">Товары: 2 шт.</p>
                 <p class="total__delivery">Доставка: Бесплатно</p>
+              </div>
+              <div class="total__left total__left--mobile">
+                <p class="total__count">Товары: 2 шт.</p>
+                <p class="total__delivery">Доставка: Бесплатно</p>
+                <span class="total__sum">Итого 
+                  <div>32 000 ₽</div>
+                </span>
+                <p class="total__card">Оплачено картой онлайн</p>
               </div>
 
               <div class="total__right">
@@ -795,7 +804,12 @@
     </div>
   </section>
 
-	@@include('./include/discount.html')
+	<div class="section-none">
+    @@include('./include/discount.html')
+  </div>
+
 </main>
 
-@@include('./include/footer.html')
+<div class="section-none">
+  @@include('./include/footer.html')
+</div>
