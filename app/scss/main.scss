@@ -14307,7 +14307,7 @@ img.mfp-img {
 }
 
 .user-account__mobile-link--order {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 // user-account__wrapper
@@ -14799,6 +14799,7 @@ img.mfp-img {
 .user-account__form-name,
 .user-account__form-mail,
 .user-account__form-text {
+  box-sizing: border-box;
   background-color: #fff;
   border: none;
   padding: 10px 15px;
@@ -14907,7 +14908,7 @@ img.mfp-img {
   padding: 30px 20px 25px 30px;
 }
 
-.call-back-left {
+.call-back__left {
 
   h3 {
     margin: 0;
@@ -14929,7 +14930,7 @@ img.mfp-img {
   }
 }
 
-.call-back-rigth {
+.call-back__rigth {
   button {
     padding: 0;
     width: 190px;
@@ -14940,6 +14941,81 @@ img.mfp-img {
     font-size: 14px;
     line-height: 19px;
     color: #fff;
+  }
+}
+
+.user-account__form-desc {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .user-account--support {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-account__form-title {
+    font-size: 18px;
+  }
+  .call-back {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .call-back__left {
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .user-account__form,
+  .call-back {
+    padding: 15px 13px 20px;
+  }
+  .user-account__form-wrap {
+    flex-direction: column;
+  }
+  .user-account__form-name {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .user-account__form-mail {
+    width: 100%;
+  }
+  .user-account__form-desc {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #0E1A29;
+    margin-bottom: 10px;
+  }
+  .user-account__form-privacy {
+    display: none;
+  }
+  .user-account__form-privacy--mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  .user-account__form-btn-send,
+  .call-back__rigth {
+    width: 100%;
+  }
+  .call-back__rigth button {
+    width: 100%;
+  }
+  .user-account__form-privacy--mobile {
+    text-align: center;
   }
 }
 
