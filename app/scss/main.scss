@@ -13714,7 +13714,16 @@ img.mfp-img {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .modal-wrapper__callback--recovery {
+    width: 100%;
+  }
+} 
 @media screen and (max-width: 768px) {
+  .modal-wrapper__callback--recovery .card__title  {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .modal-wrapper__review {
     padding: 40px 16px;
   }
@@ -13742,11 +13751,11 @@ img.mfp-img {
     width: 50%;
   }
   .wrapper-final__text--mobile .wrapper-final__text--fz16 {
+    color: #000;
     font-weight: 700;
-    color: rgba(14, 26, 41, 0.5);
   }
   .wrapper-final__text--mobile .wrapper-final__text-blue {
-    color: #000;
+    color: rgba(14, 26, 41, 0.5);
     text-decoration: none;
   }
   .modal-wrapper__callback-body .wrap-login__form {
