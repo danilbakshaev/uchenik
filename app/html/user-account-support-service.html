@@ -15,8 +15,8 @@
     </div>
   </div>
 
-  <section class="user-account">
-    <div class="container">
+  <section class="user-account user-account--support">
+    <div class="container container--mobile">
       <div class="user-account__inner">
         <div class="user-account__left">
           <div class="user-account__profile">
@@ -35,12 +35,19 @@
         </div>
 
         <div class="user-account__rigth">
-
-          <h1 class="user-account__title">Служба поддержки</h1>
+          <a class="user-account__mobile-link user-account__mobile-link--order container-true" href="#">
+            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 14L2 7.66667L9 1.33333" stroke="#C1C4C9" stroke-width="1.5"></path>
+            </svg>&nbsp;
+            Профиль
+          </a>
+          <h1 class="user-account__title container-true">Служба поддержки</h1>
           <form class="user-account__form">
             <h2 class="user-account__form-title">Возникли вопросы? Напишите нам!</h2>
             <div class="user-account__form-wrap">
+              <span class="user-account__form-desc">Фамиля Имя</span>
               <input class="user-account__form-name" type="text" placeholder="Константин Константинопольский">
+              <span class="user-account__form-desc">Эл. почта</span>
               <input class="user-account__form-mail" type="mail" placeholder="example@gmail.com">
             </div>
             <textarea class="user-account__form-text" placeholder="Напишите ваш вопрос"></textarea>
@@ -62,16 +69,20 @@
               Нажимая кнопку «Отправить», вы соглашаетесь с 
               <a href="#">политикой конфиденциальности сайта</a>
             </p>
+            <p class="user-account__form-privacy user-account__form-privacy--mobile">
+              Перед отправкой отзыва, пожалуйста, ознакомьтесь с 
+              <a href="#">правилами публикации</a>
+            </p>
           </form>
 
           <div class="call-back">
 
-            <div class="call-back-left">
+            <div class="call-back__left">
               <h3>Мы всегда на связи! Закажите обратный звонок</h3>
               <p>Оставьте заявку и наш специалист перезвонит в ближайшее время</p>
             </div>
 
-            <div class="call-back-rigth">
+            <div class="call-back__rigth">
               <button>Заказать звонок</button>
             </div>
             
@@ -82,7 +93,12 @@
     </div>
   </section>
 
-  @@include('./include/discount.html')
+  <div class="section-none">
+    @@include('./include/discount.html')
+  </div>
+
 </main>
 
-@@include('./include/footer.html')
+<div class="section-none">
+  @@include('./include/footer.html')
+</div>
